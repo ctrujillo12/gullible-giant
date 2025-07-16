@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/PageLayout.astro';
+import TextMoving from '../components/TextMoving.astro';
+import Icon from '../components/Icon.astro';
+import ShopCarousel from '../components/ShopCarousel.astro';
+---
+
+<Layout title="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet">
+  </head>
+
+  
+  <div class="moving-text-wrapper">
+    
+    <TextMoving text="My Picks" fontSize="13rem" />
+  </div>
+
+  <!-- <h1 style="background-color:rgb(219, 250, 81); padding: 0.5rem 1rem; border-radius: 8px; display: inline-block;">
+    ✨ blehhh!
+  </h1> -->
+
+  <ShopCarousel />
+
+  
+  <style>
+    .fancy-heading {
+        color:rgb(219, 250, 81);
+    }
+    .moving-text-wrapper {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    .moving-text-wrapper img {
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      z-index: 10;
+      pointer-events: none;
+    }
+    
+
+  </style>
+
+</Layout>

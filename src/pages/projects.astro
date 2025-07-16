@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/PageLayout.astro';
+import TextMoving from '../components/TextMoving.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<Layout title="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet">
+  </head>
+
+  
+  <div class="moving-text-wrapper">
+    <Icon src="/images/glow.webp" alt="Star" size={222} />
+    <Icon src="/images/glow.webp" alt="Star" size={222} />
+    <Icon src="/images/glow.webp" alt="Star" size={222} />
+    
+    <Icon src="/images/glow.webp" alt="Star" size={222} />
+    <Icon src="/images/glow.webp" alt="Star" size={222} />
+    <TextMoving text="Bruh" fontSize="15rem" />
+  </div>
+
+
+  <h1>✨blehhh!</h1>
+
+  <a href="https://open.spotify.com/user/6f8wd68ntevknv4h1fx17lky5?si=Jig_62sAS_ixal_bHqOwFQ&nd=1&dlsi=fb03e7d356b5483f" style="display: inline-block;">
+    <img src="/images/kimk.JPG" alt="Go to Projects" style="width: 60px; cursor: pointer;" />
+  </a>
+
+  <section class="image-grid">
+    <a href="https://link1.com" target="_blank">
+      <img src="/images/mcmshoes.webp" alt="Item 1" />
+    </a>
+    <!-- <a href="https://link2.com" target="_blank">
+      <img src="/images/mcmshoes.webp" alt="Item 2" />
+    </a>
+    <a href="https://link3.com" target="_blank">
+      <img src="/images/mcmshoes.webp" alt="Item 3" />
+    </a> -->
+    <!-- Add more items -->
+  </section>
+
+  //*
+  <h3>Ideas for my blog:</h3>
+  <h3>favorite runway shows page</h3>
+  <h3>spotify charts page</h3>
+  <h3>monthly secondhand picks??</h3>
+  <h3>substacky page or writing short pieces or anecdoty page</h3>
+  <h3>lets connect page</h3>
+  <p>Here is my first truly viral pin. It got 45 comments, 550 saves, and 50k impressions!</p>
+  <p>people had lots of things to say, like <br /> "what genre even is this supposed to be ??"</p>
+  <p>"why is _____ so low ???"</p>
+  <p>"ts is mainstream"</p>
+  /
+  
+  <div style="display: flex; align-items: center; gap: 1rem; max-width: 700px; margin: 2rem auto;">
+    <img src="/images/iceberg.jpg" alt="Iceberg" style="width: 300px; border-radius: 10px;" />
+    <div>
+      <h3>Stupid music iceberg</h3>
+      <p>This piece was my attempt at being cool and underground.</p>
+    </div>
+  </div>
+
+
+
+  <div style="display: flex; align-items: center; gap: 1rem; max-width: 700px; margin: 2rem auto;">
+    <img src="/images/me.jpg" alt="this is me" style="width: 300px; border-radius: 10px;" />
+    <div>
+      <h3>cute me</h3>
+      <p>This piece was my attempt at being cool and underground.</p>
+    </div>
+  </div>
+
+  <section style="display: grid; gap: 2rem; margin-top: 2rem;">
+    <article>
+      <h2>🎨 Creative Portfolio</h2>
+      <ul>
+        <li><a href="https://open.spotify.com/user/6f8wd68ntevknv4h1fx17lky5?si=Jig_62sAS_ixal_bHqOwFQ&nd=1&dlsi=fb03e7d356b5483f" target="_blank">cheyenne++ Spotify </a></li>
+        <li><a href="https://example.com/zine" target="_blank">Zine Series: Analog + Digital Mashups</a></li>
+      </ul>
+    </article>
+
+    <article>
+      <h2>💻 Coding Projects</h2>
+      <ul>
+        <li><a href="https://github.com/yourusername/music-app">Music App using Spotify API</a></li>
+        <li><a href="https://github.com/yourusername/portfolio-site">This Portfolio Website (Astro!)</a></li>
+      </ul>
+    </article>
+  </section>
+
+  <style>
+    .moving-text-wrapper {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    .moving-text-wrapper img {
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      z-index: 10;
+      pointer-events: none;
+    }
+    
+  </style>
+
+</Layout>

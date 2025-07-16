@@ -1,0 +1,36 @@
+---
+const {
+  text = "This text moves left and right",
+  speed = 5,
+  color = "#33ffff",
+  fontSize = "10rem"
+} = Astro.props;
+---
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+
+  @keyframes slideBackAndForth {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-150px); }
+    100% { transform: translateX(0); }
+  }
+
+  .moving-text {
+    display: inline-block;
+    animation-name: slideBackAndForth;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    font-family: 'Ballet', cursive;
+    white-space: nowrap;
+  }
+</style>
+
+<div
+  class="moving-text"
+  
+  style={`animation-duration: ${speed}s; font-size: ${fontSize}; color: ${color};`}
+>
+  {text}
+</div>

@@ -1,0 +1,26 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+import { render } from 'astro:content';
+import { Image } from 'astro:assets'; // ✅ Combine into the same frontmatter
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+
+type Props = CollectionEntry<'blog'>;
+
+const post = Astro.props;
+const { Content, data } = await render(Astro.props);
+---
+{data.heroImage && (
+  <Image src={data.heroImage} alt={data.title} style="width: 100%; border-radius: 12px; margin-bottom: 2rem;" />
+)}
+
+<BlogPost {...data}>
+	<Content />
+</BlogPost>
