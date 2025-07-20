@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/PageLayout.astro';
+import TextMoving from '../components/TextMoving.astro';
+import Icon from '../components/Icon.astro';
+
+const clientId = 'f6af48791a99465e8a5eb950464a9c15';
+const redirectUri = 'http://127.0.0.1:4322/api/spotify/callback';
+const scopes = encodeURIComponent('user-read-private user-read-email user-top-read');
+const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes}`;
+---
+
+<Layout title="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet" />
+  </head>
+
+  <a href={authUrl}>
+    <button>Login with Spotify</button>
+  </a>
+
+  <button id="get-data">Get My Top Tracks</button>
+
+  <style>
+    .fancy-heading {
+      color: rgb(219, 250, 81);
+    }
+    .moving-text-wrapper {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+    .moving-text-wrapper img {
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      z-index: 10;
+      pointer-events: none;
+    }
+  </style>
+
+  <script type="module">
+    docume
