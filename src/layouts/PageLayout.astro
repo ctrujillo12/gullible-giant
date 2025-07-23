@@ -10,12 +10,13 @@ const { title, description, coverImage } = Astro.props;
     <link rel="stylesheet" href="/styles/global.css" />
   </head> -->
   <head>
+    <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
   </head>
   <body style="font-family: 'League Script', serif; background-color:rgb(33, 33, 33); color: #333333; line-height: 1.6; margin: 0;">
-    <header style="padding: 1.5rem 32rem; border-bottom: 1px solid #eee;">
+    <header style="padding: 1.5rem 25rem; border-bottom: 1px solid #eee;">
       <nav style="display: flex; gap: 2rem; font-weight: bold;">
         <a href="/">Home</a>
         <a href="/blog">Blog</a>
@@ -33,7 +34,7 @@ const { title, description, coverImage } = Astro.props;
       )}
 
       <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">{title}</h1>
-      {description && <p style="font-style: italic; color: #666;">{description}</p>}
+      {description && <p style="font-style: italic; color: #c7ff7a;">{description}</p>}
 
       <div style="margin-top: 2rem;">
         <slot />

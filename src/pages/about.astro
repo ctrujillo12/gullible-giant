@@ -1,12 +1,139 @@
 ---
 import Layout from '../layouts/PageLayout.astro';
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import ShopCarousel from '../components/ShopCarousel.astro';
 ---
 
-<Layout title="Shop">
-  <h1>🛍️ Shop My Closet</h1>
-  <p>Click on any item to shop the look 💅</p>
-  
-  <ShopCarousel />
+<style>
+  .connect-container {
+    text-align: center;
+    margin-top: 4rem;
+    color:rgb(219, 250, 81)
+  }
+
+  .connect-container h1 {
+    font-size: 2.5rem;
+    color:rgb(219, 250, 81)
+  }
+
+  .connect-container p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color:rgb(219, 250, 81)
+  }
+
+  .connect-button {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  .connect-button:hover {
+    background-color: rgb(219, 250, 81)
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    text-align: left;
+  }
+
+  .modal-content h2 {
+    margin-top: 0;
+  }
+
+  .modal-content label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .modal-content textarea {
+    height: 100px;
+  }
+
+  .modal-close {
+    background-color: #ccc;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+  .modal-show {
+    display: flex;
+  }
+</style>
+
+<Layout title="Let's Connect">
+  <div class="connect-container">
+    <h1>💌 Let’s Connect</h1>
+    <p>Have suggestions, comments, or just want to say hi?</p>
+    <button class="connect-button" id="openModal">Connect</button>
+  </div>
+
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <h2>Send a Message</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="topic">Topic</label>
+        <input type="text" id="topic" name="topic" />
+
+        <label for="message">What’s on your mind?</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button class="modal-close" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('contactModal');
+    const openBtn = document.getElementById('openModal');
+
+    openBtn.addEventListener('click', () => {
+      modal.classList.add('modal-show');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('modal-show');
+      }
+    });
+  </script>
 </Layout>

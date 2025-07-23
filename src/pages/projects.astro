@@ -1,111 +1,192 @@
 ---
 import Layout from '../layouts/PageLayout.astro';
-import TextMoving from '../components/TextMoving.astro';
-import Icon from '../components/Icon.astro';
+import LoopMoving from '../components/LoopMoving.astro';
 ---
 
-<Layout title="">
+
+<Layout title="Home"></Layout>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  
-  <div class="moving-text-wrapper">
-    <Icon src="/images/glow.webp" alt="Star" size={222} />
-    <Icon src="/images/glow.webp" alt="Star" size={222} />
-    <Icon src="/images/glow.webp" alt="Star" size={222} />
-    
-    <Icon src="/images/glow.webp" alt="Star" size={222} />
-    <Icon src="/images/glow.webp" alt="Star" size={222} />
-    <TextMoving text="Bruh" fontSize="15rem" />
+  <div class="hero">
+    <div class="overlay"></div>
+    <LoopMoving text="My Picks" fontSize="13rem" />
   </div>
 
-
-  <h1>✨blehhh!</h1>
-
-  <a href="https://open.spotify.com/user/6f8wd68ntevknv4h1fx17lky5?si=Jig_62sAS_ixal_bHqOwFQ&nd=1&dlsi=fb03e7d356b5483f" style="display: inline-block;">
-    <img src="/images/kimk.JPG" alt="Go to Projects" style="width: 60px; cursor: pointer;" />
-  </a>
-
-  <section class="image-grid">
-    <a href="https://link1.com" target="_blank">
-      <img src="/images/mcmshoes.webp" alt="Item 1" />
-    </a>
-    <!-- <a href="https://link2.com" target="_blank">
-      <img src="/images/mcmshoes.webp" alt="Item 2" />
-    </a>
-    <a href="https://link3.com" target="_blank">
-      <img src="/images/mcmshoes.webp" alt="Item 3" />
-    </a> -->
-    <!-- Add more items -->
-  </section>
-
-  //*
-  <h3>Ideas for my blog:</h3>
-  <h3>favorite runway shows page</h3>
-  <h3>spotify charts page</h3>
-  <h3>monthly secondhand picks??</h3>
-  <h3>substacky page or writing short pieces or anecdoty page</h3>
-  <h3>lets connect page</h3>
-  <p>Here is my first truly viral pin. It got 45 comments, 550 saves, and 50k impressions!</p>
-  <p>people had lots of things to say, like <br /> "what genre even is this supposed to be ??"</p>
-  <p>"why is _____ so low ???"</p>
-  <p>"ts is mainstream"</p>
-  /
-  
-  <div style="display: flex; align-items: center; gap: 1rem; max-width: 700px; margin: 2rem auto;">
-    <img src="/images/iceberg.jpg" alt="Iceberg" style="width: 300px; border-radius: 10px;" />
-    <div>
-      <h3>Stupid music iceberg</h3>
-      <p>This piece was my attempt at being cool and underground.</p>
+  <div class="content-section">
+    <div class="content-text">
+      <h2>Secondhand Picks</h2>
+      <p>A collection of my favorite vintage and thrifted gems. Fashion with a story.</p>
+      <a href="/secondhand" class="link-button">Explore Finds</a>
+    </div>
+    <div class="content-image">
+      <img src="/images/secondhand.jpg" alt="Secondhand Finds" />
     </div>
   </div>
 
-
-
-  <div style="display: flex; align-items: center; gap: 1rem; max-width: 700px; margin: 2rem auto;">
-    <img src="/images/me.jpg" alt="this is me" style="width: 300px; border-radius: 10px;" />
-    <div>
-      <h3>cute me</h3>
-      <p>This piece was my attempt at being cool and underground.</p>
+  <div class="content-section">
+    <div class="content-text">
+      <h2>Diary</h2>
+      <p>Personal reflections, observations, and thoughts from my life and mind.</p>
+      <a href="/diary" class="link-button">Read Entries</a>
+    </div>
+    <div class="content-image">
+      <img src="/images/diary.jpg" alt="Diary Entries" />
     </div>
   </div>
 
-  <section style="display: grid; gap: 2rem; margin-top: 2rem;">
-    <article>
-      <h2>🎨 Creative Portfolio</h2>
-      <ul>
-        <li><a href="https://open.spotify.com/user/6f8wd68ntevknv4h1fx17lky5?si=Jig_62sAS_ixal_bHqOwFQ&nd=1&dlsi=fb03e7d356b5483f" target="_blank">cheyenne++ Spotify </a></li>
-        <li><a href="https://example.com/zine" target="_blank">Zine Series: Analog + Digital Mashups</a></li>
-      </ul>
-    </article>
+  <div class="content-section">
+    <div class="content-text">
+      <h2>My Music</h2>
+      <p>Snippets, covers, and compositions—from violin to piano to experimental loops.</p>
+      <a href="/music" class="link-button">Listen In</a>
+    </div>
+    <div class="content-image">
+      <img src="/images/music.jpg" alt="Music" />
+    </div>
+  </div>
 
-    <article>
-      <h2>💻 Coding Projects</h2>
-      <ul>
-        <li><a href="https://github.com/yourusername/music-app">Music App using Spotify API</a></li>
-        <li><a href="https://github.com/yourusername/portfolio-site">This Portfolio Website (Astro!)</a></li>
-      </ul>
-    </article>
-  </section>
+  <div class="content-section">
+    <div class="content-text">
+      <h2>Projects & Inspo</h2>
+      <p>Things I’ve built, things I love, and the ideas that spark something in me.</p>
+      <a href="/projects" class="link-button">See More</a>
+    </div>
+    <div class="content-image">
+      <img src="/images/projects.jpg" alt="Projects and Inspirations" />
+    </div>
+  </div>
 
-  <style>
-    .moving-text-wrapper {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 2rem;
-    }
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
 
-    .moving-text-wrapper img {
-      position: absolute;
-      top: -20px;
-      left: 10px;
-      z-index: 10;
-      pointer-events: none;
-    }
-    
-  </style>
-
+    document.querySelectorAll('.content-section').forEach((section) => {
+      observer.observe(section);
+    });
+  </script>
 </Layout>
+
+<style>
+  .hero {
+    position: relative;
+    height: 70vh;
+    background-image: url('/images/tractor.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  .content-section {
+    max-width: 900px;
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Odd sections: text left, image right */
+  .content-section:nth-of-type(odd) {
+    flex-direction: row;
+  }
+
+  /* Even sections: image left, text right */
+  .content-section:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .content-text {
+    flex: 1;
+    color:rgba(188, 255, 112, 0.4)
+  }
+
+  .content-text h2 {
+    margin-bottom: 1rem;
+  }
+
+  .content-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color:rgba(188, 255, 112, 0.4)
+  }
+
+  .content-image {
+    flex: 1;
+  }
+
+  .content-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  /* Responsive: stack vertically on small screens */
+  @media (max-width: 768px) {
+    .content-section {
+      flex-direction: column !important;
+      text-align: center;
+    }
+
+    .content-text, .content-image {
+      width: 100%;
+    }
+  }
+
+  .link-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+
+  .link-button:hover {
+    background-color: #333;
+  }
+</style>
