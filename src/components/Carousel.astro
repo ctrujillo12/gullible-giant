@@ -1,0 +1,85 @@
+---
+// Props: expects an array of { image, title, description }
+const { items = [] } = Astro.props;
+---
+
+<style>
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 2rem 0;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 20%; /* 5 items per view (100% / 5) */
+    box-sizing: border-box;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+
+  .carousel-nav:hover {
+    opacity: 1;
+  }
+
+  .left-btn {
+    left: 0;
+  }
+
+  .right-btn {
+    right: 0;
+  }
+</style>
+
+<div class="carousel-container">
+  <button class="carousel-nav left-btn" onclick="scrollCarousel(-1)">‹</button>
+  <div class="carousel" id="carousel">
+    {items.map((item) => (
+      <div class="carousel-item">
+        <img src={item.image} alt={item.title} />
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+      </div>
+    ))}
+  </div>
+  <button class="carousel-nav right-btn" onclick="scrollCarousel(1)">›</button>
+</div>
+
+<script type="module" is:inline>
+  const carousel = document.getElementById('carousel');
+  let currentIndex = 0;
+  const maxIndex = Math.ceil({items.length} / 5) - 1;
+
+  function scrollCarousel(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+    const offset = currentIndex * 100;
+    carousel.style.transform = `translateX(-${offset}%)`;
+  }
+</script>
