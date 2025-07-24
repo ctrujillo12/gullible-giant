@@ -1,30 +1,34 @@
 ---
-// Props: expects an array of { image, title, description }
-const { items = [] } = Astro.props;
+import { products as items } from '../content/products.js';
 ---
 
 <style>
   .carousel-container {
     position: relative;
-    width: 100%;
+    width: 90vw;
     overflow: hidden;
     margin: 2rem 0;
+    background: #c7ff7a;
+    color: #333;
   }
 
   .carousel {
     display: flex;
     transition: transform 0.4s ease-in-out;
+    will-change: transform;
   }
 
   .carousel-item {
-    min-width: 20%; /* 5 items per view (100% / 5) */
+    flex: 0 0 8%; /* 5 items per view */
     box-sizing: border-box;
     padding: 0.5rem;
     text-align: center;
+    background: #c7ff7a;
+    color: #333;
   }
 
   .carousel-item img {
-    width: 100%;
+    width: 70%;
     height: auto;
     border-radius: 1rem;
   }
@@ -34,7 +38,8 @@ const { items = [] } = Astro.props;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background: white;
+    background: #c7ff7a;
+    color: #333;
     border: none;
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -54,32 +59,44 @@ const { items = [] } = Astro.props;
   .right-btn {
     right: 0;
   }
+
+  a.view-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 </style>
 
 <div class="carousel-container">
-  <button class="carousel-nav left-btn" onclick="scrollCarousel(-1)">‹</button>
+  <button class="carousel-nav left-btn" onClick="scrollCarousel(-1)">‹</button>
   <div class="carousel" id="carousel">
-    {items.map((item) => (
-      <div class="carousel-item">
-        <img src={item.image} alt={item.title} />
-        <h3>{item.title}</h3>
-        <p>{item.description}</p>
+    {items.map((item, index) => (
+      <div class="carousel-item" key={index}>
+        <img src={item.image} alt={item.name} />
+        <h3>{item.name}</h3>
+        <p>{item.price}</p>
+        <a href={item.link} target="_blank" rel="noopener noreferrer" class="view-link">View</a>
       </div>
     ))}
   </div>
-  <button class="carousel-nav right-btn" onclick="scrollCarousel(1)">›</button>
+  <button class="carousel-nav right-btn" onClick="scrollCarousel(1)">›</button>
 </div>
 
-<script type="module" is:inline>
+<script is:inline type="module">
   const carousel = document.getElementById('carousel');
+  const itemsCount = carousel.querySelectorAll('.carousel-item').length;
+  const itemsPerView = 5;
   let currentIndex = 0;
-  const maxIndex = Math.ceil({items.length} / 5) - 1;
+  const maxIndex = Math.max(0, itemsCount - itemsPerView);
 
-  function scrollCarousel(direction) {
+  window.scrollCarousel = function(direction) {
     currentIndex += direction;
     if (currentIndex < 0) currentIndex = 0;
     if (currentIndex > maxIndex) currentIndex = maxIndex;
-    const offset = currentIndex * 100;
-    carousel.style.transform = `translateX(-${offset}%)`;
+    const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
+    const offset = itemWidth * currentIndex;
+    carousel.style.transform = `translateX(-${offset}px)`;
   }
 </script>

@@ -8,13 +8,14 @@ const { title = "Shop" } = Astro.props;
     <meta charset="UTF-8" />
     <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Glider.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
-    
+
+    <!-- Google Fonts: multiple different fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&family=Montserrat&family=Pacifico&family=Roboto+Slab&family=Raleway&display=swap" rel="stylesheet" />
 
     <style>
       body {
@@ -35,12 +36,37 @@ const { title = "Shop" } = Astro.props;
         gap: 2rem;
         font-weight: bold;
         flex-wrap: wrap;
+        align-items: center;
       }
 
       nav a {
         font-size: 1.1rem;
         color: #c7ff7a;
         text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+
+      /* Unique fonts for each nav link using nth-child */
+      nav a:nth-child(1) {
+        font-family: 'League Script', cursive; /* Home */
+      }
+      nav a:nth-child(2) {
+        font-family: 'Montserrat', sans-serif; /* Picks */
+      }
+      nav a:nth-child(3) {
+        font-family: 'Pacifico', cursive; /* Diary */
+      }
+      nav a:nth-child(5) {
+        font-family: 'Raleway', sans-serif; /* Connect */
+      }
+
+      /* Spotify image link style */
+      nav a.spotify-link img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) saturate(100%) invert(81%) sepia(40%) saturate(682%) hue-rotate(70deg) brightness(93%) contrast(92%);
+        /* This filter tints the image roughly #c7ff7a green. Adjust or remove if your icon is already colored */
       }
 
       footer {
@@ -48,7 +74,7 @@ const { title = "Shop" } = Astro.props;
         padding: 2rem 0;
         border-top: 1px solid #555;
         font-size: 0.9rem;
-        color: #999;
+        color: #c7ff7a;
       }
 
       main {
@@ -65,12 +91,13 @@ const { title = "Shop" } = Astro.props;
     <header>
       <nav>
         <a href="/">Home</a>
-        <a href="/blog">Blog</a>
-        <a href="/projects">Projects</a>
+        <!-- <a href="/projects">Projects</a> -->
         <a href="/mypicks">Picks</a>
         <a href="/diary">Diary</a>
-        <a href="/spotify">Spotifyyy</a>
-        <a href="/about">About</a>
+        <a href="/spotify" class="spotify-link" aria-label="Spotify">
+          <img src="/images/spot.png" alt="Spotify" />
+        </a>
+        <a href="/about">Connect</a>
       </nav>
     </header>
 

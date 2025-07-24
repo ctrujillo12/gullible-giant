@@ -3,8 +3,8 @@ import ShopLayout from '../layouts/ShopLayout.astro';
 import { products } from '../content/products.js';
 ---
 
-<ShopLayout title="Shop the Look">
-  <h2 style="text-align: center; margin-bottom: 2rem;">Shop the Look</h2>
+<ShopLayout title="Recent finds:">
+  <h2 style="text-align: center; margin-bottom: 2rem;">Recent finds</h2>
 
   <div class="carousel-wrapper">
     <button class="glider-prev">‹</button>
@@ -63,14 +63,16 @@ import { products } from '../content/products.js';
     }
 
     .shop-item {
+      width: 120px; /* Was 160px → now 75% */
       text-align: center;
-      padding: 1rem;
+      padding: 0.5rem;
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin: 0 10px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 0 6px;
       transition: transform 0.3s;
       color: black;
+      flex-shrink: 0;
     }
 
     .shop-item:hover {
@@ -80,40 +82,44 @@ import { products } from '../content/products.js';
     .shop-item img {
       width: 100%;
       height: auto;
-      border-radius: 6px;
+      border-radius: 4px;
     }
 
     .shop-item p {
-      margin: 0.5rem 0;
-      font-size: 0.95rem;
+      margin: 0.4rem 0;
+      font-size: 0.75rem;
+	  transform: scale(0.75);
+  	  transform-origin: center;
     }
 
     .shop-item a {
-      color: #0077cc;
+      color: #007f5f;
       text-decoration: none;
       font-weight: bold;
+      font-size: 0.75rem;
     }
 
     .glider-prev,
     .glider-next {
-      background: #000;
+      background: #007f5f;
       color: #fff;
       border: none;
-      padding: 0.8rem 1rem;
-      font-size: 1.5rem;
+      padding: 0.4rem 0.6rem;
+      font-size: 1rem;
       cursor: pointer;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       z-index: 2;
+      border-radius: 50%;
     }
 
     .glider-prev {
-      left: -50px;
+      left: -25px;
     }
 
     .glider-next {
-      right: -50px;
+      right: -25px;
     }
 
     @media (max-width: 768px) {
@@ -124,4 +130,3 @@ import { products } from '../content/products.js';
     }
   </style>
 </ShopLayout>
-
