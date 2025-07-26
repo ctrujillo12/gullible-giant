@@ -1,132 +1,192 @@
 ---
-import ShopLayout from '../layouts/ShopLayout.astro';
-import { products } from '../content/products.js';
+import Layout from '../layouts/ShopLayout.astro';
+import LoopMoving from '../components/LoopMoving.astro';
 ---
 
-<ShopLayout title="Recent finds:">
-  <h2 style="text-align: center; margin-bottom: 2rem;">Recent finds</h2>
 
-  <div class="carousel-wrapper">
-    <button class="glider-prev">‹</button>
+<Layout title="Home">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <div class="glider">
-      {products.map((product) => (
-        <div class="shop-item">
-          <img src={product.image} alt={product.name} />
-          <p>{product.name}</p>
-          <a href={product.link} target="_blank">View Product</a>
-        </div>
-      ))}
-    </div>
-
-    <button class="glider-next">›</button>
+  <div class="hero">
+    <div class="overlay"></div>
+    <LoopMoving text="My Picks" fontSize="13rem" />
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <div class="content-section">
+    <div class="content-text">
+      <h2>Secondhand Picks</h2>
+      <p>A collection of my favorite vintage and thrifted gems. Fashion with a story.</p>
+      <a href="/secondhand" class="link-button">Explore Finds</a>
+    </div>
+    <div class="content-image">
+      <img src="/images/secondhand.jpg" alt="Secondhand Finds" />
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="content-text">
+      <h2>Diary</h2>
+      <p>Personal reflections, observations, and thoughts from my life and mind.</p>
+      <a href="/diary" class="link-button">Read Entries</a>
+    </div>
+    <div class="content-image">
+      <img src="/images/diary.jpg" alt="Diary Entries" />
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="content-text">
+      <h2>My Music</h2>
+      <p>Snippets, covers, and compositions—from violin to piano to experimental loops.</p>
+      <a href="/music" class="link-button">Listen In</a>
+    </div>
+    <div class="content-image">
+      <img src="/images/music.jpg" alt="Music" />
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="content-text">
+      <h2>Projects & Inspo</h2>
+      <p>Things I’ve built, things I love, and the ideas that spark something in me.</p>
+      <a href="/projects" class="link-button">See More</a>
+    </div>
+    <div class="content-image">
+      <img src="/images/projects.jpg" alt="Projects and Inspirations" />
+    </div>
+  </div>
+
   <script>
-    window.addEventListener('load', function () {
-      new Glider(document.querySelector('.glider'), {
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        draggable: true,
-        arrows: {
-          prev: '.glider-prev',
-          next: '.glider-next'
-        },
-        responsive: [
-          {
-            breakpoint: 800,
-            settings: {
-              slidesToShow: 3,
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-            }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
           }
-        ]
-      });
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    document.querySelectorAll('.content-section').forEach((section) => {
+      observer.observe(section);
     });
   </script>
+</Layout>
 
-  <style>
-    .carousel-wrapper {
-      position: relative;
-      max-width: 1000px;
-      margin: auto;
-    }
+<style>
+  .hero {
+    position: relative;
+    height: 70vh;
+    background-image: url('/images/tractor.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
 
-    .glider {
-      margin: 0 auto;
-    }
+  .hero h1 {
+    font-size: 4rem;
+    text-align: center;
+    z-index: 1;
+  }
 
-    .shop-item {
-      width: 120px; /* Was 160px → now 75% */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  .content-section {
+    max-width: 900px;
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Odd sections: text left, image right */
+  .content-section:nth-of-type(odd) {
+    flex-direction: row;
+  }
+
+  /* Even sections: image left, text right */
+  .content-section:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .content-text {
+    flex: 1;
+    color:rgba(188, 255, 112, 0.4)
+  }
+
+  .content-text h2 {
+    margin-bottom: 1rem;
+  }
+
+  .content-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color:rgba(188, 255, 112, 0.4)
+  }
+
+  .content-image {
+    flex: 1;
+  }
+
+  .content-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  /* Responsive: stack vertically on small screens */
+  @media (max-width: 768px) {
+    .content-section {
+      flex-direction: column !important;
       text-align: center;
-      padding: 0.5rem;
-      background: white;
-      border-radius: 6px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: 0 6px;
-      transition: transform 0.3s;
-      color: black;
-      flex-shrink: 0;
     }
 
-    .shop-item:hover {
-      transform: scale(1.03);
-    }
-
-    .shop-item img {
+    .content-text, .content-image {
       width: 100%;
-      height: auto;
-      border-radius: 4px;
     }
+  }
 
-    .shop-item p {
-      margin: 0.4rem 0;
-      font-size: 0.75rem;
-	  transform: scale(0.75);
-  	  transform-origin: center;
-    }
+  .link-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
 
-    .shop-item a {
-      color: #007f5f;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 0.75rem;
-    }
-
-    .glider-prev,
-    .glider-next {
-      background: #007f5f;
-      color: #fff;
-      border: none;
-      padding: 0.4rem 0.6rem;
-      font-size: 1rem;
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
-      border-radius: 50%;
-    }
-
-    .glider-prev {
-      left: -25px;
-    }
-
-    .glider-next {
-      right: -25px;
-    }
-
-    @media (max-width: 768px) {
-      .glider-prev,
-      .glider-next {
-        display: none;
-      }
-    }
-  </style>
-</ShopLayout>
+  .link-button:hover {
+    background-color: #333;
+  }
+</style>
