@@ -42,51 +42,65 @@ export const products = [
     price: "$50"
   },
   {
-    name: "Faux Fur Coat",
-    image: "https://images.unsplash.com/photo-1556909190-447bbed5276e",
-    link: "https://example.com/product8",
-    price: "$210"
+    name: "Marc Jacobs",
+    image: "/images/mj_sunglasses.png",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$56"
   },
   {
-    name: "Wide-Leg Trousers",
-    image: "https://images.unsplash.com/photo-1588515028451-c1d9a0e9eb09",
-    link: "https://example.com/product9",
-    price: "$80"
+    name: "Guinness polo",
+    image: "/images/guiness_shirt.webp",
+    link: "https://poshmark.com/listing/Guinness-rugby-shirt-67a235c12839bc7bc77b6a4d",
+    price: "$10"
   },
   {
-    name: "Gold Statement Earrings",
-    image: "https://images.unsplash.com/photo-1623091412210-58c24f52dc5c",
-    link: "https://example.com/product10",
-    price: "$55"
+    name: "MCM mini boston bag",
+    image: "/images/mcm_bag.webp",
+    link: "https://poshmark.com/listing/MCM-mini-Boston-bag-6606d91a92e491386801376a",
+    price: "$199"
   },
   {
-    name: "Structured Blouse",
-    image: "https://images.unsplash.com/photo-1584043720375-bd5dc3f5771f",
-    link: "https://example.com/product11",
-    price: "$70"
+    name: "2 tone green polo",
+    image: "/images/pwc_polo.webp",
+    link: "https://poshmark.com/listing/Olive-Green-Polo-Shirt-67a238bd154600a6a5c303ad",
+    price: "$20"
   },
   {
-    name: "Silk Headscarf",
-    image: "https://images.unsplash.com/photo-1592878892232-0a6c317fbbe3",
-    link: "https://example.com/product12",
-    price: "$35"
+    name: "Molly Goddard cardigan",
+    image: "/images/mollygoddard_cardigan.webp",
+    link: "https://poshmark.com/listing/Molly-Goddard-cardigan-sweater-66d49f8dfe7e2cf2d14f17c4",
+    price: "$180"
   },
   {
-    name: "Denim Corset Top",
-    image: "https://images.unsplash.com/photo-1618354691229-6fd263b03b7f",
-    link: "https://example.com/product13",
-    price: "$60"
+    name: "Kate Spade arctic bear ring",
+    image: "/images/katespade_bear_ring.webp",
+    link: "https://www.therealreal.com/products/jewelry/rings/cocktail-ring/kate-spade-new-york-arctic-friends-polar-bear-pave-ring-qr3nf",
+    price: "$68"
   },
   {
-    name: "Lace-Up Heels",
-    image: "https://images.unsplash.com/photo-1618354691086-59c56c5c3e11",
-    link: "https://example.com/product14",
-    price: "$90"
+    name: "Jil Sander sweater",
+    image: "/images/jilsander_shortsleeve_sweater.webp",
+    link: "https://www.therealreal.com/products/women/clothing/knitwear/jil-sander-cashmere-crew-neck-sweater-qd7o1",
+    price: "$75"
   },
   {
-    name: "Crochet Handbag",
-    image: "https://images.unsplash.com/photo-1618354690905-b24cf8dd4f33",
-    link: "https://example.com/product15",
-    price: "$85"
+    name: "Marc Jacobs denim jacket",
+    image: "/images/mj_denimjacket.webp",
+    link: "https://www.therealreal.com/products/women/clothing/jackets/marc-by-marc-jacobs-printed-jacket-qt548",
+    price: "$45"
   },
+  {
+    name: "Fleur Du Mal bodysuit",
+    image: "/images/fleurdumal_bodysuit.webp",
+    link: "https://www.therealreal.com/products/women/clothing/tops/fleur-du-mal-off-the-shoulder-short-sleeve-bodysuit-qcy09",
+    price: "$84"
+  },
+  {
+    name: "Kate Spade arctic bear ring",
+    image: "/images/katespade_bear_ring.webp",
+    link: "https://www.therealreal.com/products/jewelry/rings/cocktail-ring/kate-spade-new-york-arctic-friends-polar-bear-pave-ring-qr3nf",
+    price: "$68"
+  },
+
+  
 ];
