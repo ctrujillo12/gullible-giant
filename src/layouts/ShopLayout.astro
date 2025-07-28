@@ -23,7 +23,7 @@ const { title = "Shop" } = Astro.props;
     <style>
       body {
         font-family: 'League Script', serif;
-        background: rgb(73, 90, 10);
+        background: rgb(82, 82, 82);
         color: #f0f0f0;
         margin: 0;
         padding: 0;
@@ -82,8 +82,8 @@ const { title = "Shop" } = Astro.props;
       .nav-links a.spotify-link img {
         width: 24px;
         height: 24px;
-        filter: brightness(0) saturate(100%) invert(81%) sepia(40%) saturate(682%)
-          hue-rotate(70deg) brightness(93%) contrast(92%);
+        /* filter: brightness(0) saturate(100%) invert(81%) sepia(40%) saturate(682%)
+          hue-rotate(70deg) brightness(93%) contrast(92%); */
       }
 
       footer {
@@ -108,11 +108,13 @@ const { title = "Shop" } = Astro.props;
     <header>
       <nav>
         <!-- <a href="/" class="site-logo">C</a> -->
-       <img src="/images/whorse.png" alt="Home" style="
+       <a href="/" class="site-logo" aria-label="horse" style="width: 50px; height: 50px; display: inline-block;">
+        <img src="/images/whorse.png" alt="Home" style="
           width: 40px;
           height: 40px;
-          filter: drop-shadow(0 0 0 white) drop-shadow(0 0 2px rgb(255, 0, 0));
+          filter: drop-shadow(0 0 0 rgb(182, 35, 255)) drop-shadow(0 0 2px rgb(182, 35, 255));
         " />
+      </a>
 
 
         <div class="nav-links">
@@ -121,7 +123,7 @@ const { title = "Shop" } = Astro.props;
           <a href="/mypicks">Picks</a>
           <a href="/diary">Diary</a>
           <a href="/spotify" class="spotify-link" aria-label="Spotify">
-            <img src="/images/spot.png" alt="Spotify" />
+            <img src="/images/nn.jpg" alt="Spotify" />
           </a>
           <a href="/about">Connect</a>
         </div>
