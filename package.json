@@ -1,5 +1,5 @@
 {
-  "name": "gullible-giant",
+  "name": "frontend",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,11 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
-    "@astrojs/rss": "^4.0.12",
-    "@astrojs/sitemap": "^3.4.1",
-    "astro": "^5.11.0",
-    "glider-js": "^1.7.9",
-    "sharp": "^0.34.2"
+    "astro": "^5.12.4"
   }
 }
