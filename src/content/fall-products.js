@@ -1,4 +1,4 @@
-export const products = [
+export const fall_products = [
   {
     name: "Nanette Lepore halter",
     image: '/images/halter.jpg', // Make sure this image exists in your /public/images folder
