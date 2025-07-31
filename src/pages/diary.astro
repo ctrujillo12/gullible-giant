@@ -6,56 +6,46 @@ import Icon from '../components/Icon.astro';
 
 <Layout title="">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
   </head>
 
-  
   <div class="moving-text-wrapper">
-    <!-- <Icon src="/images/glow.webp" alt="Star" size={222} /> -->
-    <TextMoving text="Thinking abt rn..." fontSize="15rem" />
     
+    <TextMoving text="My Picks" fontSize="13rem" />
   </div>
 
-<div style="display: flex; align-items: center; gap: 1rem; max-width: 1200px; margin: 2rem auto;">
-    <img src="/images/effy.jpg" alt="this is me" style="width: 400px; border-radius: 10px;" />
-
-  </div>
-
-  <h1>
-    <span class="fancy-heading">The Warehouse:</span>
-    <span class="dreamy">a playground for Eros</span>
-  </h1>
-
-  <div class="text-reflection">
-    <p>
+  <div class="notes-container">
+    <article class="text-reflection">
+      <h2 class="note-title">The Warehouse: a playground for Eros</h2>
+      <p>
         eros: love conceived as a fundamental creative impulse having a sensual element.
         this scene in effy's first episode lights me on fire. i've watched it idk how many times.
         it's like the warehouse is an alternate reality that is effy's and hers alone.
         ofc spencer is there but more as a means through which effy expresses herself and meets her needs.
         she doesnt have to say anything to get everything.
-    </p>
-    <p>
+      </p>
+      <p>
         the metallic sounds, the whirs, the grinding, the beeping, makes the place feel cold and industrial,
         but somehow the scene is full of humanity and bursting with sensuality, creativity, and also destruction.
         everything is being let go and made to serve her purpose. shes worshipped.
-    </p>
-    <p>
+      </p>
+      <p>
         its a total trip. an unearthly place. it may feel childish or immature for a second,
         but then it becomes about the underlying desires present.
-    </p>
-    <p class="signature">7/18 c</p>
-  </div>
+      </p>
+      <p class="signature">7/18 c</p>
+    </article>
 
-
-  <div class="text-reflection">
-    <p>
+    <article class="text-reflection">
+      <h2 class="note-title">Sharp Desires</h2>
+      <p>
         something that has always been a part of me is the desired to defile my skin with 
         sharp or satisfying objects. 
-    </p>
-    <p>
+      </p>
+      <p>
         for example, today at my job, i was entranced by the
         long sharp probes of the multimeter sitting on my desk. you see, i have this bump on my upper arm
         near the pit, and i have been picking at it lately. this morning i made it bleed again
@@ -64,79 +54,58 @@ import Icon from '../components/Icon.astro';
         do. to get under this little scab and remove it with a precise instrument such as the probe would be
         so intensely satisfying. but i held back, as i sit in an open hallway with other interns 
         and engineers around me. anyway thats what i felt today
-    </p>
-    <p class="signature">7/21 c</p>
+      </p>
+      <p class="signature">7/21 c</p>
+    </article>
   </div>
 
-
-
-  
- 
-
-
-
-
-
-    
-
   <style>
+    .notes-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 0 1rem;
+    }
+
     .text-reflection {
-        background-color: #fdf8e6; /* pale paper yellow */
-        border: 1.5px solid #ccc;
-        border-radius: 10px;
-        padding: 35px 40px;
-        margin: 60px auto;
-        max-width: 800px;
-        font-size: 1.2rem;
-        line-height: 2;
-        /* font-family: 'Nanum Pen Script', cursive; */
-        color: #333;
-        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
-        transform: rotate(-0.3deg);
-        transition: all 0.3s ease;
-        position: relative;
-        background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-        background-repeat: repeat;
-    }
-    .text-reflection:hover {
-        background-color: #fffbe6;
-        transform: rotate(0deg) scale(1.01);
-        box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    .signature {
-        text-align: right;
-        margin-top: 30px;
-        font-size: 1.6rem;
-        font-family: 'Homemade Apple', cursive;
-        color: #444;
-    }
-    .fancy-heading {
-        color:rgb(219, 250, 81);
-        font-family: 'Georgia', serif;
-    }
-    .plain {
-        color:rgb(255, 255, 255);
-        font-family: 'Georgia', serif;
-    }
-    .dreamy {
-        color:rgb(219, 250, 81);
-        font-style: italic;
-        font-family: 'Courier New', monospace;
-    }
-    .moving-text-wrapper {
+      background-color: #fdf8e6; /* pale paper yellow */
+      border: 1.5px solid #ccc;
+      border-radius: 10px;
+      padding: 2.5rem 3rem 3rem 3rem;
+      font-size: 1.2rem;
+      line-height: 2;
+      color: #333;
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+      transform: rotate(-0.3deg);
+      transition: all 0.3s ease;
       position: relative;
-      display: inline-block;
-      margin-bottom: 2rem;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
     }
 
-    .moving-text-wrapper img {
-      position: absolute;
-      top: -20px;
-      left: 10px;
-      z-index: 10;
-      pointer-events: none;
+    .text-reflection:hover {
+      background-color: #fffbe6;
+      transform: rotate(0deg) scale(1.01);
+      box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
     }
-    
+
+    .note-title {
+      font-family: 'Nanum Pen Script', cursive;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: rgb(219, 250, 81);
+      text-transform: capitalize;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      font-family: 'Homemade Apple', cursive;
+      color: #444;
+    }
   </style>
-
 </Layout>

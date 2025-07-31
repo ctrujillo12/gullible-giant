@@ -8,7 +8,9 @@ import 'glider-js/glider.min.css';
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
+  background-color: #4a4a4aa2; /* pastel pink with slight transparency */
+  border-radius: 12px;
 }
 
 .glider {
@@ -21,7 +23,7 @@ import 'glider-js/glider.min.css';
   width: 180px;
   text-align: center;
   text-decoration: none;
-  color: inherit;
+  color: #ff66cc;
 }
 
 .product-card img {
@@ -83,7 +85,6 @@ import 'glider-js/glider.min.css';
 <script is:client="load">
   import Glider from 'glider-js';
 
-  // Wait until DOM is ready
   window.addEventListener('DOMContentLoaded', () => {
     new Glider(document.querySelector('.glider'), {
       slidesToShow: 5,

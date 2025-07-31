@@ -19,15 +19,18 @@ const {
 
   .scroll-text {
     display: inline-block;
-    padding-left: 100%;
     animation: scrollLoop linear infinite;
     font-family: 'Ballet', cursive;
     white-space: nowrap;
   }
 
   @keyframes scrollLoop {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-45%);
+    }
   }
 </style>
 
@@ -36,6 +39,6 @@ const {
     class="scroll-text"
     style={`animation-duration: ${speed}s; font-size: ${fontSize}; color: ${color};`}
   >
-    {text} {text} {text} {text} {text}
+    {text} {text} {text} {text} {text} {text} {text} {text}
   </div>
 </div>

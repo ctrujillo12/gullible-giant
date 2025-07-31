@@ -3,21 +3,33 @@ import Layout from '../layouts/ShopLayout.astro';
 ---
 
 <style>
+  body {
+    background-color: rgb(195, 245, 95);
+    background-image: url('/images/yellowstar.png'), url('/images/star-fileed.webp'), url('/images/hearts.png');
+    background-repeat: repeat;
+    background-size: 80px, 60px, 60px;
+    background-position: top left, center, bottom right;
+  }
+
   .connect-container {
     text-align: center;
-    margin-top: 4rem;
-    color:rgb(219, 250, 81)
+    margin-top: 5rem;
+    color: #ff66cc;
+    position: relative;
   }
 
   .connect-container h1 {
-    font-size: 2.5rem;
-    color:rgb(219, 250, 81)
+    font-size: 3rem;
+    color: #ff66cc;
+    font-family: "Pacifico", cursive;
+    margin-bottom: 1rem;
   }
 
   .connect-container p {
     font-size: 1.2rem;
-    margin: 1rem 0;
-    color:rgb(219, 250, 81)
+    color: #ff66cc;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
   }
 
   .connect-button {
@@ -29,11 +41,43 @@ import Layout from '../layouts/ShopLayout.astro';
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
+    margin-bottom: 2rem;
   }
 
   .connect-button:hover {
-    background-color: rgb(219, 250, 81)
+    background-color: #ff66cc;
+    color: white;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color: #ff66cc;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+
+  .social-links a::before {
+    content: "★";
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+
+  .social-links a:hover {
+    transform: scale(1.1);
   }
 
   .modal {
@@ -54,16 +98,21 @@ import Layout from '../layouts/ShopLayout.astro';
     max-width: 500px;
     width: 90%;
     text-align: left;
+    box-shadow: 0 0 10px rgba(255, 102, 204, 0.2);
   }
 
   .modal-content h2 {
     margin-top: 0;
+    font-family: "Pacifico", cursive;
+    color: #ff66cc;
   }
 
   .modal-content label {
     display: block;
     margin-top: 1rem;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
   }
 
   .modal-content input,
@@ -74,6 +123,7 @@ import Layout from '../layouts/ShopLayout.astro';
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .modal-content textarea {
@@ -81,16 +131,35 @@ import Layout from '../layouts/ShopLayout.astro';
   }
 
   .modal-close {
-    background-color: #ccc;
+    background-color: #ff66cc;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 6px;
     margin-top: 1rem;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
   }
 
   .modal-show {
     display: flex;
+  }
+
+  /* Optional floating background images */
+  .floating-icon {
+    position: absolute;
+    width: 40px;
+    opacity: 0.2;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .icon1 { top: 10%; left: 5%; animation-delay: 0s; }
+  .icon2 { top: 50%; left: 85%; animation-delay: 2s; }
+  .icon3 { top: 80%; left: 10%; animation-delay: 4s; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
   }
 </style>
 
@@ -98,7 +167,20 @@ import Layout from '../layouts/ShopLayout.astro';
   <div class="connect-container">
     <h1>💌 Let’s Connect</h1>
     <p>Have suggestions, comments, or just want to say hi?</p>
-    <button class="connect-button" id="openModal">Connect</button>
+    <button class="connect-button" id="openModal">Send a Message</button>
+
+    <div class="social-links">
+      <a href="https://www.pinterest.com/yourprofile" target="_blank">Pinterest</a>
+      <a href="https://www.linkedin.com/in/cheyenne-trujillo-093a41246" target="_blank">LinkedIn</a>
+      <a href="https://github.com/ctrujillo12" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/cheyenneetrujillo/" target="_blank">Instagram</a>
+      <a href="mailto:youremail@example.com">Email</a>
+    </div>
+
+    <!-- cute floating icons -->
+    <img src="/images/heart.png" alt="heart" class="floating-icon icon1" />
+    <img src="/images/star.png" alt="star" class="floating-icon icon2" />
+    <img src="/images/bow.png" alt="bow" class="floating-icon icon3" />
   </div>
 
   <div class="modal" id="contactModal">
@@ -137,3 +219,4 @@ import Layout from '../layouts/ShopLayout.astro';
     });
   </script>
 </Layout>
+
