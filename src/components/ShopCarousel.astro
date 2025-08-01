@@ -8,8 +8,8 @@ import 'glider-js/glider.min.css';
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 1rem 1rem;
-  background-color: #000000; /* pastel pink with slight transparency */
+  padding: 1rem;
+  background-color: #000000;
   border-radius: 12px;
 }
 
@@ -35,9 +35,9 @@ import 'glider-js/glider.min.css';
 
 .product-name {
   margin-top: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
   font-family: "League Script Two", sans-serif;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .product-price {
@@ -45,13 +45,15 @@ import 'glider-js/glider.min.css';
   font-size: 1.5rem;
 }
 
-.glider-prev, .glider-next {
+.glider-prev,
+.glider-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: white;
-  border: 1px solid #ccc;
+  background: transparent;
+  border: 2px solid #ff66cc;
+  color: #ff66cc;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
@@ -73,7 +75,7 @@ import 'glider-js/glider.min.css';
   <button aria-label="Previous" class="glider-prev">‹</button>
   <div class="glider">
     {products.map(product => (
-      <a href={product.link} class="product-card">
+      <a href={product.link} class="product-card" >
         <img src={product.image} alt={product.name} />
         <div class="product-name">{product.name}</div>
         <div class="product-price">{product.price}</div>
@@ -83,35 +85,37 @@ import 'glider-js/glider.min.css';
   <button aria-label="Next" class="glider-next">›</button>
 </div>
 
-<!-- ✅ Load glider script only on client -->
-<script is:client="load">
-  import Glider from 'glider-js';
-
-  window.addEventListener('DOMContentLoaded', () => {
-    new Glider(document.querySelector('.glider'), {
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      draggable: true,
-      arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next',
-      },
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
+<script>
+  if (typeof window !== "undefined") {
+    import('glider-js').then(({ default: Glider }) => {
+      window.addEventListener('DOMContentLoaded', () => {
+        new Glider(document.querySelector('.glider'), {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          draggable: true,
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next',
           },
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-          },
-        },
-      ],
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
     });
-  });
+  }
 </script>
+
