@@ -8,64 +8,6 @@ const clientId = 'f6af48791a99465e8a5eb950464a9c15';
 const redirectUri = 'http://127.0.0.1:4321/api/spotify/callback';
 const scopes = encodeURIComponent('user-read-private user-read-email user-top-read');
 const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes}`;
-const items = [
-  {
-    image: "/images/vivienne.jpg",
-    title: "Cute Top",
-    description: "Pastel crop top perfect for spring."
-  },
-  {
-    image: "/images/fredperry.jpg",
-    title: "Denim Jacket",
-    description: "Vintage 90s oversized denim."
-  },
-  {
-    image: "/images/mcmshoes.webp",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  {
-    image: "/images/meadowtop.jpg",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  {
-    image: "/images/pleinsud.jpg",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  {
-    image: "/images/pleinsud.jpg",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  {
-    image: "/images/pleinsud.jpg",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  {
-    image: "/images/pleinsud.jpg",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  {
-    image: "/images/pleinsud.jpg",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  {
-    image: "/images/pleinsud.jpg",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  {
-    image: "/images/pleinsud.jpg",
-    title: "Mini Skirt",
-    description: "Black leather mini with silver zip."
-  },
-  // Add up to 15 items...
-];
 ---
 
 
@@ -75,28 +17,33 @@ const items = [
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&family=Graduate&display=swap" rel="stylesheet" />
   </head>
 
   <main>
-
-    <h1>🛍️ Shop My Closet</h1>
-    <p>Click on any item to shop the look 💅</p>
-
-    <ShopCarousel items={items} />
-
+    <h1 class="graduate-pink-center">Coming Soon 🛠️</h1>
+    
     <a href={authUrl}>
-      <img src="/images/kimk.JPG" alt="Go to Projects" style="width: 60px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
+      
     </a>
-
 
     <a href="https://open.spotify.com/user/6f8wd68ntevknv4h1fx17lky5?si=Jig_62sAS_ixal_bHqOwFQ&nd=1&dlsi=fb03e7d356b5483f" style="display: inline-block;">
-        <img src="/images/kimk.JPG" alt="Go to Projects" style="width: 60px; cursor: pointer;" />
+        <!-- <img src="/images/kimk.JPG" alt="Go to Projects" style="width: 60px; cursor: pointer;" /> -->
     </a>
-    <button id="get-data">Get My Top Tracks</button>
   </main>
 
   
@@ -117,5 +64,11 @@ const items = [
       z-index: 10;
       pointer-events: none;
     }
+    .graduate-pink-center {
+      font-family: 'Graduate', cursive;
+      color: #ff66cc; /* pink */
+      text-align: center;
+    }
+
   </style>
 </Layout>

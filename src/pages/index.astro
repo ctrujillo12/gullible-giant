@@ -9,62 +9,55 @@ import LoopMoving from '../components/LoopMoving.astro';
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&family=Graduate&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Script+Two&display=swap" rel="stylesheet" />
   </head>
 
 
   <div class="hero-images">
     <div class="hero-img-container">
-      <img src="/images/running.jpg" alt="Banner 1" />
-      <img src="/images/slaying.jpg" alt="Banner 2" />
+      <img src="/images/masai.jpg" alt="Banner 4" />
+      <img src="/images/female_manipulator.png" alt="Banner 1" />
+      <img src="/images/kurt_jonny.jpg" alt="Banner 1" />
+      <img src="/images/fp_dress.jpg" alt="Banner 5" />
+      <img src="/images/fitted.jpg" alt="Banner 5" />
+      <img src="/images/minecraft_y.jpg" alt="Banner 2" />
+      <img src="/images/jonny_real.jpg" alt="Banner 3" />
       <div class="overlay-text">
-        <LoopMoving text="Me" fontSize="11rem" />
+        <h2 class="custom-hero-text">Cheyenne++</h2>
       </div>
     </div>
   </div>
 
-  <div class="content-section">
-    <div class="content-text">
-      <h2>An archive of my inner world. . .</h2>
+  <div class="content-text">
+      <h2>now you see me. . .</h2>
       <!-- <p>Personal reflections, observations, and thoughts from my life and mind.</p>
       <a href="/diary" class="link-button">Read Entries</a> -->
     </div>
-    <!-- <div class="content-image">
-      <img src="/images/diary.jpg" alt="Diary Entries" />
-    </div> -->
-  </div>
 
   <div class="content-section">
     <div class="content-text">
       <h2>Currently Listening:</h2>
-      <p>My current vibe. For coding, wandering, dreaming, or dancing in your room.</p>
-      <!-- Optional: you can add a button to open the playlist on Spotify -->
-      <a href="https://open.spotify.com/playlist/5gZmFliH9TZo0RZRcjQdj3" class="link-button" target="_blank">Open on Spotify</a>
+      <p>A very good mix of things</p>
+      <a href="https://open.spotify.com/playlist/6QlKyBsUbqqEptu4lgE789" class="link-button" target="_blank">Open on Spotify</a>
     </div>
     <div class="content-image">
-      <iframe
-        style="border-radius:12px"
-        src="https://open.spotify.com/embed/playlist/5gZmFliH9TZo0RZRcjQdj3?utm_source=generator"
-        width="100%"
-        height="352"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy">
-      </iframe>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6QlKyBsUbqqEptu4lgE789?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </div>
 
+  
 
   <div class="content-section">
     <div class="content-text">
-      <h2>Secondhand Picks</h2>
-      <p>A collection of my favorite vintage and thrifted gems. Fashion with a story.</p>
-      <a href="/secondhand" class="link-button">Explore Finds</a>
+      <h2>Currently Shopping: </h2>
+      <p>Recent secondhand finds I love!!!</p>
+      <a href="/mypicks" class="link-button">See More</a>
     </div>
-    <div class="content-image">
-      <img src="/images/secondhand.jpg" alt="Secondhand Finds" />
+    <div class="content-image shadow-bg">
+      <img src="/images/cover2.png" alt="Secondhand Finds" />
     </div>
   </div>
+
 
   <!-- <div class="content-section">
     <div class="content-text">
@@ -120,6 +113,35 @@ import LoopMoving from '../components/LoopMoving.astro';
 </Layout>
 
 <style>
+  .custom-hero-text {
+    font-family: "Ballet", cursive;
+    font-size: 12rem;
+    color: #2eddddff;
+    text-align: right;
+    z-index: 4;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    font-variation-settings: 'opsz' 16; /* 👈 This gives you the thin, delicate script look */
+  }
+
+  .content-image.shadow-bg {
+    background-color: rgba(0, 0, 0, 0.826); /* black with 60% opacity */
+    display: inline-block; /* shrink-wrap to image */
+    padding: 10px; /* optional padding around image */
+    border-radius: 8px; /* optional rounded corners */
+  }
+
+  .content-image.shadow-bg img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* match container corners */
+  }
+  
   .hero-images {
     position: relative;
     height: 60vh;
@@ -127,19 +149,40 @@ import LoopMoving from '../components/LoopMoving.astro';
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: #ff66cc;
   }
 
   .hero-img-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 images in a row */
+    grid-auto-rows: 1fr;
+    gap: 6px;
+    height: 90%;
+    width: auto;
+    aspect-ratio: 6 / 1; /* Keep it proportional horizontally */
+    max-width: 90vw;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
   }
 
   .hero-img-container img {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     object-fit: cover;
+    display: block;
   }
+
+
+  /* Optional: create interesting collage layout with span classes */
+  .hero-img-container img:nth-child(1) { grid-column: span 1; grid-row: span 1; }
+  .hero-img-container img:nth-child(2) { grid-column: span 0.5; grid-row: span 1; }
+  .hero-img-container img:nth-child(3) { grid-column: span 1; grid-row: span 1; }
+  .hero-img-container img:nth-child(4) { grid-column: span 0.5; grid-row: span 0.5; }
+  .hero-img-container img:nth-child(5) { grid-column: span 0.5; grid-row: span 0.5; }
+  .hero-img-container img:nth-child(6) { grid-column: span 0.5; grid-row: span 0.5; }
+  .hero-img-container img:nth-child(7) { grid-column: span 1; grid-row: span 1; }
+
 
   .overlay-text {
     position: absolute;
@@ -197,16 +240,17 @@ import LoopMoving from '../components/LoopMoving.astro';
   }
 
   .content-text h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-family: "Graduate", serif;
     color: #ff66cc; /* Optional if you want to emphasize it */
   }
 
 
   .content-text p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color:#ff66cc;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    font-family: "League Script Two", sans-serif;
+    color:#ffffff;
   }
 
   .content-image {
@@ -233,6 +277,7 @@ import LoopMoving from '../components/LoopMoving.astro';
   .link-button {
     display: inline-block;
     margin-top: 1rem;
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
     background-color: #111;
     color: white;

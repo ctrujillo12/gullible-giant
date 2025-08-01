@@ -20,37 +20,37 @@ export const products = [
   {
     name: "Sneakers",
     image: "/images/fredperry.jpg",
-    link: "https://example.com/product2",
+    link: "https://www.therealreal.com/products/men/shoes/sneakers/fred-perry-x-comme-des-garcons-printed-embroidered-accent-sneakers-qcior",
     price: "$120"
   },
   {
     name: "Marc Jacobs cardigan",
     image: "/images/mjcardigan.png",
-    link: "https://example.com/product3",
+    link: "https://www.therealreal.com/products/women/clothing/knitwear/marc-by-marc-jacobs-plaid-print-crew-neck-sweater-quaku",
     price: "$36"
   },
   {
     name: "Ombre skirt",
     image: "/images/topshopskirt.png",
-    link: "https://example.com/product4",
+    link: "https://poshmark.com/listing/Topshop-high-low-ombre-gray-mini-skirt-6276871c09d760cb66538393",
     price: "$25"
   },
   {
     name: "Bebe ruffle top",
     image: "/images/beberuffle.png",
-    link: "https://example.com/product5",
+    link: "https://poshmark.com/listing/Bebe-100-Silk-Ruffled-Tiered-Camisole-Top-Womens-Small-67a4970334e984be3690a03c",
     price: "$50"
   },
   {
     name: "Balenciaga dress",
     image: "/images/balencidress.png",
-    link: "https://example.com/product6",
-    price: "$250"
+    link: "https://poshmark.com/listing/Balenciaga-small-short-dress-622429cacb692c022d07ceea",
+    price: "$240"
   },
   {
     name: "Guess top",
     image: "/images/guesstop.png",
-    link: "https://example.com/product7",
+    link: "https://poshmark.com/listing/Guess-Creased-Off-Shoulder-Top-XXS-NWT-58f65bb04127d0b0d516ba81",
     price: "$50"
   },
   {
@@ -107,12 +107,12 @@ export const products = [
     link: "https://www.therealreal.com/products/women/clothing/tops/fleur-du-mal-off-the-shoulder-short-sleeve-bodysuit-qcy09",
     price: "$84"
   },
-  {
-    name: "Kate Spade arctic bear ring",
-    image: "/images/katespade_bear_ring.webp",
-    link: "https://www.therealreal.com/products/jewelry/rings/cocktail-ring/kate-spade-new-york-arctic-friends-polar-bear-pave-ring-qr3nf",
-    price: "$68"
-  },
+  // {
+  //   name: "Kate Spade arctic bear ring",
+  //   image: "/images/katespade_bear_ring.webp",
+  //   link: "https://www.therealreal.com/products/jewelry/rings/cocktail-ring/kate-spade-new-york-arctic-friends-polar-bear-pave-ring-qr3nf",
+  //   price: "$68"
+  // },
 
   
 ];

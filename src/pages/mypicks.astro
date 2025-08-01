@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/ShopLayout.astro';
-import TextMoving from '../components/TextMoving.astro';
+import LoopMoving from '../components/LoopMoving.astro';
 import Icon from '../components/Icon.astro';
 import ShopCarousel from '../components/ShopCarousel.astro';
 ---
@@ -10,12 +10,18 @@ import ShopCarousel from '../components/ShopCarousel.astro';
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Script+Two&display=swap" rel="stylesheet" />
   </head>
 
   
   <div class="moving-text-wrapper">
     
-    <TextMoving text="My Picks" fontSize="13rem" />
+    <LoopMoving text="-My Picks" fontSize="13rem" />
+    <div class="content-text">
+      <h2>What i'd buy. . .</h2>
+      <!-- <p>Personal reflections, observations, and thoughts from my life and mind.</p>
+      <a href="/diary" class="link-button">Read Entries</a> -->
+    </div>
   </div>
 
   <!-- <h1 style="background-color:rgb(219, 250, 81); padding: 0.5rem 1rem; border-radius: 8px; display: inline-block;">
@@ -43,6 +49,23 @@ import ShopCarousel from '../components/ShopCarousel.astro';
       pointer-events: none;
     }
     
+    .content-text {
+      flex: 1;
+      color:#ff66cc;
+    }
+
+    .content-text h2 {
+      margin-bottom: 0.5rem;
+      font-family: "Graduate", serif;
+      color: #ff66cc; /* Optional if you want to emphasize it */
+    }
+
+    .content-text p {
+      font-size: 3.5rem;
+      line-height: 0.8;
+      font-family: "League Script Two", sans-serif;
+      color:#ffffff;
+    }
 
   </style>
 
