@@ -1,7 +1,7 @@
-import { c as createComponent, m as maybeRenderHead, b as renderScript, g as addAttribute, a as renderTemplate, r as renderComponent } from '../chunks/astro/server_CPTbKEqK.mjs';
+import { c as createComponent, m as maybeRenderHead, b as renderScript, e as addAttribute, a as renderTemplate, r as renderComponent } from '../chunks/astro/server_CLdCtpUm.mjs';
 import 'kleur/colors';
-import { $ as $$ShopLayout } from '../chunks/ShopLayout_QAOWJBnU.mjs';
-import { $ as $$LoopMoving } from '../chunks/LoopMoving_B1tZTtF6.mjs';
+import { $ as $$ShopLayout } from '../chunks/ShopLayout_BEy7phtM.mjs';
+import { $ as $$LoopMoving } from '../chunks/LoopMoving_3A8599t-.mjs';
 import 'clsx';
 /* empty css                                   */
 export { renderers } from '../renderers.mjs';
@@ -130,8 +130,7 @@ const $$ShopCarousel = createComponent(($$result, $$props, $$slots) => {
 }, "C:/Projects/Website/gullible-giant/src/components/ShopCarousel.astro", void 0);
 
 const $$Mypicks = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$ShopLayout, { "title": "", "data-astro-cid-7f2wokly": true }, { "default": ($$result2) => renderTemplate` <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=League+Script+Two&display=swap" rel="stylesheet"> ${maybeRenderHead()}<div class="moving-text-wrapper" data-astro-cid-7f2wokly> ${renderComponent($$result2, "LoopMoving", $$LoopMoving, { "text": "-My Picks", "fontSize": "13rem", "data-astro-cid-7f2wokly": true })} <div class="content-text" data-astro-cid-7f2wokly> <h2 data-astro-cid-7f2wokly>What i'd buy. . .</h2> <!-- <p>Personal reflections, observations, and thoughts from my life and mind.</p>
-      <a href="/diary" class="link-button">Read Entries</a> --> </div> </div>  ${renderComponent($$result2, "ShopCarousel", $$ShopCarousel, { "data-astro-cid-7f2wokly": true })}  ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$ShopLayout, { "title": "", "data-astro-cid-7f2wokly": true }, { "default": ($$result2) => renderTemplate` <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=League+Script+Two&display=swap" rel="stylesheet">  ${maybeRenderHead()}<div class="white-bg-container" data-astro-cid-7f2wokly> <div class="moving-text-wrapper" data-astro-cid-7f2wokly> ${renderComponent($$result2, "LoopMoving", $$LoopMoving, { "text": "- My Picks", "fontSize": "9rem", "data-astro-cid-7f2wokly": true })} </div> </div>  <div class="content-text" data-astro-cid-7f2wokly> <h2 data-astro-cid-7f2wokly>What i'm eyeing. . .</h2> </div> ${renderComponent($$result2, "ShopCarousel", $$ShopCarousel, { "data-astro-cid-7f2wokly": true })}  ` })}`;
 }, "C:/Projects/Website/gullible-giant/src/pages/mypicks.astro", void 0);
 
 const $$file = "C:/Projects/Website/gullible-giant/src/pages/mypicks.astro";

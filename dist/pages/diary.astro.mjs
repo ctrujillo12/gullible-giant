@@ -1,11 +1,11 @@
-import { c as createComponent, d as createAstro, m as maybeRenderHead, g as addAttribute, a as renderTemplate, r as renderComponent } from '../chunks/astro/server_CPTbKEqK.mjs';
+import { d as createAstro, c as createComponent, m as maybeRenderHead, e as addAttribute, a as renderTemplate, r as renderComponent } from '../chunks/astro/server_CLdCtpUm.mjs';
 import 'kleur/colors';
-import { $ as $$ShopLayout } from '../chunks/ShopLayout_QAOWJBnU.mjs';
+import { $ as $$ShopLayout } from '../chunks/ShopLayout_BEy7phtM.mjs';
 import 'clsx';
 /* empty css                                 */
 export { renderers } from '../renderers.mjs';
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("https://boisterous-valkyrie-62854e.netlify.app");
 const $$TextMoving = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$TextMoving;
