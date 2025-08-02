@@ -1,8 +1,11 @@
 ---
 import Layout from '../layouts/ShopLayout.astro';
 import LoopMoving from '../components/LoopMoving.astro';
-import Icon from '../components/Icon.astro';
 import ShopCarousel from '../components/ShopCarousel.astro';
+
+import { products } from '../content/products.js';
+import { productsAccessories } from '../content/accessories.js';
+import { productsFall } from '../content/fall-products.js';
 ---
 
 <Layout title="">
@@ -13,34 +16,116 @@ import ShopCarousel from '../components/ShopCarousel.astro';
     <link href="https://fonts.googleapis.com/css2?family=League+Script+Two&display=swap" rel="stylesheet" />
   </head>
 
-  <!-- White full-width but thin container behind moving text -->
+  <!-- Moving Title -->
   <div class="white-bg-container">
     <div class="moving-text-wrapper">
       <LoopMoving text="- My Picks" fontSize="9rem" />
     </div>
   </div>
 
-  <!-- Left-aligned content text below -->
+  <!-- Subtitle -->
   <div class="content-text">
-    <h2>What i'm eyeing. . .</h2>
+    <h2>What I'm Eyeing. . .</h2>
   </div>
 
-  <ShopCarousel />
+  <!-- Tab Buttons -->
+  <div class="tab-buttons" role="tablist" aria-label="Shop Categories">
+    <button
+      type="button"
+      role="tab"
+      aria-selected="true"
+      aria-controls="carousel-clothes"
+      id="tab-clothes"
+      class="active"
+    >
+      Summer!
+    </button>
+    <button
+      type="button"
+      role="tab"
+      aria-selected="false"
+      aria-controls="carousel-accessories"
+      id="tab-accessories"
+    >
+      Accessories!
+    </button>
+    <button
+      type="button"
+      role="tab"
+      aria-selected="false"
+      aria-controls="carousel-fall"
+      id="tab-fall"
+    >
+      Fall!
+    </button>
+  </div>
+
+  <!-- Carousels -->
+  <div class="carousel-container">
+    <section
+      id="carousel-clothes"
+      role="tabpanel"
+      aria-labelledby="tab-clothes"
+      class="carousel-tab active-tab"
+    >
+      <ShopCarousel products={products} />
+    </section>
+    <section
+      id="carousel-accessories"
+      role="tabpanel"
+      aria-labelledby="tab-accessories"
+      class="carousel-tab"
+    >
+      <ShopCarousel products={productsAccessories} />
+    </section>
+    <section
+      id="carousel-fall"
+      role="tabpanel"
+      aria-labelledby="tab-fall"
+      class="carousel-tab"
+    >
+      <ShopCarousel products={productsFall} />
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.tab-buttons button');
+      const panels = document.querySelectorAll('.carousel-tab');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = tab.getAttribute('aria-controls');
+
+          tabs.forEach((t) => {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+
+          panels.forEach((panel) => panel.classList.remove('active-tab'));
+
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+          document.getElementById(targetId).classList.add('active-tab');
+        });
+      });
+    });
+  </script>
 
   <style>
-    /* White background behind the moving text - thinner height */
     .white-bg-container {
-      width: 100vw;           /* full viewport width */
-      height: 140px;          /* much thinner */
-      background-color: white;
+      width: 100vw;
+      height: 140px;
+      background-color: rgba(255, 255, 255, 0.089);
       margin-left: calc(50% - 50vw);
       margin-right: calc(50% - 50vw);
       box-sizing: border-box;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       display: flex;
-      align-items: center;    /* vertically center the moving text inside */
+      align-items: center;
       justify-content: center;
-      overflow: visible;      /* allow moving text to overflow if needed */
+      overflow: visible;
       padding: 0 1rem;
       position: relative;
       z-index: 1;
@@ -54,13 +139,12 @@ import ShopCarousel from '../components/ShopCarousel.astro';
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: visible; /* so large text can overflow container */
+      overflow: visible;
     }
 
-    /* Left align the content text and constrain max width */
     .content-text {
       max-width: 1400px;
-      margin: 4rem  1rem auto; /* very tight vertical spacing */
+      margin: 4rem 1rem 0;
       color: #ff66cc;
       text-align: left;
       padding: 0 1rem;
@@ -71,6 +155,46 @@ import ShopCarousel from '../components/ShopCarousel.astro';
       margin: 0;
       font-size: 1.5rem;
       line-height: 1.1;
+    }
+
+    .tab-buttons {
+      display: flex;
+      justify-content: flex-start; /* left align */
+      gap: 1rem;
+      margin: 1rem 1rem 2rem; /* less top margin to bring buttons closer */
+      max-width: 1000px;
+      padding: 0 1rem;
+    }
+
+    .tab-buttons button {
+      background: white;
+      border: 1px solid #ff66cc;
+      color: #ff66cc;
+      font-family: 'Graduate', serif;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .tab-buttons button.active,
+    .tab-buttons button[aria-selected='true'] {
+      background-color: #ff66cc;
+      color: white;
+    }
+
+    .carousel-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1rem 4rem;
+    }
+
+    .carousel-tab {
+      display: none;
+    }
+
+    .carousel-tab.active-tab {
+      display: block;
     }
   </style>
 </Layout>

@@ -12,12 +12,11 @@ import Layout from '../layouts/ShopLayout.astro';
   .connect-container {
     text-align: center;
     margin-top: 1rem;
-    color: #b623ff; /* purple */
+    color: #b623ff;
     position: relative;
-    font-family: 'League Script', cursive; /* base font for entire container */
+    font-family: 'League Script', cursive;
   }
 
-  /* Special class for the "Have an idea? ..." text */
   .idea-text {
     font-family: 'League Script Two', sans-serif;
     color: #ffffff;
@@ -25,18 +24,17 @@ import Layout from '../layouts/ShopLayout.astro';
     margin-bottom: 3rem;
   }
 
-  /* Animation setup */
   .fade-slide-up {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
+
   .fade-slide-up.visible {
     opacity: 1;
     transform: translateY(0);
   }
 
-  /* Headers: Graduate font, purple */
   .connect-container h1,
   .modal-content h2 {
     font-size: 3rem;
@@ -46,7 +44,6 @@ import Layout from '../layouts/ShopLayout.astro';
     margin-bottom: 2rem;
   }
 
-  /* Smaller text: League Script font, purple */
   .connect-button,
   .social-links a {
     font-family: 'League Script', cursive;
@@ -79,7 +76,6 @@ import Layout from '../layouts/ShopLayout.astro';
     margin-top: 2rem;
   }
 
-  /* Social icons styling */
   .social-links a {
     display: inline-block;
     width: 32px;
@@ -139,7 +135,7 @@ import Layout from '../layouts/ShopLayout.astro';
     margin-top: 0.3rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1.2rem; /* smaller than header */
+    font-size: 1.2rem;
     font-family: 'League Script', cursive;
     color: rgb(182, 35, 255);
   }
@@ -169,10 +165,7 @@ import Layout from '../layouts/ShopLayout.astro';
 <Layout title="Let's Connect">
   <div class="connect-container">
     <img src="/images/envelope.png" alt="Envelope Icon" style="max-width: 400px; margin-bottom: 1rem;" />
-
-    <!-- Separate class for the idea text with different font -->
     <p class="fade-slide-up idea-text">Have an idea? Something to say? My inbox is open.</p>
-
     <button class="connect-button fade-slide-up" id="openModal">Send a Message</button>
 
     <div class="social-links">
@@ -187,6 +180,9 @@ import Layout from '../layouts/ShopLayout.astro';
       </a>
       <a href="mailto:cheyenneettrujillo@gmail.com" aria-label="Email">
         <img src="/images/gmail.jpg" alt="Email" class="social-icon" />
+      </a>
+      <a href="https://open.spotify.com/user/6f8wd68ntevknv4h1fx17lky5" target="_blank" aria-label="Spotify">
+        <img src="/images/spowebp.webp" alt="Spotify" class="social-icon" />
       </a>
     </div>
   </div>
@@ -226,14 +222,13 @@ import Layout from '../layouts/ShopLayout.astro';
         });
       }
 
-      // Intersection Observer for fade-slide-up animation
       const animatedElements = document.querySelectorAll('.fade-slide-up');
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Animate once
+            observer.unobserve(entry.target);
           }
         });
       }, { threshold: 0.1 });

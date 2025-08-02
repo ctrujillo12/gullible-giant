@@ -1,5 +1,6 @@
 ---
-import { products } from '../content/products.js';
+// ShopCarousel.astro
+const { products } = Astro.props;
 import 'glider-js/glider.min.css';
 ---
 
@@ -75,7 +76,7 @@ import 'glider-js/glider.min.css';
   <button aria-label="Previous" class="glider-prev">‹</button>
   <div class="glider">
     {products.map(product => (
-      <a href={product.link} class="product-card" >
+      <a href={product.link} class="product-card" target="_blank" rel="noopener noreferrer">
         <img src={product.image} alt={product.name} />
         <div class="product-name">{product.name}</div>
         <div class="product-price">{product.price}</div>
@@ -118,4 +119,3 @@ import 'glider-js/glider.min.css';
     });
   }
 </script>
-
