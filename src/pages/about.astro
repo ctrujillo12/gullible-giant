@@ -5,42 +5,52 @@ import Layout from '../layouts/ShopLayout.astro';
 <style>
   body {
     background-color: rgb(195, 245, 95);
-    /* background-image: url('/images/yellowstar.png'), url('/images/star-fileed.webp'), url('/images/hearts.png'); */
-    /* background-repeat: repeat; */
     background-size: 80px, 60px, 60px;
     background-position: top left, center, bottom right;
   }
 
   .connect-container {
     text-align: center;
-    margin-top: 5rem;
-    color: #ff66cc;
+    margin-top: 1rem;
+    color: #b623ff; /* purple */
     position: relative;
+    font-family: 'League Script', cursive; /* base font for entire container */
   }
 
-  /* Headers: Graduate font, pink */
+  /* Special class for the "Have an idea? ..." text */
+  .idea-text {
+    font-family: 'League Script Two', sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Animation setup */
+  .fade-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Headers: Graduate font, purple */
   .connect-container h1,
   .modal-content h2 {
     font-size: 3rem;
-    color: #ff66cc;
-    font-family: 'Graduate', cursive;
-    margin-bottom: 1rem;
-  }
-
-  /* Smaller text: League Script font, pink */
-  .connect-container p,
-  .connect-button,
-  .social-links a,
-  .modal-content label,
-  .modal-content input,
-  .modal-content textarea {
+    color: rgb(182, 35, 255);
+    line-height: 0.8;
     font-family: 'League Script', cursive;
-    color: #ff66cc;
+    margin-bottom: 2rem;
   }
 
-  .connect-container p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+  /* Smaller text: League Script font, purple */
+  .connect-button,
+  .social-links a {
+    font-family: 'League Script', cursive;
+    color: rgb(182, 35, 255);
   }
 
   .connect-button {
@@ -48,7 +58,8 @@ import Layout from '../layouts/ShopLayout.astro';
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
-    font-size: 1.7rem;
+    font-family: 'League Script', cursive;
+    font-size: 2rem;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -56,7 +67,7 @@ import Layout from '../layouts/ShopLayout.astro';
   }
 
   .connect-button:hover {
-    background-color: #ff66cc;
+    background-color: #282828;
     color: white;
   }
 
@@ -78,7 +89,7 @@ import Layout from '../layouts/ShopLayout.astro';
   .social-links img.social-icon {
     width: 100%;
     height: 100%;
-    filter: drop-shadow(0 0 2px #ff66cc);
+    filter: drop-shadow(0 0 2px #2eddddff);
     transition: transform 0.2s ease;
   }
 
@@ -105,12 +116,20 @@ import Layout from '../layouts/ShopLayout.astro';
     width: 90%;
     text-align: left;
     box-shadow: 0 0 10px rgba(255, 102, 204, 0.2);
+    font-family: 'League Script', cursive;
+    color: rgb(182, 35, 255);
+  }
+
+  .modal-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
 
   .modal-content label {
     display: block;
     margin-top: 1rem;
     font-weight: bold;
+    font-size: 1.3rem;
   }
 
   .modal-content input,
@@ -120,7 +139,9 @@ import Layout from '../layouts/ShopLayout.astro';
     margin-top: 0.3rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 1.2rem; /* smaller than header */
+    font-family: 'League Script', cursive;
+    color: rgb(182, 35, 255);
   }
 
   .modal-content textarea {
@@ -128,14 +149,16 @@ import Layout from '../layouts/ShopLayout.astro';
   }
 
   .modal-close {
-    background-color: #ff66cc;
+    background-color: rgb(182, 35, 255);
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 6px;
     margin-top: 1rem;
     cursor: pointer;
     color: white;
     font-weight: bold;
+    font-family: 'League Script', cursive;
+    font-size: 1rem;
   }
 
   .modal-show {
@@ -145,14 +168,14 @@ import Layout from '../layouts/ShopLayout.astro';
 
 <Layout title="Let's Connect">
   <div class="connect-container">
-    <h1>💌 Let’s Connect</h1>
-    <!-- <p>Have suggestions, comments, or just want to say hi?</p> -->
-    <button class="connect-button" id="openModal">Send a Message</button>
+    <img src="/images/envelope.png" alt="Envelope Icon" style="max-width: 400px; margin-bottom: 1rem;" />
+
+    <!-- Separate class for the idea text with different font -->
+    <p class="fade-slide-up idea-text">Have an idea? Something to say? My inbox is open.</p>
+
+    <button class="connect-button fade-slide-up" id="openModal">Send a Message</button>
 
     <div class="social-links">
-      <!-- <a href="https://www.pinterest.com/yourprofile" target="_blank" aria-label="Pinterest">
-        <img src="/images/pinterest.svg" alt="Pinterest" class="social-icon" />
-      </a> -->
       <a href="https://www.linkedin.com/in/cheyenne-trujillo-093a41246" target="_blank" aria-label="LinkedIn">
         <img src="/images/linkedin.svg" alt="LinkedIn" class="social-icon" />
       </a>
@@ -178,9 +201,6 @@ import Layout from '../layouts/ShopLayout.astro';
         <label for="email">Email/Handle</label>
         <input type="email" id="email" name="email" />
 
-        <!-- <label for="topic">Topic</label>
-        <input type="text" id="topic" name="topic" /> -->
-
         <label for="message">Content</label>
         <textarea id="message" name="message"></textarea>
 
@@ -205,7 +225,20 @@ import Layout from '../layouts/ShopLayout.astro';
           }
         });
       }
+
+      // Intersection Observer for fade-slide-up animation
+      const animatedElements = document.querySelectorAll('.fade-slide-up');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Animate once
+          }
+        });
+      }, { threshold: 0.1 });
+
+      animatedElements.forEach(el => observer.observe(el));
     });
   </script>
-
 </Layout>

@@ -7,66 +7,70 @@ import ShopCarousel from '../components/ShopCarousel.astro';
 
 <Layout title="">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=League+Script+Two&display=swap" rel="stylesheet" />
   </head>
 
-  
-  <div class="moving-text-wrapper">
-    
-    <LoopMoving text="-My Picks" fontSize="13rem" />
-    <div class="content-text">
-      <h2>What i'd buy. . .</h2>
-      <!-- <p>Personal reflections, observations, and thoughts from my life and mind.</p>
-      <a href="/diary" class="link-button">Read Entries</a> -->
+  <!-- White full-width but thin container behind moving text -->
+  <div class="white-bg-container">
+    <div class="moving-text-wrapper">
+      <LoopMoving text="- My Picks" fontSize="9rem" />
     </div>
   </div>
 
-  <!-- <h1 style="background-color:rgb(219, 250, 81); padding: 0.5rem 1rem; border-radius: 8px; display: inline-block;">
-    ✨ blehhh!
-  </h1> -->
+  <!-- Left-aligned content text below -->
+  <div class="content-text">
+    <h2>What i'm eyeing. . .</h2>
+  </div>
 
   <ShopCarousel />
 
-  
   <style>
-    .fancy-heading {
-        color:rgb(219, 250, 81);
-    }
-    .moving-text-wrapper {
+    /* White background behind the moving text - thinner height */
+    .white-bg-container {
+      width: 100vw;           /* full viewport width */
+      height: 140px;          /* much thinner */
+      background-color: white;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      box-sizing: border-box;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;    /* vertically center the moving text inside */
+      justify-content: center;
+      overflow: visible;      /* allow moving text to overflow if needed */
+      padding: 0 1rem;
       position: relative;
-      display: inline-block;
-      margin-bottom: 2rem;
+      z-index: 1;
     }
 
-    .moving-text-wrapper img {
-      position: absolute;
-      top: -20px;
-      left: 10px;
-      z-index: 10;
-      pointer-events: none;
+    .moving-text-wrapper {
+      position: relative;
+      margin-top: 2.5rem;
+      max-width: 1300px;
+      width: 120%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: visible; /* so large text can overflow container */
     }
-    
+
+    /* Left align the content text and constrain max width */
     .content-text {
-      flex: 1;
-      color:#ff66cc;
+      max-width: 1400px;
+      margin: 4rem  1rem auto; /* very tight vertical spacing */
+      color: #ff66cc;
+      text-align: left;
+      padding: 0 1rem;
+      font-family: 'Graduate', serif;
     }
 
     .content-text h2 {
-      margin-bottom: 0.5rem;
-      font-family: "Graduate", serif;
-      color: #ff66cc; /* Optional if you want to emphasize it */
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.1;
     }
-
-    .content-text p {
-      font-size: 3.5rem;
-      line-height: 0.8;
-      font-family: "League Script Two", sans-serif;
-      color:#ffffff;
-    }
-
   </style>
-
 </Layout>
