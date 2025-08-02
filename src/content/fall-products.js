@@ -6,10 +6,28 @@ export const productsFall = [
     price: "$51"
   },
   {
+    name: "Guess top",
+    image: "/images/guesstop.png",
+    link: "https://poshmark.com/listing/Guess-Creased-Off-Shoulder-Top-XXS-NWT-58f65bb04127d0b0d516ba81",
+    price: "$50"
+  },
+  {
+    name: "2 tone green polo",
+    image: "/images/pwc_polo.webp",
+    link: "https://poshmark.com/listing/Olive-Green-Polo-Shirt-67a238bd154600a6a5c303ad",
+    price: "$20"
+  },
+  {
     name: "Marc Jacobs cardigan",
     image: "/images/mjcardigan.png",
     link: "https://www.therealreal.com/products/women/clothing/knitwear/marc-by-marc-jacobs-plaid-print-crew-neck-sweater-quaku",
     price: "$36"
+  },
+  {
+    name: "Anthropologie cardigan",
+    image: "/images/anthro_sweater.webp",
+    link: "https://poshmark.com/listing/Knitted-Knotted-Anthropologie-Cardigan-63eaa4ceeb7e7ad0dad7ca54",
+    price: "$13"
   },
   {
     name: "Balenciaga dress",
@@ -22,6 +40,12 @@ export const productsFall = [
     image: "/images/guiness_shirt.webp",
     link: "https://poshmark.com/listing/Guinness-rugby-shirt-67a235c12839bc7bc77b6a4d",
     price: "$10"
+  },
+  {
+    name: "GOA Paris sweater",
+    image: "/images/goa_sweater.jpg",
+    link: "https://poshmark.com/listing/GOA-Paris-Embroidered-Sweater-605bc6dc67bd91f4bb7cd2bc",
+    price: "$91"
   },
   {
     name: "Molly Goddard cardigan",
