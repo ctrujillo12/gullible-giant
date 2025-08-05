@@ -22,7 +22,7 @@ import LoopMoving from '../components/LoopMoving.astro';
   <div class="content-section">
     <div class="content-text">
       <h2>Secondhand Picks</h2>
-      <p>A collection of my favorite vintage and thrifted gems. Fashion with a story.</p>
+      <p></p>
       <a href="/secondhand" class="link-button">Explore Finds</a>
     </div>
     <div class="content-image">
@@ -33,7 +33,7 @@ import LoopMoving from '../components/LoopMoving.astro';
   <div class="content-section">
     <div class="content-text">
       <h2>Diary</h2>
-      <p>Personal reflections, observations, and thoughts from my life and mind.</p>
+      <p></p>
       <a href="/diary" class="link-button">Read Entries</a>
     </div>
     <div class="content-image">
@@ -44,7 +44,7 @@ import LoopMoving from '../components/LoopMoving.astro';
   <div class="content-section">
     <div class="content-text">
       <h2>My Music</h2>
-      <p>Snippets, covers, and compositions—from violin to piano to experimental loops.</p>
+      <p></p>
       <a href="/music" class="link-button">Listen In</a>
     </div>
     <div class="content-image">
@@ -55,7 +55,7 @@ import LoopMoving from '../components/LoopMoving.astro';
   <div class="content-section">
     <div class="content-text">
       <h2>Projects & Inspo</h2>
-      <p>Things I’ve built, things I love, and the ideas that spark something in me.</p>
+      <p></p>
       <a href="/projects" class="link-button">See More</a>
     </div>
     <div class="content-image">
@@ -129,12 +129,12 @@ import LoopMoving from '../components/LoopMoving.astro';
     transform: translateY(0);
   }
 
-  /* Odd sections: text left, image right */
+  
   .content-section:nth-of-type(odd) {
     flex-direction: row;
   }
 
-  /* Even sections: image left, text right */
+  
   .content-section:nth-of-type(even) {
     flex-direction: row-reverse;
   }
@@ -163,7 +163,7 @@ import LoopMoving from '../components/LoopMoving.astro';
     border-radius: 8px;
   }
 
-  /* Responsive: stack vertically on small screens */
+  
   @media (max-width: 768px) {
     .content-section {
       flex-direction: column !important;
