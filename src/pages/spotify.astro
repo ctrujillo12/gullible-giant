@@ -1,74 +1,74 @@
 ---
 import Layout from '../layouts/ShopLayout.astro';
-import TextMoving from '../components/TextMoving.astro';
-import Icon from '../components/Icon.astro';
-import ShopCarousel from '../components/Carousel.astro';
+import { getTopTracks } from '../utils/spotify/api';
 
 const clientId = 'f6af48791a99465e8a5eb950464a9c15';
-const redirectUri = 'http://127.0.0.1:4321/api/spotify/callback';
+const redirectUri = 'https://ctrujillo.netlify.app/callback'; // your callback URL
 const scopes = encodeURIComponent('user-read-private user-read-email user-top-read');
 const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes}`;
+
+const token = Astro.cookies.get('spotify_token')?.value;
+let topTracks = [];
+
+if (token) {
+  try {
+    topTracks = await getTopTracks(token);
+  } catch (e) {
+    console.error('Spotify API failed:', e);
+  }
+}
 ---
 
-
-
-
-<Layout title="Home">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&family=Graduate&display=swap" rel="stylesheet" />
-  </head>
-
+<Layout title="My Spotify">
   <main>
-    <h1 class="graduate-pink-center">Coming Soon 🛠️</h1>
-    
-    <a href={authUrl}>
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      <img src="/images/kimk.JPG" alt="My Spotify" style="width: 80px; cursor: pointer;" />
-      
-    </a>
+    <h1 class="graduate-pink-center">My Top Spotify Tracks 🎶</h1>
 
-    <a href="https://open.spotify.com/user/6f8wd68ntevknv4h1fx17lky5?si=Jig_62sAS_ixal_bHqOwFQ&nd=1&dlsi=fb03e7d356b5483f" style="display: inline-block;">
-        <!-- <img src="/images/kimk.JPG" alt="Go to Projects" style="width: 60px; cursor: pointer;" /> -->
-    </a>
+    {topTracks.length > 0 ? (
+      <ul class="pink-text">
+        {topTracks.map(track => (
+          <li>
+            <strong>{track.name}</strong> by {track.artists.map(a => a.name).join(', ')}
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <>
+        
+        <a href={authUrl} class="login-button">Log in with Spotify</a>
+      </>
+    )}
   </main>
 
-  
-
   <style>
-    .fancy-heading {
-      color: rgb(219, 250, 81);
-    }
-    .moving-text-wrapper {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 2rem;
-    }
-    .moving-text-wrapper img {
-      position: absolute;
-      top: -20px;
-      left: 10px;
-      z-index: 10;
-      pointer-events: none;
-    }
     .graduate-pink-center {
-      font-family: 'Graduate', cursive;
-      color: #ff66cc; 
+      color: #ff66cc; /* pink color */
       text-align: center;
+      font-family: 'Graduate', cursive;
     }
 
+    .pink-text {
+      color: #ff66cc;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .login-button {
+      display: inline-block;
+      background-color: #1db954;
+      color: white;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .login-button:hover {
+      background-color: #1ed760;
+    }
   </style>
 </Layout>
