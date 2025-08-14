@@ -3,7 +3,6 @@ import Layout from '../layouts/ShopLayout.astro';
 import LoopMoving from '../components/LoopMoving.astro';
 ---
 
-
 <Layout title="Home">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,7 +10,6 @@ import LoopMoving from '../components/LoopMoving.astro';
     <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&family=Graduate&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=League+Script+Two&display=swap" rel="stylesheet" />
   </head>
-
 
   <div class="hero-images">
     <div class="hero-img-container">
@@ -21,12 +19,6 @@ import LoopMoving from '../components/LoopMoving.astro';
       <img src="/images/fp_dress.jpg" alt="Banner 5" />
       <img src="/images/fitted.jpg" alt="Banner 5" />
       <img src="/images/minecraft_y.jpg" alt="Banner 2" />
-      <!-- <img src="/images/jonny_real.png" alt="Banner 3" />
-      <img src="/images/mine.jpg" alt="Banner 7" />
-      <img src="/images/me_flying.jpg" alt="Banner 8" />
-      <img src="/images/tractor.jpg" alt="Banner 9" />
-      <img src="/images/effy.jpg" alt="Banner 10" />
-      <img src="/images/running.jpg" alt="Banner 11" /> -->
 
       <div class="overlay-text">
         <h2 class="custom-hero-text">Cheyenne++</h2>
@@ -34,11 +26,7 @@ import LoopMoving from '../components/LoopMoving.astro';
     </div>
   </div>
 
-  <div class="content-text">
-      <!-- <h2>now you can see me. . .</h2> -->
-      <!-- <p>Personal reflections, observations, and thoughts from my life and mind.</p>
-      <a href="/diary" class="link-button">Read Entries</a> -->
-    </div>
+  <div class="content-text"></div>
 
   <div class="content-section">
     <div class="content-text">
@@ -51,8 +39,6 @@ import LoopMoving from '../components/LoopMoving.astro';
     </div>
   </div>
 
-  
-
   <div class="content-section">
     <div class="content-text">
       <h2>Currently Shopping: </h2>
@@ -63,40 +49,6 @@ import LoopMoving from '../components/LoopMoving.astro';
       <img src="/images/cover2.png" alt="Secondhand Finds" />
     </div>
   </div>
-
-
-  <!-- <div class="content-section">
-    <div class="content-text">
-      <h2>Diary</h2>
-      <p>Personal reflections, observations, and thoughts from my life and mind.</p>
-      <a href="/diary" class="link-button">Read Entries</a>
-    </div>
-    <div class="content-image">
-      <img src="/images/diary.jpg" alt="Diary Entries" />
-    </div>
-  </div> -->
-
-  <!-- <div class="content-section">
-    <div class="content-text">
-      <h2>My Music</h2>
-      <p>Snippets, covers, and compositions—from violin to piano to experimental loops.</p>
-      <a href="/music" class="link-button">Listen In</a>
-    </div>
-    <div class="content-image">
-      <img src="/images/music.jpg" alt="Music" />
-    </div>
-  </div> -->
-
-  <!-- <div class="content-section">
-    <div class="content-text">
-      <h2>Projects & Inspo</h2>
-      <p>Things I’ve built, things I love, and the ideas that spark something in me.</p>
-      <a href="/projects" class="link-button">See More</a>
-    </div>
-    <div class="content-image">
-      <img src="/images/projects.jpg" alt="Projects and Inspirations" />
-    </div>
-  </div> -->
 
   <script>
     const observer = new IntersectionObserver(
@@ -131,7 +83,6 @@ import LoopMoving from '../components/LoopMoving.astro';
     left: 60%;
     transform: translate(-50%, -50%);
     pointer-events: none;
-
     font-variation-settings: 'opsz' 16; 
   }
 
@@ -179,8 +130,6 @@ import LoopMoving from '../components/LoopMoving.astro';
     object-fit: cover;
     display: block;
   }
-
-
   
   .hero-img-container img:nth-child(1) { grid-column: span 1; grid-row: span 1; }
   .hero-img-container img:nth-child(2) { grid-column: span 0.5; grid-row: span 1; }
@@ -188,8 +137,6 @@ import LoopMoving from '../components/LoopMoving.astro';
   .hero-img-container img:nth-child(4) { grid-column: span 0.5; grid-row: span 0.5; }
   .hero-img-container img:nth-child(5) { grid-column: span 0.5; grid-row: span 0.5; }
   .hero-img-container img:nth-child(6) { grid-column: span 0.5; grid-row: span 0.5; }
-  .hero-img-container img:nth-child(7) { grid-column: span 1; grid-row: span 1; }
-
 
   .overlay-text {
     position: absolute;
@@ -203,17 +150,6 @@ import LoopMoving from '../components/LoopMoving.astro';
     height: 100%;
     pointer-events: none;
   }
-
-  
-  /* .hero-img-container::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-  } */
-
 
   .content-section {
     max-width: 900px;
@@ -250,7 +186,6 @@ import LoopMoving from '../components/LoopMoving.astro';
     color: #ff66cc; 
   }
 
-
   .content-text p {
     font-size: 3.5rem;
     line-height: 0.8;
@@ -275,6 +210,22 @@ import LoopMoving from '../components/LoopMoving.astro';
 
     .content-text, .content-image {
       width: 100%;
+    }
+
+    /* Mobile fixes for hero text */
+    .custom-hero-text {
+      font-size: 4rem;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* Make grid less cramped */
+    .hero-img-container {
+      grid-template-columns: repeat(3, 1fr);
+      aspect-ratio: auto;
     }
   }
 
