@@ -203,27 +203,28 @@ import LoopMoving from '../components/LoopMoving.astro';
   }
 
   @media (max-width: 768px) {
-    .content-section {
-      flex-direction: column !important;
-      text-align: center;
+    /* Hide all images except the last three */
+    .hero-img-container img:not(:nth-last-child(-n+3)) {
+      display: none;
     }
 
-    .content-text, .content-image {
-      width: 100%;
+    /* Grid for remaining three images */
+    .hero-img-container {
+      grid-template-columns: repeat(3, 1fr);
+      aspect-ratio: auto;
     }
 
-    /* Mobile fixes for hero text */
+    /* Hero text styling */
     .custom-hero-text {
-      font-family: "Ballet", cursive;
-      font-weight: 700; /* Bold weight */
-      font-variation-settings: 'opsz' 16;
       font-size: 4rem;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       white-space: nowrap;
+      font-weight: 700;
     }
+  }
 
     /* Make grid less cramped */
     .hero-img-container {
