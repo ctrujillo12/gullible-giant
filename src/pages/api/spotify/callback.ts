@@ -1,38 +1,36 @@
-// import type { APIRoute } from 'astro';
-import type { APIRoute } from 'astro';
-import { clientId, redirectUri } from '../utils/spotify/spotconstants';
+import type { APIRoute } from "astro";
+import { clientId, clientSecret, redirectUri } from "../../../lib/spotifyTokenStore";
 
-const clientSecret = import.meta.env.SPOTIFY_CLIENT_SECRET;
+export const GET: APIRoute = async ({ url, redirect }) => {
+  const code = url.searchParams.get("code");
+  if (!code) {
+    return new Response("No code provided", { status: 400 });
+  }
 
-export const GET: APIRoute = async ({ url, redirect, cookies }) => {
-  const code = url.searchParams.get('code');
-  if (!code) return new Response('No code provided', { status: 400 });
+  const body = new URLSearchParams({
+    grant_type: "authorization_code",
+    code,
+    redirect_uri: redirectUri,
+    client_id: clientId,
+    client_secret: clientSecret
+  });
 
-  const basic = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
-
-  const tokenRes = await fetch('https://accounts.spotify.com/api/token', {
-    method: 'POST',
+  const tokenRes = await fetch("https://accounts.spotify.com/api/token", {
+    method: "POST",
     headers: {
-      'Authorization': `Basic ${basic}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
+      "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: new URLSearchParams({
-      grant_type: 'authorization_code',
-      code,
-      redirect_uri: redirectUri,
-    }),
+    body: body.toString(),
   });
 
-  const tokenData = await tokenRes.json();
+  const data = await tokenRes.json();
 
-  if (!tokenRes.ok) return new Response(JSON.stringify(tokenData), { status: 500 });
+  if (!tokenRes.ok) {
+    return new Response(JSON.stringify(data), { status: 500 });
+  }
 
-  cookies.set('spotify_token', tokenData.access_token, {
-    path: '/',
-    httpOnly: true,
-    secure: true,
-    maxAge: 3600,
-  });
+  const access_token = data.access_token;
 
-  return redirect('/spotify');
+  // Redirect somewhere with the token OR save to a cookie/session/etc.
+  return redirect(`/spotify/success?token=${access_token}`);
 };

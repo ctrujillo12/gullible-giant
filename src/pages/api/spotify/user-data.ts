@@ -16,13 +16,11 @@
 //   });
 // };
 
-
-
 import type { APIRoute } from 'astro';
-import { getToken } from '../../../lib/spotifyTokenStore';
 
-export const GET: APIRoute = async () => {
-  const token = getToken();
+export const GET: APIRoute = async ({ cookies }) => {
+  const token = cookies.get('spotify_token')?.value;
+
   if (!token) {
     return new Response('No token. Please log in.', { status: 401 });
   }

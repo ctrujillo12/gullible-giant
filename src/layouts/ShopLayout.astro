@@ -54,6 +54,7 @@ const { title = "Shop" } = Astro.props;
       .nav-links {
         display: flex;
         gap: 2rem;
+        color: #ff66cc;
         align-items: center;
       }
 
@@ -61,6 +62,7 @@ const { title = "Shop" } = Astro.props;
         display: flex;
         flex-direction: row; /* make sure it's horizontal */
         gap: 2rem;
+        color: #ff66cc;
         align-items: center;
         flex-wrap: nowrap; /* prevent stacking */
       }
@@ -68,15 +70,23 @@ const { title = "Shop" } = Astro.props;
       /* Unique fonts for nav links */
       .nav-links a:nth-child(1) {
         font-family: 'Graduate', cursive;
+        text-decoration: none;
+        color: rgb(158, 31, 222);
       }
       .nav-links a:nth-child(2) {
         font-family: 'Graduate', cursive;
+        text-decoration: none;
+        color: rgb(158, 31, 222);
       }
       .nav-links a:nth-child(3) {
         font-family: 'Graduate', cursive;
+        text-decoration: none;
+        color: rgb(158, 31, 222);
       }
       .nav-links a:nth-child(4) {
         font-family: 'Graduate', cursive;
+        text-decoration: none;
+        color: rgb(158, 31, 222);
       }
 
       /* Spotify icon styling */
@@ -92,7 +102,7 @@ const { title = "Shop" } = Astro.props;
         padding: 2rem 0;
         border-top: 1px solid #555;
         font-size: 0.9rem;
-        color: #ff66cc;
+        color: rgb(158, 31, 222);
         font-family: 'Graduate', serif;
       }
 
@@ -114,7 +124,7 @@ const { title = "Shop" } = Astro.props;
         <img src="/images/whorse.png" alt="Home" style="
           width: 40px;
           height: 40px;
-          filter: drop-shadow(0 0 0 rgb(182, 35, 255)) drop-shadow(0 0 2px rgb(182, 35, 255));
+          filter: drop-shadow(0 0 0 rgb(158, 31, 222)) drop-shadow(0 0 2px rgb(158, 31, 222));
           display: block;
           margin: 20px auto;
         " />
@@ -123,7 +133,8 @@ const { title = "Shop" } = Astro.props;
           <defs>
             <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
           </defs>
-          <text fill="#b623ff" font-family="Graduate, serif" font-size="10" letter-spacing="2" style="text-shadow: 0 0 5px #b623ff;">
+          <text fill="#b623ff" font-family="Graduate, serif" font-size="10" letter-spacing="2">
+
             <textPath xlink:href="#circlePath" startOffset="25%">
               • H O M E • 
             </textPath>
@@ -137,12 +148,13 @@ const { title = "Shop" } = Astro.props;
           <!-- <a href="/">Home</a> -->
           <!-- <a href="/projects">Projects</a> -->
           <a href="/mypicks">My Picks</a>
+          <!-- <a href="/projects">Projects</a> -->
           <!-- <a href="/diary">Diary</a> -->
           <a href="/spotify">Music</a>
           <!-- </a>class="spotify-link" aria-label="Spotify">
             <img src="/images/spotify--v2.png" alt="Spotify" />
           </a> -->
-          <a href="/about">Connect</a>
+          <a href="/about">About</a>
         </div>
       </nav>
     </header>

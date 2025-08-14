@@ -1,18 +1,19 @@
 ---
 import Layout from '../layouts/ShopLayout.astro';
-import { getTopTracks } from '../utils/spotify/api';
-
-const clientId = 'f6af48791a99465e8a5eb950464a9c15';
-const redirectUri = 'https://ctrujillo.netlify.app/callback'; // your callback URL
-const scopes = encodeURIComponent('user-read-private user-read-email user-top-read');
-const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes}`;
+import { authUrl } from '../utils/spotify/spotconstants';
 
 const token = Astro.cookies.get('spotify_token')?.value;
 let topTracks = [];
 
 if (token) {
   try {
-    topTracks = await getTopTracks(token);
+    const res = await fetch('/api/spotify/user-data');
+    if (res.ok) {
+      const data = await res.json();
+      topTracks = data.items || [];
+    } else {
+      console.error('Failed to fetch tracks:', await res.text());
+    }
   } catch (e) {
     console.error('Spotify API failed:', e);
   }
@@ -21,27 +22,27 @@ if (token) {
 
 <Layout title="My Spotify">
   <main>
-    <h1 class="graduate-pink-center">My Top Spotify Tracks 🎶</h1>
+    <h1 class="graduate-pink-center">coming soon</h1>
 
-    {topTracks.length > 0 ? (
-      <ul class="pink-text">
-        {topTracks.map(track => (
-          <li>
-            <strong>{track.name}</strong> by {track.artists.map(a => a.name).join(', ')}
-          </li>
-        ))}
+    {topTracks
+      .sort((a: any, b: any) => b.popularity - a.popularity)
+      .map((track: any) => (
+        <li class="py-1">
+          {track.name} — {track.artists.map((artist: any) => artist.name).join(", ")}
+        </li>
+      ))}
+
       </ul>
     ) : (
-      <>
-        
+      <div style="text-align: center; margin-top: 2rem;">
         <a href={authUrl} class="login-button">Log in with Spotify</a>
-      </>
+      </div>
     )}
   </main>
 
   <style>
     .graduate-pink-center {
-      color: #ff66cc; /* pink color */
+      color: #ff66cc;
       text-align: center;
       font-family: 'Graduate', cursive;
     }
@@ -58,13 +59,11 @@ if (token) {
       background-color: #1db954;
       color: white;
       font-weight: bold;
-      padding: 0.75rem 1.5rem;
-      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1rem;
       transition: background-color 0.3s ease;
-      text-align: center;
-      margin: 0 auto;
     }
 
     .login-button:hover {
@@ -72,3 +71,21 @@ if (token) {
     }
   </style>
 </Layout>
+
+
+
+
+<!-- ---
+import Layout from '../layouts/ShopLayout.astro';
+import { clientId, redirectUri, scopes } from '../lib/spotifyTokenStore';
+const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes}`;
+---
+<Layout>
+  <html>
+    <head><title>Spotify Login</title></head>
+    <body>
+      <h1>Login with Spotify</h1>
+      <a href={authUrl}><button>Login</button></a>
+    </body>
+  </html>
+</Layout> -->

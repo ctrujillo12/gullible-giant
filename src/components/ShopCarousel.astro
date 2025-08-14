@@ -2,6 +2,9 @@
 // ShopCarousel.astro
 const { products } = Astro.props;
 import 'glider-js/glider.min.css';
+
+// unique id per instance so we can scope initialization
+const uid = `carousel-${Math.random().toString(36).slice(2, 9)}`;
 ---
 
 <style>
@@ -39,6 +42,8 @@ import 'glider-js/glider.min.css';
   font-weight: 700;
   font-family: "League Script Two", sans-serif;
   color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* subtle dark shadow */
+
 }
 
 .product-price {
@@ -65,16 +70,12 @@ import 'glider-js/glider.min.css';
   cursor: pointer;
 }
 
-.glider-prev {
-  left: 0;
-}
-.glider-next {
-  right: 0;
-}
+.glider-prev { left: 0; }
+.glider-next { right: 0; }
 </style>
 
-<div class="carousel-container">
-  <button aria-label="Previous" class="glider-prev">‹</button>
+<div id={uid} class="glider-contain carousel-container">
+  <button aria-label="Previous" class="glider-prev" type="button">‹</button>
   <div class="glider">
     {products.map(product => (
       <a href={product.link} class="product-card" target="_blank" rel="noopener noreferrer">
@@ -84,39 +85,55 @@ import 'glider-js/glider.min.css';
       </a>
     ))}
   </div>
-  <button aria-label="Next" class="glider-next">›</button>
+  <button aria-label="Next" class="glider-next" type="button">›</button>
 </div>
 
 <script>
-  if (typeof window !== "undefined") {
-    import('glider-js').then(({ default: Glider }) => {
-      window.addEventListener('DOMContentLoaded', () => {
-        new Glider(document.querySelector('.glider'), {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          draggable: true,
-          arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next',
-          },
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
+  // Run on the client and scope to this instance by ID.
+  import('glider-js').then(({ default: Glider }) => {
+    const root = document.getElementById('${uid}');
+    if (!root) return;
+
+    const init = () => {
+      if (root.__gliderInited) return;
+      const gliderEl = root.querySelector('.glider');
+      new Glider(gliderEl, {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        draggable: true,
+        arrows: {
+          prev: root.querySelector('.glider-prev'),
+          next: root.querySelector('.glider-next'),
+        },
+        responsive: [
+          { breakpoint: 768, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+          { breakpoint: 1024, settings: { slidesToShow: 4, slidesToScroll: 1 } },
+        ],
       });
-    });
-  }
+      root.__gliderInited = true;
+    };
+
+    const isVisible = (el) =>
+      el.offsetParent !== null && getComputedStyle(el).visibility !== 'hidden';
+
+    if (isVisible(root)) {
+      // First (visible) tab
+      init();
+    } else {
+      // Wait until this carousel's tab becomes visible
+      const panel = root.closest('.carousel-tab');
+      if (panel) {
+        const mo = new MutationObserver(() => {
+          if (panel.classList.contains('active-tab') && isVisible(root)) {
+            init();
+            mo.disconnect();
+          }
+        });
+        mo.observe(panel, { attributes: true, attributeFilter: ['class', 'style'] });
+      } else {
+        // Fallback
+        requestAnimationFrame(() => isVisible(root) && init());
+      }
+    }
+  });
 </script>
