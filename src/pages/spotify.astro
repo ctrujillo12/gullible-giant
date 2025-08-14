@@ -1,27 +1,27 @@
 ---
 import Layout from '../layouts/ShopLayout.astro';
-import { authUrl } from '../utils/spotify/spotconstants';
+// import { authUrl } from '../utils/spotify/spotconstants';
 
-const token = Astro.cookies.get('spotify_token')?.value;
-let topTracks = [];
+// const token = Astro.cookies.get('spotify_token')?.value;
+// let topTracks = [];
 
-if (token) {
-  try {
-    const res = await fetch('/api/spotify/user-data');
-    if (res.ok) {
-      const data = await res.json();
-      topTracks = data.items || [];
-    } else {
-      console.error('Failed to fetch tracks:', await res.text());
-    }
-  } catch (e) {
-    console.error('Spotify API failed:', e);
-  }
-}
+// if (token) {
+//   try {
+//     const res = await fetch('/api/spotify/user-data');
+//     if (res.ok) {
+//       const data = await res.json();
+//       topTracks = data.items || [];
+//     } else {
+//       console.error('Failed to fetch tracks:', await res.text());
+//     }
+//   } catch (e) {
+//     console.error('Spotify API failed:', e);
+//   }
+// }
 ---
 
 <Layout title="My Spotify">
-  <main>
+  <!-- <main>
     <h1 class="graduate-pink-center">coming soon</h1>
 
     {topTracks
@@ -38,7 +38,7 @@ if (token) {
         <a href={authUrl} class="login-button">Log in with Spotify</a>
       </div>
     )}
-  </main>
+  </main> -->
 
   <style>
     .graduate-pink-center {
@@ -79,13 +79,13 @@ if (token) {
 import Layout from '../layouts/ShopLayout.astro';
 import { clientId, redirectUri, scopes } from '../lib/spotifyTokenStore';
 const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes}`;
----
+--- -->
 <Layout>
   <html>
     <head><title>Spotify Login</title></head>
     <body>
       <h1>Login with Spotify</h1>
-      <a href={authUrl}><button>Login</button></a>
+      <!-- <a href={authUrl}><button>Login</button></a> -->
     </body>
   </html>
-</Layout> -->
+</Layout>
