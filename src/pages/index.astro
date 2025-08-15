@@ -73,7 +73,7 @@ import LoopMoving from '../components/LoopMoving.astro';
 <style>
   .custom-hero-text {
     font-family: "Ballet", cursive;
-    font-size: 10rem;
+    font-size: 13rem;
     font-style: bold;
     color: #2eddddff;
     text-align: right;
@@ -213,17 +213,18 @@ import LoopMoving from '../components/LoopMoving.astro';
     }
 
     /* Mobile fixes for hero text */
+    @media (max-width: 768px) {
     .custom-hero-text {
       font-family: "Ballet", cursive;
-      font-weight: 700; /* Bold weight */
-      font-variation-settings: 'opsz' 16;
-      font-size: 4rem;
+      font-weight: 700; /* makes the text bold */
+      font-size: 4rem;  /* adjust size for mobile */
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      white-space: nowrap;
+      font-variation-settings: 'opsz' 16;
     }
+  }
 
     /* Show only last 3 images on mobile */
     .hero-img-container img:nth-child(-n+3) {
