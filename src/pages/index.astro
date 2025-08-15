@@ -73,18 +73,20 @@ import LoopMoving from '../components/LoopMoving.astro';
 <style>
   .custom-hero-text {
     font-family: "Ballet", cursive;
-    font-size: 13rem;
+    font-size: 11rem;
     font-style: bold;
     color: #2eddddff;
+    overflow: visible;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     text-align: center; /* center horizontally */
-    z-index: 4;
+    z-index: 7;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 65%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     font-variation-settings: 'opsz' 16; 
-    white-space: nowrap; /* prevent breaking lines */
+    /* white-space: nowrap; prevent breaking lines */
   }
 
   .overlay-text {
@@ -136,6 +138,7 @@ import LoopMoving from '../components/LoopMoving.astro';
     align-items: center;
     justify-content: center;
     overflow: visible;
+    position: relative; /* needed for absolute centering of text */
   }
 
   .hero-img-container img {
