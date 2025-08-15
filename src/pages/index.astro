@@ -76,7 +76,7 @@ import LoopMoving from '../components/LoopMoving.astro';
     font-size: 13rem;
     font-style: bold;
     color: #2eddddff;
-    text-align: right;
+    text-align: center; /* center horizontally */
     z-index: 4;
     position: absolute;
     top: 50%;
@@ -84,6 +84,20 @@ import LoopMoving from '../components/LoopMoving.astro';
     transform: translate(-50%, -50%);
     pointer-events: none;
     font-variation-settings: 'opsz' 16; 
+    white-space: nowrap; /* prevent breaking lines */
+  }
+
+  .overlay-text {
+    position: absolute;
+    z-index: 2;
+    color: #ff66cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible; /* allow text to overflow container */
+    pointer-events: none;
   }
 
   .content-image.shadow-bg {
@@ -138,32 +152,15 @@ import LoopMoving from '../components/LoopMoving.astro';
   .hero-img-container img:nth-child(5) { grid-column: span 0.5; grid-row: span 0.5; }
   .hero-img-container img:nth-child(6) { grid-column: span 0.5; grid-row: span 0.5; }
 
-  .overlay-text {
-    position: absolute;
-    z-index: 2;
-    color: #ff66cc;
-    /* text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.705); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: auto;
-    height: auto;
-    overflow: visible;
-    /* width: 100%;
-    height: 100%; */
-    pointer-events: none;
-  }
-
   .content-section {
     max-width: 900px;
-    margin: 6rem auto; /* increased spacing */
+    margin: 6rem auto; 
     display: flex;
     align-items: center;
     gap: 4rem;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 2.23s ease-out, transform 2.3s ease-out; /* slower reveal */
+    transition: opacity 2.23s ease-out, transform 2.3s ease-out;
   }
 
   .content-section.visible {
@@ -216,25 +213,22 @@ import LoopMoving from '../components/LoopMoving.astro';
       width: 100%;
     }
 
-    /* Mobile fixes for hero text */
     .custom-hero-text {
       font-family: "Ballet", cursive;
-      font-weight: 900; /* bold */
+      font-weight: 900;
       font-size: 6.2rem;
-      left: 57%;
+      left: 50%;
       top: 50%;
-      text-shadow: none;
       transform: translate(-50%, -50%);
       font-variation-settings: 'opsz' 16;
       text-align: center;
+      white-space: nowrap;
     }
 
-    /* Show only last 3 images on mobile */
     .hero-img-container img:nth-child(-n+3) {
       display: none;
     }
 
-    /* Horizontal layout for the remaining 3 images */
     .hero-img-container {
       grid-template-columns: repeat(3, 1fr);
       aspect-ratio: auto;
@@ -242,12 +236,11 @@ import LoopMoving from '../components/LoopMoving.astro';
       gap: 4px;
     }
 
-    /* Mobile pink background adjustments */
     .hero-images {
-      height: 50vh; /* smaller height for mobile */
-      padding: 0 1rem; /* horizontal padding */
-      border-radius: 3px; /* slightly rounded corners */
-      background-color: #ff66cc; /* keep pink */
+      height: 50vh;
+      padding: 0 1rem;
+      border-radius: 3px;
+      background-color: #ff66cc;
       overflow: hidden;
     }
   }
