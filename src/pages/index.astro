@@ -153,13 +153,13 @@ import LoopMoving from '../components/LoopMoving.astro';
 
   .content-section {
     max-width: 900px;
-    margin: 4rem auto;
+    margin: 6rem auto; /* increased spacing */
     display: flex;
     align-items: center;
     gap: 2rem;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 1.8s ease-out, transform 1.8s ease-out; /* slower reveal */
   }
 
   .content-section.visible {
