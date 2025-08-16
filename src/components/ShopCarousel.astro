@@ -1,12 +1,11 @@
 ---
 // ShopCarousel.astro
-const { products } = Astro.props;
+const { products, nameFontSize = "1rem", priceFontSize = "1rem" } = Astro.props;
 import 'glider-js/glider.min.css';
 
 // unique id per instance so we can scope initialization
 const uid = `carousel-${Math.random().toString(36).slice(2, 9)}`;
 ---
-
 <style>
 .carousel-container {
   position: relative;
@@ -37,19 +36,20 @@ const uid = `carousel-${Math.random().toString(36).slice(2, 9)}`;
   border-radius: 8px;
 }
 
+/* Use CSS variables for dynamic font sizes */
 .product-name {
   margin-top: 0.5rem;
   font-weight: 700;
   font-family: "League Script Two", sans-serif;
   color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* subtle dark shadow */
-
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: var(--name-font-size);
 }
 
 .product-price {
   color: #2eddddff;
   font-family: "Graduate", sans-serif;
-  font-size: 1rem;
+  font-size: var(--price-font-size);
 }
 
 .glider-prev,
@@ -74,7 +74,11 @@ const uid = `carousel-${Math.random().toString(36).slice(2, 9)}`;
 .glider-next { right: 0; }
 </style>
 
-<div id={uid} class="glider-contain carousel-container">
+<div 
+  id={uid} 
+  class="glider-contain carousel-container"
+  style={`--name-font-size: ${nameFontSize}; --price-font-size: ${priceFontSize};`}
+>
   <button aria-label="Previous" class="glider-prev" type="button">‹</button>
   <div class="glider">
     {products.map(product => (
@@ -89,7 +93,6 @@ const uid = `carousel-${Math.random().toString(36).slice(2, 9)}`;
 </div>
 
 <script>
-  // Run on the client and scope to this instance by ID.
   import('glider-js').then(({ default: Glider }) => {
     const root = document.getElementById('${uid}');
     if (!root) return;
@@ -117,10 +120,8 @@ const uid = `carousel-${Math.random().toString(36).slice(2, 9)}`;
       el.offsetParent !== null && getComputedStyle(el).visibility !== 'hidden';
 
     if (isVisible(root)) {
-      // First (visible) tab
       init();
     } else {
-      // Wait until this carousel's tab becomes visible
       const panel = root.closest('.carousel-tab');
       if (panel) {
         const mo = new MutationObserver(() => {
@@ -131,7 +132,6 @@ const uid = `carousel-${Math.random().toString(36).slice(2, 9)}`;
         });
         mo.observe(panel, { attributes: true, attributeFilter: ['class', 'style'] });
       } else {
-        // Fallback
         requestAnimationFrame(() => isVisible(root) && init());
       }
     }
