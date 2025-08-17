@@ -1,6 +1,6 @@
 export const productsEdgy = [
   {
-    name: "Agent provocateur wim top",
+    name: "Agent provocateur bikini",
     image: "/images/ap_swim_top.png",
     link: "https://www.agentprovocateur.com/us_en/ap12286001674-laticia-bikini-top-in-black-neon-pink-32429",
     price: "$60"
@@ -41,22 +41,5 @@ export const productsEdgy = [
     link: "https://www.mercari.com/us/item/m70088295442/?ref=search_results",
     price: "$55"
   },
-  {
-    name: "GOA Paris sweater",
-    image: "/images/goa_sweater.jpg",
-    link: "https://poshmark.com/listing/GOA-Paris-Embroidered-Sweater-605bc6dc67bd91f4bb7cd2bc",
-    price: "$91"
-  },
-  {
-    name: "Molly Goddard cardigan",
-    image: "/images/mollygoddard_cardigan.webp",
-    link: "https://poshmark.com/listing/Molly-Goddard-cardigan-sweater-66d49f8dfe7e2cf2d14f17c4",
-    price: "$180"
-  },
-  {
-    name: "Jil Sander sweater",
-    image: "/images/jilsander_shortsleeve_sweater.webp",
-    link: "https://www.therealreal.com/products/women/clothing/knitwear/jil-sander-cashmere-crew-neck-sweater-qd7o1",
-    price: "$75"
-  },
+  
 ];
