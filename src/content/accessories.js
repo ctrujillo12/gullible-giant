@@ -2,7 +2,7 @@ export const productsAccessories = [
   {
     name: "Nike wedges",
     image: "/images/nike_wedges.webp",
-    link: "https://www.therealreal.com/products/jewelry/necklaces/collar/pamela-love-spike-collar-necklace-qjejn",
+    link: "https://poshmark.com/listing/Nike-Air-Size-75-684954300-Dunk-High-Wedge-Sneaker-Boot-Dark-Loden-Anthracite-68491700ac1b04aef4ec8834",
     price: "$75"
   },
   {
