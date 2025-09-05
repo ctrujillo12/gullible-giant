@@ -43,7 +43,7 @@ export const productsCollege = [
   },
   {
     name: "Brandy shirt",
-    image: "/images/brandy_shirt.jpg",
+    image: "/images/brandy_shirt.webp",
     link: "https://www.therealreal.com/products/men/shoes/sneakers/fred-perry-x-comme-des-garcons-printed-embroidered-accent-sneakers-qcior",
     price: "$28"
   },
