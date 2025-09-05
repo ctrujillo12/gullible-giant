@@ -2,7 +2,7 @@ export const productsCollege = [
   {
     name: "Flip flops",
     image: "/images/archies.webp",
-    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    link: "https://archiesfootwear.com/products/flip-flops-classic-olive",
     price: "$40"
   },
   {
