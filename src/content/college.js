@@ -48,12 +48,6 @@ export const productsCollege = [
     price: "$120"
   },
   {
-    name: "Jil Sander sweater",
-    image: "/images/jilsander_sweater.webp",
-    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
-    price: "$68"
-  },
-  {
     name: "Prada silk top",
     image: "/images/prada_film.webp",
     link: "https://www.therealreal.com/products/women/clothing/tops/prada-silk-v-neck-blouse-qi0ll",
@@ -98,7 +92,7 @@ export const productsCollege = [
   {
     name: "Vivienne Westwood jorts",
     image: "/images/vivienne_jorts.webp",
-    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    link: "https://www.therealreal.com/products/men/clothing/shorts/vivienne-westwood-2010-flat-front-shorts-qozn5",
     price: "$62"
   },
   {
@@ -110,19 +104,19 @@ export const productsCollege = [
   {
     name: "Brandy skirt",
     image: "/images/brandy_skirt.webp",
-    link: "https://poshmark.com/listing/DRIES-VAN-NOTEN-SNEAKER-WEDGE-SIZE-365-65f8b356c5df6c7fa8e37b4f",
+    link: "https://us.brandymelville.com/products/dana-skirt-4?_pos=2&_sid=ec5a4b36b&_ss=r",
     price: "$32"
   },
   {
     name: "Kotn track pants",
     image: "/images/kotn_nady.webp",
-    link: "https://www.therealreal.com/products/jewelry/rings/cocktail-ring/kate-spade-new-york-arctic-friends-polar-bear-pave-ring-qr3nf",
+    link: "https://kotn.com/products/womens-nady-track-pant?colour=black&size=xs",
     price: "$148"
   },
   {
     name: "JPG top",
     image: "/images/jpg_cowl.webp",
-    link: "https://poshmark.com/listing/MCM-mini-Boston-bag-6606d91a92e491386801376a",
+    link: "https://www.therealreal.com/products/women/clothing/tops/jean-paul-gaultier-striped-cowl-neck-top-qku6x",
     price: "$63"
   },
   {
@@ -138,27 +132,21 @@ export const productsCollege = [
     price: "$87"
   },
   {
-    name: "Brandy shirt",
-    image: "/images/brandy_shirt.webp",
-    link: "https://www.therealreal.com/products/men/shoes/sneakers/fred-perry-x-comme-des-garcons-printed-embroidered-accent-sneakers-qcior",
-    price: "$28"
-  },
-  {
     name: "Moschino jorts",
     image: "/images/moschino_jorts.webp",
-    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    link: "https://www.therealreal.com/products/women/clothing/shorts/moschino-knee-length-shorts-r74ki",
     price: "$62"
   },
   {
     name: "Patrizia Pepe sweater",
     image: "/images/pp_sweater.webp",
-    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    link: "https://www.therealreal.com/products/women/clothing/knitwear/patrizia-pepe-scoop-neck-sweater-qq6mg",
     price: "$62"
   },
   {
     name: "Chloe top",
     image: "/images/seechloe_longsleeve.webp",
-    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    link: "https://www.therealreal.com/products/women/clothing/tops/see-by-chloe-crew-neck-three-quarter-sleeve-top-rak8f",
     price: "$32"
   },
 
