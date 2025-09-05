@@ -1,5 +1,11 @@
 export const productsCollege = [
   {
+    name: "Vivienne Westwood jorts",
+    image: "/images/vivienne_jorts.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$62"
+  },
+  {
     name: "Chanel Boots",
     image: "/images/chanel_boots.webp",
     link: "https://www.therealreal.com/products/jewelry/necklaces/collar/pamela-love-spike-collar-necklace-qjejn",
@@ -13,7 +19,7 @@ export const productsCollege = [
   },
   {
     name: "Kotn track pants",
-    image: "/images/kotn_sweats.webp",
+    image: "/images/kotn_nady.webp",
     link: "https://www.therealreal.com/products/jewelry/rings/cocktail-ring/kate-spade-new-york-arctic-friends-polar-bear-pave-ring-qr3nf",
     price: "$148"
   },
@@ -30,16 +36,35 @@ export const productsCollege = [
     price: "$100"
   },
   {
-    name: "Sneakers",
-    image: "/images/fredperry.jpg",
-    link: "https://www.therealreal.com/products/men/shoes/sneakers/fred-perry-x-comme-des-garcons-printed-embroidered-accent-sneakers-qcior",
-    price: "$120"
+    name: "JPG pants",
+    image: "/images/jpg_pants.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$87"
   },
   {
-    name: "Marc Jacobs",
-    image: "/images/mj_sunglasses.png",
-    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
-    price: "$56"
+    name: "Brandy shirt",
+    image: "/images/brandy_shirt.jpg",
+    link: "https://www.therealreal.com/products/men/shoes/sneakers/fred-perry-x-comme-des-garcons-printed-embroidered-accent-sneakers-qcior",
+    price: "$28"
   },
+  {
+    name: "Moschino jorts",
+    image: "/images/moschino_jorts.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$62"
+  },
+  {
+    name: "Patrizia Pepe sweater",
+    image: "/images/pp_sweater.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$62"
+  },
+  {
+    name: "Chloe top",
+    image: "/images/seechloe_longsleeve.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$32"
+  },
+
   
 ];
