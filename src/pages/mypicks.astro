@@ -6,6 +6,7 @@ import ShopCarousel from '../components/ShopCarousel.astro';
 import { products } from '../content/products.js';
 import { productsAccessories } from '../content/accessories.js';
 import { productsFall } from '../content/fall-products.js';
+import { productsCollege } from '../content/college.js';
 ---
 
 <Layout title="">
@@ -58,6 +59,15 @@ import { productsFall } from '../content/fall-products.js';
     >
       Fall!
     </button>
+    <button
+      type="button"
+      role="tab"
+      aria-selected="false"
+      aria-controls="carousel-school"
+      id="tab-school"
+    >
+      School!
+    </button>
   </div>
 
   <!-- Carousels -->
@@ -85,6 +95,14 @@ import { productsFall } from '../content/fall-products.js';
       class="carousel-tab"
     >
       <ShopCarousel products={productsFall} />
+    </section>
+    <section
+      id="carousel-school"
+      role="tabpanel"
+      aria-labelledby="tab-school"
+      class="carousel-tab"
+    >
+      <ShopCarousel products={productsCollege} />
     </section>
   </div>
 
