@@ -1,5 +1,11 @@
 export const productsCollege = [
   {
+    name: "Skort",
+    image: "/images/omighty_skirt.png",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$92"
+  },
+  {
     name: "Vivienne Westwood jorts",
     image: "/images/vivienne_jorts.webp",
     link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
