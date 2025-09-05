@@ -6,6 +6,102 @@ export const productsCollege = [
     price: "$92"
   },
   {
+    name: "Flip flops",
+    image: "/images/archies.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$40"
+  },
+  {
+    name: "Allsaints bucket bag",
+    image: "/images/allsaints_bag.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$100"
+  },
+  {
+    name: "Blumarine sweater",
+    image: "/images/blumarine_sweater.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$56"
+  },
+  {
+    name: "Allsaints wrap top",
+    image: "/images/allsaints_wraptop.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$48"
+  },
+  {
+    name: "Balenci flats",
+    image: "/images/balenci_flats.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$100"
+  },
+  {
+    name: "Helmut Lang shirt",
+    image: "/images/helmutlang_shirt.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$40"
+  },
+  {
+    name: "Jil Sander sweater",
+    image: "/images/jilsander_sweater.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$68"
+  },
+  {
+    name: "Junya wedges",
+    image: "/images/junya_wedges.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$120"
+  },
+  {
+    name: "Jil Sander sweater",
+    image: "/images/jilsander_sweater.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$68"
+  },
+  {
+    name: "Prada silk top",
+    image: "/images/prada_film.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$68"
+  },
+  {
+    name: "Marc Jacobs top",
+    image: "/images/marcjacobs_top.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$50"
+  },
+  {
+    name: "Viviana Uchitel sweater",
+    image: "/images/viviana_sweater.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$25"
+  },
+  {
+    name: "Viviana Uchitel top",
+    image: "/images/viviana_top.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$150"
+  },
+  {
+    name: "Sailor sweater",
+    image: "/images/sailor_sweater.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$79"
+  },
+  {
+    name: "Zadig top",
+    image: "/images/zadig_top.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$55"
+  },
+  {
+    name: "Silk dress",
+    image: "/images/silk_dress.webp",
+    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
+    price: "$12"
+  },
+  {
     name: "Vivienne Westwood jorts",
     image: "/images/vivienne_jorts.webp",
     link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
