@@ -1,11 +1,5 @@
 export const productsCollege = [
   {
-    name: "Skort",
-    image: "/images/omighty_skirt.png",
-    link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
-    price: "$92"
-  },
-  {
     name: "Flip flops",
     image: "/images/archies.webp",
     link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
@@ -49,7 +43,7 @@ export const productsCollege = [
   },
   {
     name: "Junya wedges",
-    image: "/images/junya_wedges.webp",
+    image: "/images/junya_wedges.jpg",
     link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
     price: "$120"
   },
@@ -79,13 +73,13 @@ export const productsCollege = [
   },
   {
     name: "Viviana Uchitel top",
-    image: "/images/viviana_top.webp",
+    image: "/images/viviana_top.jpg",
     link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
     price: "$150"
   },
   {
     name: "Sailor sweater",
-    image: "/images/sailor_sweater.webp",
+    image: "/images/sailor_sweater.jpg",
     link: "https://www.therealreal.com/products/women/accessories/sunglasses/marc-jacobs-wayfarer-tinted-sunglasses-qrqyi",
     price: "$79"
   },
