@@ -1,5 +1,11 @@
 export const productsEdgy = [
   {
+    name: "Omighty skirt",
+    image: "/images/omighty_skirt.webp",
+    link: "https://www.agentprovocateur.com/us_en/ap12286001674-laticia-bikini-top-in-black-neon-pink-32429",
+    price: "$69"
+  },
+  {
     name: "Agent provocateur bikini",
     image: "/images/ap_swim_top.png",
     link: "https://www.agentprovocateur.com/us_en/ap12286001674-laticia-bikini-top-in-black-neon-pink-32429",

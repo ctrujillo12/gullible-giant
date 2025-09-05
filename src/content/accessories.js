@@ -1,5 +1,11 @@
 export const productsAccessories = [
   {
+    name: "Nike wedges",
+    image: "/images/nike_wedges.webp",
+    link: "https://www.therealreal.com/products/jewelry/necklaces/collar/pamela-love-spike-collar-necklace-qjejn",
+    price: "$75"
+  },
+  {
     name: "Pamela Love necklace",
     image: "/images/pamelalove_necklace.webp",
     link: "https://www.therealreal.com/products/jewelry/necklaces/collar/pamela-love-spike-collar-necklace-qjejn",
