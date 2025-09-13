@@ -10,13 +10,20 @@
         "date": {
           "type": "string"
         },
+        "coverImage": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
         "$schema": {
           "type": "string"
         }
       },
       "required": [
         "title",
-        "date"
+        "date",
+        "description"
       ],
       "additionalProperties": false
     }

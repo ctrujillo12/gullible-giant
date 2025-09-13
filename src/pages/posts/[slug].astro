@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/ShopLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const post = await getCollection('posts').then((posts) =>
+  posts.find((p) => p.slug === slug)
+);
+
+if (!post) {
+  throw new Error(`Post not found: ${slug}`);
+}
+
+const rendered = await post.render();
+---
+
+<Layout>
+  <article class="post-article">
+    <h1>{post.data.title}</h1>
+    <p class="date">{post.data.date}</p>
+    <div class="content" innerHTML={rendered.Content} />
+  </article>
+</Layout>
+
+<style>
+.post-article {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'League Script Two', sans-serif;
+  color: black;
+}
+
+.post-article h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-article .date {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.post-article .content {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+</style>
+
