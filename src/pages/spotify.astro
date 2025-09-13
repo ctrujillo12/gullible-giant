@@ -20,7 +20,7 @@ import Layout from '../layouts/ShopLayout.astro';
 // }
 ---
 
-<Layout title="My Spotify">
+<Layout title="Coming Soon...">
   <!-- <main>
     <h1 class="graduate-pink-center">coming soon</h1>
 
@@ -40,37 +40,47 @@ import Layout from '../layouts/ShopLayout.astro';
     )}
   </main> -->
 
-  <style>
-    .graduate-pink-center {
-      color: #ff66cc;
-      text-align: center;
-      font-family: 'Graduate', cursive;
-    }
-
-    .pink-text {
-      color: #ff66cc;
-      font-size: 1.2rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .login-button {
-      display: inline-block;
-      background-color: #1db954;
-      color: white;
-      font-weight: bold;
-      padding: 0.5rem 1rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: background-color 0.3s ease;
-    }
-
-    .login-button:hover {
-      background-color: #1ed760;
-    }
-  </style>
+  
+  <body>
+    <h1 class="pink-text">Coming Soon ...</h1>
+    <!-- <a href={authUrl}><button>Login</button></a> -->
+    
+    
 </Layout>
+
+<style>
+  .graduate-pink-center {
+    color: #ff66cc;
+    text-align: center;
+    font-family: 'Graduate', cursive;
+  }
+
+  .pink-text {
+    color: #ff66cc;
+    font-size: 10rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px #fff, 
+               0 0 10px #fff, 
+               0 0 20px #fff;
+  }
+
+  .login-button {
+    display: inline-block;
+    background-color: #1db954;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-button:hover {
+    background-color: #1ed760;
+  }
+</style>
 
 
 
@@ -80,12 +90,3 @@ import Layout from '../layouts/ShopLayout.astro';
 import { clientId, redirectUri, scopes } from '../lib/spotifyTokenStore';
 const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes}`;
 --- -->
-<Layout>
-  <html>
-    <head><title>Spotify Login</title></head>
-    <body>
-      <h1>Login with Spotify</h1>
-      <!-- <a href={authUrl}><button>Login</button></a> -->
-    </body>
-  </html>
-</Layout>

@@ -12,9 +12,7 @@ posts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
 
 <Layout>
   <!-- LoopMoving at top -->
-  <div style="background-color: rgb(195, 245, 95);">
-    <LoopMoving text="- Blog" fontSize="8rem" color="#ff66cc" />
-  </div>
+  <h1 class="pink-text">My blog ...</h1>
 
   <!-- Posts Grid -->
   <section class="grid">
@@ -114,5 +112,15 @@ posts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
     font-size: 0.9rem;
     color: #666;
     margin: 0.2rem 0;
+  }
+  .pink-text {
+    color: #ff66cc;
+    font-size: 8rem;
+    text-align: left;
+    margin-bottom: 1rem;
+
+    /* text-shadow: 0 0 5px #fff, 
+               0 0 10px #fff, 
+               0 0 20px #fff; */
   }
 </style>
