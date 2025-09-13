@@ -115,6 +115,13 @@ import { productsCollege } from '../content/college.js';
       color: white;
     }
 
+    .left-align-wrapper {
+      width: 100%;
+      display: block; /* ensures children stack normally */
+      text-align: left; /* left-align content */
+      padding-left: 1rem; /* optional spacing from left edge */
+    }
+
     .carousel-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -187,24 +194,24 @@ import { productsCollege } from '../content/college.js';
       </div>
     </div>
 
-    <div class="content-text">
+    <!-- <div class="content-text">
       <h2>What I'm Eyeing. . .</h2>
+    </div> -->
+
+    <!-- Subtitle and Buttons wrapper -->
+    <div class="left-align-wrapper">
+      <div class="content-text">
+        <h2>What I'm Eyeing. . .</h2>
+      </div>
+
+      <div class="tab-buttons" role="tablist" aria-label="Shop Categories">
+        <button type="button" role="tab" aria-selected="true" aria-controls="carousel-clothes" id="tab-clothes" class="active">Summer!</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="carousel-accessories" id="tab-accessories">Accessories!</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="carousel-fall" id="tab-fall">Fall!</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="carousel-school" id="tab-school">School!</button>
+      </div>
     </div>
 
-    <div class="tab-buttons" role="tablist" aria-label="Shop Categories">
-      <button type="button" role="tab" aria-selected="true" aria-controls="carousel-clothes" id="tab-clothes" class="active">
-        Summer!
-      </button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="carousel-accessories" id="tab-accessories">
-        Accessories!
-      </button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="carousel-fall" id="tab-fall">
-        Fall!
-      </button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="carousel-school" id="tab-school">
-        School!
-      </button>
-    </div>
 
     <div class="carousel-container">
       <section id="carousel-clothes" role="tabpanel" aria-labelledby="tab-clothes" class="carousel-tab active-tab">

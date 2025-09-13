@@ -162,12 +162,22 @@ import { productsCollege } from '../content/college.js';
 
     .content-text {
       max-width: 1400px;
-      margin: 4rem 1rem 0;
+      margin: 4rem 0 0 0; /* remove horizontal centering */
       color: #ff66cc;
-      text-align: left;
-      padding: 0 1rem;
+      text-align: left; 
+      padding-left: 1rem; /* optional spacing from left edge */
       font-family: 'Graduate', serif;
     }
+
+    .tab-buttons {
+      display: flex;
+      justify-content: flex-start; /* left-align the buttons */
+      gap: 1rem;
+      margin: 1rem 0 2rem 0; /* remove horizontal centering */
+      padding-left: 1rem; /* optional spacing from left edge */
+      max-width: none; /* allow them to align fully left */
+    }
+
 
     .content-text h2 {
       margin: 0;
@@ -175,14 +185,14 @@ import { productsCollege } from '../content/college.js';
       line-height: 1.1;
     }
 
-    .tab-buttons {
+    /* .tab-buttons {
       display: flex;
       justify-content: flex-start; 
       gap: 1rem;
       margin: 1rem 1rem 2rem; 
       max-width: 1000px;
       padding: 0 1rem;
-    }
+    } */
 
     .tab-buttons button {
       background: white;
