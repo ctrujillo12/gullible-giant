@@ -1,7 +1,7 @@
 ---
-title: "My First Post"
+title: "Trying to be emo fr this time"
 date: "2025-09-13"
 coverImage: "/images/16arlington_skirt.jpg"
-description: "This is a short description of my first post."
+description: "So it is now Shopping September and here is all the damage I have inflicted so far."
 ---
-Hello! This is my first blog post.
+So it is now Shopping September and here is all the damage I have inflicted so far. Mainly easy clothes to wear for going to class and looking cool on the weekends.

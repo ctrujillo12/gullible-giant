@@ -25,20 +25,23 @@ const rendered = await post.render();
   <article class="post-article">
     <h1>{post.data.title}</h1>
     <p class="date">{post.data.date}</p>
-    <div class="content" innerHTML={rendered.Content} />
+
+    <!-- render the Markdown content as a component -->
+    <rendered.Content />
   </article>
 </Layout>
 
 <style>
 .post-article {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
+  width: 100%;            /* full width of page */
+  padding: 2rem 3rem;     /* some padding on sides */
   font-family: 'League Script Two', sans-serif;
   color: black;
+  box-sizing: border-box;
 }
 
 .post-article h1 {
+  text-align: left;       /* left-aligned title */
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -47,6 +50,7 @@ const rendered = await post.render();
   font-size: 1rem;
   color: #555;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .post-article .content {
@@ -54,4 +58,3 @@ const rendered = await post.render();
   line-height: 1.6;
 }
 </style>
-
