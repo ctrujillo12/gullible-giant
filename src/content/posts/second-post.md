@@ -41,18 +41,18 @@ gray mini dresses. thats it
   height: 200px;
   object-fit: cover;
   border-radius: 1px;
-  border: 3px solid #2eddddff; /* neon light blue border */
-  box-shadow: 0 0 5px #2eddddff; /* subtle glowing effect */
+  border: 3px solid #2eddddff; 
+  box-shadow: 0 0 5px #2eddddff; 
 }
 
 a {
-  color: #ff66cc; /* neon pink/purple */
-  text-decoration: none; /* removes underline */
+  color: #ff66cc; 
+  text-decoration: none; 
   font-weight: normal;
 }
 
 a:hover {
-  color: #2edddd; /* changes to neon blue on hover */
-  text-shadow: 0 0 6px #2edddd; /* glowing hover effect */
+  color: #2edddd;
+  text-shadow: 0 0 6px #2edddd;
 }
 </style>

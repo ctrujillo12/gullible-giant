@@ -26,7 +26,6 @@ const rendered = await post.render();
     <h1>{post.data.title}</h1>
     <p class="date">{post.data.date}</p>
 
-    <!-- render the Markdown content as a component -->
     <rendered.Content />
   </article>
 </Layout>
@@ -43,7 +42,7 @@ const rendered = await post.render();
 .post-article h1 {
   
   font-family: 'League Script', cursive;
-  text-align: left;       /* left-aligned title */
+  text-align: left;       
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
