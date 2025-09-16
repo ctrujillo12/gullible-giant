@@ -111,6 +111,21 @@ const { title = "Shop" } = Astro.props;
         max-width: 1200px;
         margin: 0 auto;
       }
+      /* Neon blue glow hover for nav links */
+      .nav-links a {
+        transition: color 0.2s ease, text-shadow 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: #2edddd;           /* neon blue */
+        text-shadow: 0 0 6px #2edddd; /* glowing effect */
+      }
+
+      .site-logo:hover .home-text {
+        fill: #2edddd; /* change color to neon blue */
+        filter: drop-shadow(0 0 4px #2edddd) drop-shadow(0 0 8px #2edddd);
+        transition: fill 0.2s ease, filter 0.2s ease;
+      }
     </style>
 
     <slot name="head" />
@@ -133,8 +148,7 @@ const { title = "Shop" } = Astro.props;
           <defs>
             <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
           </defs>
-          <text fill="#b623ff" font-family="Graduate, serif" font-size="10" letter-spacing="2">
-
+          <text class="home-text" fill="#b623ff" font-family="Graduate, serif" font-size="10" letter-spacing="2">
             <textPath xlink:href="#circlePath" startOffset="25%">
               • H O M E • 
             </textPath>
