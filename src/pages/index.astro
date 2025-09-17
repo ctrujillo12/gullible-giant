@@ -1,6 +1,11 @@
 ---
 import Layout from '../layouts/ShopLayout.astro';
 import LoopMoving from '../components/LoopMoving.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch blog posts
+const blogPosts = await getCollection('posts');
+const sortedPosts = blogPosts.sort((a, b) => new Date(b.data.date || 0).getTime() - new Date(a.data.date || 0).getTime());
 ---
 
 <Layout title="Home">
@@ -50,14 +55,24 @@ import LoopMoving from '../components/LoopMoving.astro';
     </div>
   </div>
 
-  <div class="content-section">
-    <div class="content-text">
-      <h2>Latest Blog Post:</h2>
-      <p>Trying to be more emo fr this time</p>
-      <a href="/posts/first-post" class="link-button">Read Blog</a>
+  <div class="blog-section">
+    <div class="blog-header">
+      <h2>Latest Blog Posts:</h2>
+      <p>Read about my thoughts</p>
     </div>
-    <div class="content-image shadow-bg">
-      <img src="/images/collage.png" alt="Blog Post Preview" />
+    <div class="blog-grid">
+      {sortedPosts.map((post) => (
+        <div class="blog-card shadow-bg">
+          <div class="blog-card-content">
+            <h3>{post.data.title}</h3>
+            <p class="blog-excerpt">{post.data.description || 'No description available'}</p>
+            <div class="blog-meta">
+              {post.data.date && <span class="blog-date">{new Date(post.data.date).toLocaleDateString()}</span>}
+            </div>
+            <a href={`/posts/${post.slug}`} class="link-button">Read Post</a>
+          </div>
+        </div>
+      ))}
     </div>
   </div>
 
@@ -75,7 +90,7 @@ import LoopMoving from '../components/LoopMoving.astro';
       }
     );
 
-    document.querySelectorAll('.content-section').forEach((section) => {
+    document.querySelectorAll('.content-section, .blog-section').forEach((section) => {
       observer.observe(section);
     });
   </script>
@@ -217,6 +232,83 @@ import LoopMoving from '../components/LoopMoving.astro';
     border-radius: 8px;
   }
 
+  /* Blog Section Styles */
+  .blog-section {
+    max-width: 900px;
+    margin: 6rem auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2.23s ease-out, transform 2.3s ease-out;
+  }
+
+  .blog-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .blog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ff66cc;
+  }
+
+  .blog-header h2 {
+    font-family: "Graduate", serif;
+    color: #ff66cc;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-header p {
+    font-size: 3.5rem;
+    line-height: 0.8;
+    font-family: "League Script Two", sans-serif;
+    color: #ffffff;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .blog-card {
+    background-color: rgba(0, 0, 0, 0.826);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 102, 204, 0.2);
+  }
+
+  .blog-card-content h3 {
+    font-family: "Graduate", serif;
+    color: #ff66cc;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .blog-excerpt {
+    color: #ffffff;
+    font-family: "League Script Two", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .blog-meta {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-date {
+    color: #2eddddff;
+    font-size: 0.9rem;
+    font-family: "Graduate", serif;
+  }
+
   @media (max-width: 768px) {
     .content-section {
       flex-direction: column !important;
@@ -256,6 +348,15 @@ import LoopMoving from '../components/LoopMoving.astro';
       border-radius: 3px;
       background-color: #ff66cc;
       overflow: hidden;
+    }
+
+    .blog-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .blog-header p {
+      font-size: 2.5rem;
     }
   }
 
