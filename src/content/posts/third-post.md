@@ -2,7 +2,7 @@
 title: "Summer/fall transition media"
 date: "2025-09-22"
 coverImage: "/images/dryseason.jpg"
-description: "nostalgia, gothic lit, sensuality, and more"
+description: "nostalgia, gothic lit, blue filter, and more"
 ---
 Current reads for this month:
 
@@ -31,7 +31,7 @@ Movies to transport me back to high school, colorado winter, and simpler times
   <img src="/images/whiteoleander.jpg" alt="club monaco gold dress" width="430" />
 </div>
 
-Tv; especially missing devi vishwakumar cause i need her energy in my life so bad rn
+Tv shows; especially missing devi vishwakumar cause i need her energy in my life so bad rn
 
 <div class="image-grid">
   <img src="/images/nhie.jpg" alt="club monaco gold dress" width="430" />
