@@ -101,7 +101,7 @@ And finally some much needed basics. I broke my sunnies the other day . and im o
   box-shadow: 0 0 5px #2eddddff; 
 }
 
-/* for links */
+
 a {
   color: #ff66cc; 
   text-decoration: none; 

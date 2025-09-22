@@ -2,7 +2,7 @@
 title: "Summer/fall transition media"
 date: "2025-09-22"
 coverImage: "/images/dryseason.jpg"
-description: "Hallucinating that I will look good in these clothes:"
+description: "nostalgia, gothic lit, sensuality, and more"
 ---
 Current reads for this time period:
 
@@ -28,8 +28,26 @@ Movies that will transport me back to high school and simpler times
   <img src="/images/speak.jpg" alt="club monaco gold dress" width="430" />
   <img src="/images/maryshelley.jpeg" alt="club monaco gold dress" width="430" />
   <img src="/images/phantomoftheopera.jpg" alt="club monaco gold dress" width="430" />
-  <img src="/images/nhie.jpg" alt="club monaco gold dress" width="430" />
+  <img src="/images/whiteoleander.jpg" alt="club monaco gold dress" width="430" />
 </div>
+
+Tv, especially missing devi vishwakumar and need that energy in my life rn for back to school season
+
+<div class="image-grid">
+  <img src="/images/nhie.jpg" alt="club monaco gold dress" width="430" />
+  <img src="/images/twinpeaks.jpg" alt="club monaco gold dress" width="430" />
+</div>
+
+
+---
+
+- [Treisman & Guriev, Spin Dictators: The Changing Face of Tyranny in the 21st Century](#)  
+- [Joseph Sheridan Le Fanu translated by Carmen Maria Machado, Carmilla](https://www.barnesandnoble.com/w/carmilla-joseph-sheridan-le-fanu/1116753090)  
+- [Melissa Febos, The Dry Season: A Memoir of Pleasure in a Year Without Sex](https://www.melissafebos.com/the-dry-season)   
+- [Jeanette Winterson, Written on the Body](#)   
+- [Daphne Du Maurier, Rebecca](#)   
+- [Jane Austen, Persuasion](#)  
+
 
 <style>
 .image-grid {
