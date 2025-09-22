@@ -1,0 +1,70 @@
+---
+// src/components/CircleText.astro
+const {
+  text = "Hello World",
+  radius = 100,        // radius in pixels
+  duration = 8,        // rotation duration in seconds
+  direction = "normal", // "normal" or "reverse"
+  fontSize = "1.5rem",
+  color = "#06f",
+} = Astro.props;
+
+const letters = String(text).split("");
+const count = letters.length || 1;
+const angleStep = 360 / count;
+---
+
+<style>
+:root { --safe-font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+.circular-text-wrap {
+  display: inline-block;
+  /* size will be derived from the radius variable set inline */
+  width: calc(var(--radius) * 2px);
+  height: calc(var(--radius) * 2px);
+  position: relative;
+  overflow: visible;
+}
+
+.circular-spinner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  transform-origin: center center;
+  animation: spin var(--duration)s linear infinite;
+  animation-direction: var(--direction);
+}
+
+.circular-letter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0; /* rotate then translate will place the char */
+  white-space: pre;
+  font-family: var(--safe-font);
+  font-size: var(--font-size);
+  color: var(--color);
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* optional: make it smoother on low-res text */
+.circular-letter { -webkit-font-smoothing: antialiased; }
+</style>
+
+<div
+  class="circular-text-wrap"
+  style={`--radius:${radius}; --duration:${duration}; --direction:${direction}; --font-size:${fontSize}; --color:${color};`}>
+  <div class="circular-spinner" aria-hidden="true">
+    {letters.map((ch, i) => {
+      const angle = angleStep * i;
+      // We rotate by `angle`, then translate outward by `radius` px, then rotate back so the letter stays upright
+      const style = `transform: rotate(${angle}deg) translate(${radius}px) rotate(${-angle}deg);`;
+      return (<span class="circular-letter" style={style} key={i}>{ch}</span>);
+    })}
+  </div>
+</div>
