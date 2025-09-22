@@ -12,7 +12,7 @@ Current reads for this month:
   <img src="/images/dryseason.jpg" alt="club monaco gold dress" width="200" />
 </div>
 
-What I want to read:
+What I want to get to next:
 
 <div class="image-grid">
   <img src="/images/writtenonthebody.jpg" alt="club monaco gold dress" width="430" />
@@ -20,7 +20,7 @@ What I want to read:
   <img src="/images/persuasion.jpg" alt="club monaco gold dress" width="430" />
 </div>
 
-Movies that will transport me back to high school and simpler times
+Movies to transport me back to high school, colorado winter, and simpler times
 
 <div class="image-grid">
   <img src="/images/sleepyhollow.jpg" alt="club monaco gold dress" width="430" />
@@ -31,7 +31,7 @@ Movies that will transport me back to high school and simpler times
   <img src="/images/whiteoleander.jpg" alt="club monaco gold dress" width="430" />
 </div>
 
-Tv, especially missing devi vishwakumar and need that energy in my life rn for back to school season
+Tv; especially missing devi vishwakumar cause i need her energy in my life so bad rn
 
 <div class="image-grid">
   <img src="/images/nhie.jpg" alt="club monaco gold dress" width="430" />
