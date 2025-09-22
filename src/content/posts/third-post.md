@@ -41,12 +41,12 @@ Tv, especially missing devi vishwakumar and need that energy in my life rn for b
 
 ---
 
-- [Treisman & Guriev, Spin Dictators: The Changing Face of Tyranny in the 21st Century](#)  
+- [Treisman & Guriev, Spin Dictators: The Changing Face of Tyranny in the 21st Century](https://spindictators.com/)  
 - [Joseph Sheridan Le Fanu translated by Carmen Maria Machado, Carmilla](https://www.barnesandnoble.com/w/carmilla-joseph-sheridan-le-fanu/1116753090)  
 - [Melissa Febos, The Dry Season: A Memoir of Pleasure in a Year Without Sex](https://www.melissafebos.com/the-dry-season)   
-- [Jeanette Winterson, Written on the Body](#)   
-- [Daphne Du Maurier, Rebecca](#)   
-- [Jane Austen, Persuasion](#)  
+- [Jeanette Winterson, Written on the Body](https://www.goodreads.com/work/quotes/809754-written-on-the-body)   
+- [Daphne Du Maurier, Rebecca](https://www.britannica.com/topic/Rebecca-novel)   
+- [Jane Austen, Persuasion](https://janeaustens.house/jane-austen/novels/persuasion/)  
 
 
 <style>
