@@ -4,7 +4,7 @@ date: "2025-09-22"
 coverImage: "/images/dryseason.jpg"
 description: "nostalgia, gothic lit, sensuality, and more"
 ---
-Current reads for this time period:
+Current reads for this month:
 
 <div class="image-grid">
   <img src="/images/spindictators.jpg" alt="club monaco gold dress" width="430" />
