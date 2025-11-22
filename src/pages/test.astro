@@ -205,16 +205,16 @@ import { productsCollege } from '../content/college.js';
       </div>
 
       <div class="tab-buttons" role="tablist" aria-label="Shop Categories">
-        <button type="button" role="tab" aria-selected="true" aria-controls="carousel-clothes" id="tab-clothes" class="active">Summer!</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="carousel-school" id="tab-school" class="active">School!</button>
+        <button type="button" role="tab" aria-selected="true" aria-controls="carousel-clothes" id="tab-clothes">Summer!</button>
         <button type="button" role="tab" aria-selected="false" aria-controls="carousel-accessories" id="tab-accessories">Accessories!</button>
         <button type="button" role="tab" aria-selected="false" aria-controls="carousel-fall" id="tab-fall">Fall!</button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="carousel-school" id="tab-school">School!</button>
       </div>
     </div>
 
 
     <div class="carousel-container">
-      <section id="carousel-clothes" role="tabpanel" aria-labelledby="tab-clothes" class="carousel-tab active-tab">
+      <section id="carousel-clothes" role="tabpanel" aria-labelledby="tab-clothes" class="carousel-tab">
         <ShopCarousel products={products} nameFontSize="1rem" priceFontSize="1rem" />
       </section>
       <section id="carousel-accessories" role="tabpanel" aria-labelledby="tab-accessories" class="carousel-tab">
@@ -223,7 +223,7 @@ import { productsCollege } from '../content/college.js';
       <section id="carousel-fall" role="tabpanel" aria-labelledby="tab-fall" class="carousel-tab">
         <ShopCarousel products={productsFall} nameFontSize="1rem" priceFontSize="1rem" />
       </section>
-      <section id="carousel-school" role="tabpanel" aria-labelledby="tab-school" class="carousel-tab">
+      <section id="carousel-school" role="tabpanel" aria-labelledby="tab-school" class="carousel-tab active-tab">
         <ShopCarousel products={productsCollege} nameFontSize="1rem" priceFontSize="1rem" />
       </section>
     </div>
