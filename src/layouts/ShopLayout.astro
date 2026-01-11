@@ -9,17 +9,13 @@ const { title = "Shop" } = Astro.props;
     <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-
     <!-- Glider.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
 
     <!-- Google Fonts -->
-    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=League+Script&family=Graduate&display=swap" rel="stylesheet" />
-  
-    />
 
     <style>
       body {
@@ -37,7 +33,7 @@ const { title = "Shop" } = Astro.props;
 
       nav {
         display: flex;
-        justify-content: space-between; /* logo left, links right */
+        justify-content: space-between;
         align-items: center;
         font-weight: bold;
         flex-wrap: nowrap;
@@ -53,48 +49,21 @@ const { title = "Shop" } = Astro.props;
 
       .nav-links {
         display: flex;
+        flex-direction: row;
         gap: 2rem;
         color: #ff66cc;
         align-items: center;
-      }
-
-      .nav-links {
-        display: flex;
-        flex-direction: row; /* make sure it's horizontal */
-        gap: 2rem;
-        color: #ff66cc;
-        align-items: center;
-        flex-wrap: nowrap; /* prevent stacking */
+        flex-wrap: nowrap;
       }
 
       /* Unique fonts for nav links */
-      .nav-links a:nth-child(1) {
-        font-family: 'Graduate', cursive;
-        text-decoration: none;
-        color: rgb(158, 31, 222);
-      }
-      .nav-links a:nth-child(2) {
-        font-family: 'Graduate', cursive;
-        text-decoration: none;
-        color: rgb(158, 31, 222);
-      }
-      .nav-links a:nth-child(3) {
-        font-family: 'Graduate', cursive;
-        text-decoration: none;
-        color: rgb(158, 31, 222);
-      }
+      .nav-links a:nth-child(1),
+      .nav-links a:nth-child(2),
+      .nav-links a:nth-child(3),
       .nav-links a:nth-child(4) {
         font-family: 'Graduate', cursive;
         text-decoration: none;
         color: rgb(158, 31, 222);
-      }
-
-      /* Spotify icon styling */
-      .nav-links a.spotify-link img {
-        width: 27px;
-        height: 27px;
-        /* filter: brightness(0) saturate(100%) invert(81%) sepia(40%) saturate(682%)
-          hue-rotate(70deg) brightness(93%) contrast(92%); */
       }
 
       footer {
@@ -126,6 +95,52 @@ const { title = "Shop" } = Astro.props;
         filter: drop-shadow(0 0 4px #2edddd) drop-shadow(0 0 8px #2edddd);
         transition: fill 0.2s ease, filter 0.2s ease;
       }
+
+      /* Play button styling */
+      .play-button {
+        width: 0;
+        height: 0;
+        border-left: 20px solid rgb(158, 31, 222);
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        cursor: pointer;
+        transition: transform 0.2s ease, border-left-color 0.2s ease, filter 0.2s ease;
+        position: relative;
+      }
+
+      /* Hover glow effect same as nav links */
+      .play-button:hover {
+        border-left-color: #2edddd;
+        filter: drop-shadow(0 0 6px #2edddd) drop-shadow(0 0 12px #2edddd);
+        transform: scale(1.1);
+      }
+
+      /* Active = playing state */
+      .play-button.active {
+        border-left-color: #2edddd;
+        filter: drop-shadow(0 0 6px #2edddd) drop-shadow(0 0 12px #2edddd);
+        transform: scale(1.2);
+      }
+
+      /* Now playing popup */
+      .now-playing {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: rgba(0,0,0,0.8);
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        white-space: nowrap;
+      }
+
+      .now-playing.show {
+        opacity: 1;
+      }
     </style>
 
     <slot name="head" />
@@ -134,41 +149,38 @@ const { title = "Shop" } = Astro.props;
   <body>
     <header>
       <nav>
-        <!-- <a href="/" class="site-logo">C</a> -->
-       <a href="/" class="site-logo" aria-label="horse" style="position: relative; width: 80px; height: 80px; display: inline-block;">
-        <img src="/images/whorse.png" alt="Home" style="
-          width: 40px;
-          height: 40px;
-          filter: drop-shadow(0 0 0 rgb(158, 31, 222)) drop-shadow(0 0 2px rgb(158, 31, 222));
-          display: block;
-          margin: 20px auto;
-        " />
-
-        <svg viewBox="0 0 100 100" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
-          <defs>
-            <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
-          </defs>
-          <text class="home-text" fill="#b623ff" font-family="Graduate, serif" font-size="10" letter-spacing="2">
-            <textPath xlink:href="#circlePath" startOffset="25%">
-              • H O M E • 
-            </textPath>
-          </text>
-        </svg>
-      </a>
-
-
+        <a href="/" class="site-logo" aria-label="horse" style="position: relative; width: 80px; height: 80px; display: inline-block;">
+          <img src="/images/whorse.png" alt="Home" style="
+            width: 40px;
+            height: 40px;
+            filter: drop-shadow(0 0 0 rgb(158, 31, 222)) drop-shadow(0 0 2px rgb(158, 31, 222));
+            display: block;
+            margin: 20px auto;
+          " />
+          <svg viewBox="0 0 100 100" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+            <defs>
+              <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+            </defs>
+            <text class="home-text" fill="#b623ff" font-family="Graduate, serif" font-size="10" letter-spacing="2">
+              <textPath xlink:href="#circlePath" startOffset="25%">
+                • H O M E • 
+              </textPath>
+            </text>
+          </svg>
+        </a>
 
         <div class="nav-links">
-          <!-- <a href="/">Home</a> -->
-          <!-- <a href="/projects">Projects</a> -->
           <a href="/test">My Picks</a>
           <a href="/blog">Blog</a>
-          <!-- <a href="/diary">Diary</a> -->
           <a href="/spotify">Music</a>
-          <!-- </a>class="spotify-link" aria-label="Spotify">
-            <img src="/images/spotify--v2.png" alt="Spotify" />
-          </a> -->
           <a href="/about">About</a>
+
+          <!-- Play button added -->
+          <div style="position: relative;">
+            <div id="playBtn" class="play-button" title="Play music"></div>
+            <div id="nowPlaying" class="now-playing">Now playing: Antlion demo</div>
+            <audio id="audioPlayer" src="/images/LION.mp3"></audio>
+          </div>
         </div>
       </nav>
     </header>
@@ -182,5 +194,41 @@ const { title = "Shop" } = Astro.props;
         © {new Date().getFullYear()} made with astro 
       </div>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const playBtn = document.getElementById('playBtn') as HTMLDivElement | null;
+        const nowPlaying = document.getElementById('nowPlaying') as HTMLDivElement | null;
+        const audio = document.getElementById('audioPlayer') as HTMLAudioElement | null;
+
+        if (!playBtn || !nowPlaying || !audio) return;
+
+        // Toggle play/pause on click
+        playBtn.addEventListener('click', () => {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        });
+
+        // When audio plays
+        audio.addEventListener('play', () => {
+          playBtn.classList.add('active');
+          nowPlaying.classList.add('show');
+        });
+
+        // When audio pauses or ends
+        audio.addEventListener('pause', () => {
+          playBtn.classList.remove('active');
+          nowPlaying.classList.remove('show');
+        });
+
+        audio.addEventListener('ended', () => {
+          playBtn.classList.remove('active');
+          nowPlaying.classList.remove('show');
+        });
+      });
+    </script>
   </body>
 </html>
