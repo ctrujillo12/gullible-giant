@@ -2,7 +2,7 @@
 title: "My professional ventures"
 date: "2026-02-20"
 coverImage: "/images/miumiu_pumps_cover.jpg"
-description: "So it is now Shopping September and here is all the damage I have inflicted so far."
+description: "it time to look serious but in a vintage designer way"
 ---
 guys im getting owned by private equity again
 
