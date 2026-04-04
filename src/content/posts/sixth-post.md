@@ -63,6 +63,80 @@ so yeah idk if i want neutral or fun vibes. here are some options. also i swear 
   </a>
 </div>
 
+
+or perhaps i can just take my beloved balenci flats to the cobbler... not really sure how that process works but it could be worth it. i do real like these bright pumps though: 
+
+<div>
+  <a href="https://www.therealreal.com/products/women/shoes/flats/tory-burch-snakeskin-animal-print-ballet-flats-u0auf" class="image-card">
+    <img src="/images/prada-burlap-heels.webp" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/prada-burlap-heels.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/prada-green-colorblock-heels.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/yellow-cat-flats.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/chanel-neongreen-flats2.jpeg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/chanel-neonpink-flats.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/chloe-neonyellow-heels.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/marcjacobs-yellowprinted-flats.png" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/marcjacobs-pinksling-flats.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/marcjacobs-studdedbluelace-flats.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/marcjacobs-purplesuede-flats.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+</div>
+
+
+or maybe on a calmer tone:
+
+<div>
+  <a href="boi" class="image-card">
+    <img src="/images/ae-mint-lace-flats.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/marcjacobs-olivesatin-flats.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/marcjacobs-yellowsuede-flats.jpeg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/marcjacobs-printedzebra-flats.jpeg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+</div>
+
+
+
 ---
 
 <style>
