@@ -130,6 +130,57 @@ or maybe on a calmer tone:
 
 highkey i need to prep for summer i am not freaking ready. i need a small bag, dresses, more tops for hot weather, new/fixed pair of shoes, accessories like sheer bolero, socks and jewelry and shit
 
+
+i have this idea for a fit with vintage levis shorts, cute bodysuit, and little bolero:
+
+<div class="image-grid">
+  <a href="boi" class="image-card">
+    <img src="/images/sheer-bolero1.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/teal-bolero.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/white-sheer-bolero.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/anthro-brocade.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/charlotterusse-bolero.jpg" alt=s"tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/bridal-white-top.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/laapparel-bodysuit1.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/laapparel-bodysuit2.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/levis-shorts1.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/levis-shorts2.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/levis-shorts3.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+</div>
+
+
 ---
 
 <style>
