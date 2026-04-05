@@ -89,10 +89,6 @@ or perhaps i can just take my beloved balenci flats to the cobbler... not really
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/marcjacobs-yellowprinted-flats.png" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-  <a href="boi" class="image-card">
     <img src="/images/marcjacobs-pinksling-flats.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
@@ -126,6 +122,10 @@ or maybe on a calmer tone:
     <img src="/images/prada-burlap-heels.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
+  <a href="boi" class="image-card">
+    <img src="/images/marcjacobs-yellowprinted-flats.png" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
 </div>
 
 highkey i need to prep for summer i am not freaking ready. i need a small bag, dresses, more tops for hot weather, new/fixed pair of shoes, accessories like sheer bolero, socks and jewelry and shit
@@ -151,13 +151,12 @@ i have this idea for a fit with vintage levis shorts, cute bodysuit, and little 
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/charlotterusse-bolero.jpg" alt=s"tory burch snake flats" />
+    <img src="/images/charlotterusse-bolero.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
-  <a href="boi" class="image-card">
-    <img src="/images/bridal-white-top.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
+</div>
+
+<div class="image-grid">
   <a href="boi" class="image-card">
     <img src="/images/laapparel-bodysuit1.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
@@ -166,6 +165,13 @@ i have this idea for a fit with vintage levis shorts, cute bodysuit, and little 
     <img src="/images/laapparel-bodysuit2.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
+  <a href="boi" class="image-card">
+    <img src="/images/organicbasics-teal-bodysuit.png" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+</div>
+
+<div class="image-grid">
   <a href="boi" class="image-card">
     <img src="/images/levis-shorts1.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
@@ -178,9 +184,60 @@ i have this idea for a fit with vintage levis shorts, cute bodysuit, and little 
     <img src="/images/levis-shorts3.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
+  <a href="boi" class="image-card">
+    <img src="/images/levis-shorts4.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
 </div>
 
 
+im also thinking lots about sheer and lacy clothes:
+
+
+<div class="image-grid">
+  <a href="boi" class="image-card">
+    <img src="/images/bridal-white-top.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/vs-offtheshoulder-pink.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+</div>
+
+
+now for dresses;
+
+<div class="image-grid">
+  <a href="boi" class="image-card">
+    <img src="/images/versace-mini.webp" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/houseofharlow-mini.webp" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/houseofharlow-mini2.webp" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/balenciaga-blackmini.webp" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/aliceolivia-minidress.webp" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/pleinsud-white-mini.webp" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/prada-white-sheath.webp" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+</div>
 ---
 
 <style>
