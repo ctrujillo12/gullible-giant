@@ -14,32 +14,32 @@ so yeah idk if i want neutral or fun vibes. here are some options. also i swear 
 
 <div class="image-grid">
   <a href="https://www.therealreal.com/products/women/shoes/sandals/balenciaga-leather-gladiator-sandals-tdlsy" class="image-card">
-    <img src="/images/balenci-orange-gladiator.webp" alt="balenci orange gladiator" />
-    <span class="image-title">balenci orange gladiator</span>
+    <img src="/images/balenci-orange-gladiator.webp" alt="balenciaga orange gladiator" />
+    <span class="image-title">balenciaga orange gladiator</span>
   </a>
   <a href="https://www.ebay.com/itm/316962604003" class="image-card">
-    <img src="/images/chloe-suede-blue-flats.webp" alt="balenci gray sandals" />
+    <img src="/images/chloe-suede-blue-flats.webp" alt="chloe suede blue flats" />
     <span class="image-title">chloe suede blue flats</span>
   </a>
   <a href="https://www.therealreal.com/products/women/shoes/sandals/balenciaga-leather-studded-accents-t-strap-sandals-u3uqo" class="image-card">
-    <img src="/images/balenci-studded-teal-sandlas.webp" alt="balenci studded teal" />
-    <span class="image-title">balenci studded teal</span>
+    <img src="/images/balenci-studded-teal-sandlas.webp" alt="balenciaga studded teal sandals" />
+    <span class="image-title">balenciaga studded teal sandals</span>
   </a>
   <a href="https://www.therealreal.com/products/women/shoes/sandals/balenciaga-leather-studded-accents-sandals-ty1xl" class="image-card">
-    <img src="/images/balenci-yellow-sandals.webp" alt="balenci yellow sandals" />
-    <span class="image-title">balenci yellow sandals</span>
+    <img src="/images/balenci-yellow-sandals.webp" alt="balenciaga yellow sandals" />
+    <span class="image-title">balenciaga yellow sandals</span>
   </a>
   <a href="https://www.therealreal.com/products/women/shoes/sandals/barney-s-new-york-leather-gladiator-sandals-pyahy" class="image-card">
-    <img src="/images/baraneys-gladiator.webp" alt="barneys gladiator" />
-    <span class="image-title">barneys gladiator</span>
+    <img src="/images/baraneys-gladiator.webp" alt="barneys gladiator sandals" />
+    <span class="image-title">barneys gladiator sandals</span>
   </a>
   <a href="https://www.ebay.com/itm/188142735656" class="image-card">
-    <img src="/images/chloe-scalloped-blue-flats.webp" alt="chloé scalloped blue" />
-    <span class="image-title">chloé scalloped blue</span>
+    <img src="/images/chloe-scalloped-blue-flats.webp" alt="chloe scalloped blue flats" />
+    <span class="image-title">chloe scalloped blue flats</span>
   </a>
   <a href="https://www.therealreal.com/products/women/shoes/flats/chloe-leather-scalloped-accent-flats-tv3o9" class="image-card">
-    <img src="/images/chloe-scalloped-teal-flats.webp" alt="chloé scalloped teal" />
-    <span class="image-title">chloé scalloped teal</span>
+    <img src="/images/chloe-scalloped-teal-flats.webp" alt="chloe scalloped teal flats" />
+    <span class="image-title">chloe scalloped teal flats</span>
   </a>
   <a href="https://www.therealreal.com/products/women/shoes/flats/salvatore-ferragamo-snakeskin-slingback-flats-u1kfr" class="image-card">
     <img src="/images/ferragamo_snake_flats.webp" alt="ferragamo snake flats" />
@@ -67,34 +67,33 @@ so yeah idk if i want neutral or fun vibes. here are some options. also i swear 
 or perhaps i can just take my beloved balenci flats to the cobbler... not really sure how that process works but it could be worth it. i do real like these bright pumps though: 
 
 <div class="image-grid">
-  
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/prada-green-colorblock-heels.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/prada-green-colorblock-heels.jpg" alt="prada green colorblock heels" />
+    <span class="image-title">prada green colorblock heels</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/yellow-cat-flats.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/yellow-cat-flats.jpg" alt="yellow cat flats" />
+    <span class="image-title">yellow cat flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/chanel-neongreen-flats2.jpeg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/chanel-neongreen-flats2.jpeg" alt="chanel neon green flats" />
+    <span class="image-title">chanel neon green flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/chanel-neonpink-flats.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/chanel-neonpink-flats.jpg" alt="chanel neon pink flats" />
+    <span class="image-title">chanel neon pink flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/chloe-neonyellow-heels.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/chloe-neonyellow-heels.jpg" alt="chloe neon yellow heels" />
+    <span class="image-title">chloe neon yellow heels</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/marcjacobs-pinksling-flats.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/marcjacobs-pinksling-flats.jpg" alt="marc jacobs pink slingback flats" />
+    <span class="image-title">marc jacobs pink slingback flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/marcjacobs-studdedbluelace-flats.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/marcjacobs-studdedbluelace-flats.jpg" alt="marc jacobs studded blue lace flats" />
+    <span class="image-title">marc jacobs studded blue lace flats</span>
   </a>
 </div>
 
@@ -103,28 +102,28 @@ or maybe on a calmer tone:
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/ae-mint-lace-flats.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/ae-mint-lace-flats.jpg" alt="ae mint lace flats" />
+    <span class="image-title">ae mint lace flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/marcjacobs-olivesatin-flats.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/marcjacobs-olivesatin-flats.jpg" alt="marc jacobs olive satin flats" />
+    <span class="image-title">marc jacobs olive satin flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/marcjacobs-yellowsuede-flats.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/marcjacobs-yellowsuede-flats.jpg" alt="marc jacobs yellow suede flats" />
+    <span class="image-title">marc jacobs yellow suede flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/marcjacobs-printedzebra-flats.jpeg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/marcjacobs-printedzebra-flats.jpeg" alt="marc jacobs printed zebra flats" />
+    <span class="image-title">marc jacobs printed zebra flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/prada-burlap-heels.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/prada-burlap-heels.jpg" alt="prada burlap heels" />
+    <span class="image-title">prada burlap heels</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/marcjacobs-yellowprinted-flats.png" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/marcjacobs-yellowprinted-flats.png" alt="marc jacobs yellow printed flats" />
+    <span class="image-title">marc jacobs yellow printed flats</span>
   </a>
 </div>
 
@@ -135,73 +134,72 @@ i have this idea for a fit with vintage levis shorts, cute bodysuit, and little 
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/sheer-bolero1.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/sheer-bolero1.jpg" alt="sheer bolero" />
+    <span class="image-title">sheer bolero</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/teal-bolero.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/teal-bolero.jpg" alt="teal bolero" />
+    <span class="image-title">teal bolero</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/white-sheer-bolero.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/white-sheer-bolero.jpg" alt="white sheer bolero" />
+    <span class="image-title">white sheer bolero</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/anthro-brocade.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/anthro-brocade.jpg" alt="anthropologie brocade bolero" />
+    <span class="image-title">anthropologie brocade bolero</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/charlotterusse-bolero.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-</div>
-
-<div class="image-grid">
-  <a href="boi" class="image-card">
-    <img src="/images/sixth-post/laapparel-bodysuit1.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-  <a href="boi" class="image-card">
-    <img src="/images/sixth-post/laapparel-bodysuit2.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-  <a href="boi" class="image-card">
-    <img src="/images/sixth-post/organicbasics-teal-bodysuit.png" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/charlotterusse-bolero.jpg" alt="charlotte russe bolero" />
+    <span class="image-title">charlotte russe bolero</span>
   </a>
 </div>
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/levis-shorts1.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/laapparel-bodysuit1.jpg" alt="la apparel bodysuit" />
+    <span class="image-title">la apparel bodysuit</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/levis-shorts2.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/laapparel-bodysuit2.jpg" alt="la apparel bodysuit 2" />
+    <span class="image-title">la apparel bodysuit 2</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/levis-shorts3.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/organicbasics-teal-bodysuit.png" alt="organic basics teal bodysuit" />
+    <span class="image-title">organic basics teal bodysuit</span>
+  </a>
+</div>
+
+<div class="image-grid">
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/levis-shorts1.jpg" alt="levi's shorts" />
+    <span class="image-title">levi's shorts</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/levis-shorts4.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/levis-shorts2.jpg" alt="levi's shorts 2" />
+    <span class="image-title">levi's shorts 2</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/levis-shorts3.jpg" alt="levi's shorts 3" />
+    <span class="image-title">levi's shorts 3</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/levis-shorts4.jpg" alt="levi's shorts 4" />
+    <span class="image-title">levi's shorts 4</span>
   </a>
 </div>
 
 
 im also thinking lots about sheer and lacy clothes:
 
-
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/bridal-white-top.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/bridal-white-top.jpg" alt="bridal white top" />
+    <span class="image-title">bridal white top</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/vs-offtheshoulder-pink.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/seventh-post/vs-offtheshoulder-black.jpg" alt="vs off the shoulder black" />
+    <span class="image-title">vs off the shoulder black</span>
   </a>
 </div>
 
@@ -210,34 +208,72 @@ now for dresses;
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/versace-mini.webp" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/versace-mini.webp" alt="versace mini" />
+    <span class="image-title">versace mini</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/houseofharlow-mini.webp" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/houseofharlow-mini.webp" alt="house of harlow mini" />
+    <span class="image-title">house of harlow mini</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/houseofharlow-mini2.webp" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/houseofharlow-mini2.webp" alt="house of harlow mini 2" />
+    <span class="image-title">house of harlow mini 2</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/balenciaga-blackmini.webp" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/balenciaga-blackmini.webp" alt="balenciaga black mini" />
+    <span class="image-title">balenciaga black mini</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/sixth-post/aliceolivia-minidress.webp" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-  <a href="boi" class="image-card">
-    <img src="/images/sixth-post/pleinsud-white-mini.webp" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-  <a href="boi" class="image-card">
-    <img src="/images/sixth-post/prada-white-sheath.webp" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
+    <img src="/images/sixth-post/pleinsud-white-mini.webp" alt="plein sud white mini" />
+    <span class="image-title">plein sud white mini</span>
   </a>
 </div>
+
+necklaces.
+
+<div class="image-grid">
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/blacklace-choker.webp" alt="black lace choker" />
+    <span class="image-title">black lace choker</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/whitelace-choker.webp" alt="white lace choker" />
+    <span class="image-title">white lace choker</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/blacklace-choker2.webp" alt="black lace choker 2" />
+    <span class="image-title">black lace choker 2</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/hoh-pendant.webp" alt="house of harlow pendant" />
+    <span class="image-title">house of harlow pendant</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/black-flapper-necklace.avif" alt="house of harlow pendant" />
+    <span class="image-title">house of harlow pendant</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/silver-chain-layered.avif" alt="house of harlow pendant" />
+    <span class="image-title">house of harlow pendant</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/pink-flapper-necklace.avif" alt="house of harlow pendant" />
+    <span class="image-title">house of harlow pendant</span>
+  </a>
+</div>
+
+<div class="image-grid">
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/balenci-sandals-navy.webp" alt="black lace choker" />
+    <span class="image-title">black lace choker</span>
+  </a>
+</div>
+
+oliviamhursthurst
+meadowrue
+mollylean
+alanacloudrobinson
+nhogirl
 ---
 
 <style>
