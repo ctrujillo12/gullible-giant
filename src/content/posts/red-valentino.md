@@ -2,7 +2,7 @@
 title: "Red Valentino supremacy"
 date: "2026-04-04"
 coverImage: "/images/sixth-post/red-valentino/teal-structured-vest.webp"
-description: "actually so mad"
+description: "rabbit hole on trr"
 ---
 where tf is the hype for this line???? i mean come on: 
 

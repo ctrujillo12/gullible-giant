@@ -2,7 +2,7 @@
 title: "i blacked out last night and spent $300; let's recap"
 date: "2026-04-06"
 coverImage: "/images/blackout-recap/anntaylor-colorblock-tank.webp"
-description: "actually so happy"
+description: "summer planning pt 2"
 ---
 
 the past 36 hours have just been me dancing shopping and coding. kinda fire
