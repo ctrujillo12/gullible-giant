@@ -69,31 +69,31 @@ or perhaps i can just take my beloved balenci flats to the cobbler... not really
 <div class="image-grid">
   
   <a href="boi" class="image-card">
-    <img src="/images/prada-green-colorblock-heels.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/prada-green-colorblock-heels.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/yellow-cat-flats.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/yellow-cat-flats.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/chanel-neongreen-flats2.jpeg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/chanel-neongreen-flats2.jpeg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/chanel-neonpink-flats.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/chanel-neonpink-flats.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/chloe-neonyellow-heels.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/chloe-neonyellow-heels.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/marcjacobs-pinksling-flats.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/marcjacobs-pinksling-flats.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/marcjacobs-studdedbluelace-flats.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/marcjacobs-studdedbluelace-flats.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
 </div>
@@ -103,27 +103,27 @@ or maybe on a calmer tone:
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/ae-mint-lace-flats.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/ae-mint-lace-flats.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/marcjacobs-olivesatin-flats.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/marcjacobs-olivesatin-flats.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/marcjacobs-yellowsuede-flats.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/marcjacobs-yellowsuede-flats.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/marcjacobs-printedzebra-flats.jpeg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/marcjacobs-printedzebra-flats.jpeg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/prada-burlap-heels.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/prada-burlap-heels.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/marcjacobs-yellowprinted-flats.png" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/marcjacobs-yellowprinted-flats.png" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
 </div>
@@ -135,57 +135,57 @@ i have this idea for a fit with vintage levis shorts, cute bodysuit, and little 
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/sheer-bolero1.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/sheer-bolero1.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/teal-bolero.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/teal-bolero.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/white-sheer-bolero.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/white-sheer-bolero.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/anthro-brocade.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/anthro-brocade.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/charlotterusse-bolero.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-</div>
-
-<div class="image-grid">
-  <a href="boi" class="image-card">
-    <img src="/images/laapparel-bodysuit1.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-  <a href="boi" class="image-card">
-    <img src="/images/laapparel-bodysuit2.jpg" alt="tory burch snake flats" />
-    <span class="image-title">tory burch snake flats</span>
-  </a>
-  <a href="boi" class="image-card">
-    <img src="/images/organicbasics-teal-bodysuit.png" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/charlotterusse-bolero.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
 </div>
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/levis-shorts1.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/laapparel-bodysuit1.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/levis-shorts2.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/laapparel-bodysuit2.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/levis-shorts3.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/organicbasics-teal-bodysuit.png" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+</div>
+
+<div class="image-grid">
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/levis-shorts1.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/levis-shorts4.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/levis-shorts2.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/levis-shorts3.jpg" alt="tory burch snake flats" />
+    <span class="image-title">tory burch snake flats</span>
+  </a>
+  <a href="boi" class="image-card">
+    <img src="/images/sixth-post/levis-shorts4.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
 </div>
@@ -196,11 +196,11 @@ im also thinking lots about sheer and lacy clothes:
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/bridal-white-top.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/bridal-white-top.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/vs-offtheshoulder-pink.jpg" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/vs-offtheshoulder-pink.jpg" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
 </div>
@@ -210,31 +210,31 @@ now for dresses;
 
 <div class="image-grid">
   <a href="boi" class="image-card">
-    <img src="/images/versace-mini.webp" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/versace-mini.webp" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/houseofharlow-mini.webp" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/houseofharlow-mini.webp" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/houseofharlow-mini2.webp" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/houseofharlow-mini2.webp" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/balenciaga-blackmini.webp" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/balenciaga-blackmini.webp" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/aliceolivia-minidress.webp" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/aliceolivia-minidress.webp" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/pleinsud-white-mini.webp" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/pleinsud-white-mini.webp" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
   <a href="boi" class="image-card">
-    <img src="/images/prada-white-sheath.webp" alt="tory burch snake flats" />
+    <img src="/images/sixth-post/prada-white-sheath.webp" alt="tory burch snake flats" />
     <span class="image-title">tory burch snake flats</span>
   </a>
 </div>
