@@ -1,7 +1,7 @@
 ---
 title: "Summer planning is getting serious"
 date: "2026-04-05"
-coverImage: "/images/matchacover.jpg"
+coverImage: "/images/matchacover.jpeg"
 description: "god damn i am not ready"
 ---
 Vintage/50s vibe:
