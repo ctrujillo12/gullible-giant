@@ -82,7 +82,7 @@ posts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
     flex-direction: column;
     text-decoration: none;
     border-radius: 0;
-    overflow: hidden;
+    overflow: visible; /* ← change from hidden to visible */
     box-shadow: none;
     transition: transform 0.2s ease;
     background: rgb(195, 245, 95);
@@ -99,6 +99,7 @@ posts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
     width: 100%;
     position: relative;
     overflow: hidden;
+    border: 4px solid #ff66cc; /* ← add this */
   }
 
   .card img {

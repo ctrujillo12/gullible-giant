@@ -1,7 +1,7 @@
 ---
 title: "Red Valentino supremacy"
 date: "2026-04-04"
-coverImage: "/images/IMG_6413.jpeg"
+coverImage: "/images/me-pt2.jpg"
 description: "rabbit hole on trr"
 ---
 where tf is the hype for this line???? i mean come on: 
