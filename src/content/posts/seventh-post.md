@@ -23,16 +23,32 @@ Vintage/50s vibe:
     <img src="/images/seventh-post/1940s-pinksilk-bedjacket.webp" alt="1940s pink silk bed jacket" />
     <span class="image-title">1940s pink silk bed jacket</span>
   </a>
+  <a href="/images/seventh-post/1940s-pinksilk-bedjacket.webp" class="image-card">
+    <img src="/images/seventh-post/1960-lace-bolero.webp" alt="1940s pink silk bed jacket" />
+    <span class="image-title">1960s lace top</span>
+  </a>
+  <a href="/images/seventh-post/1940s-pinksilk-bedjacket.webp" class="image-card">
+    <img src="/images/seventh-post/alfredsung-bluesilk-mini.webp" alt="1940s pink silk bed jacket" />
+    <span class="image-title">Alfred Sung blue satin mini</span>
+  </a>
+  <a href="/images/seventh-post/1940s-pinksilk-bedjacket.webp" class="image-card">
+    <img src="/images/seventh-post/moschino-bolero.webp" alt="1940s pink silk bed jacket" />
+    <span class="image-title">Moschino knit bolero</span>
+  </a>
+  <a href="/images/seventh-post/1940s-pinksilk-bedjacket.webp" class="image-card">
+    <img src="/images/seventh-post/pinksatin-net-bra.avif" alt="1940s pink silk bed jacket" />
+    <span class="image-title">1940s pink satin net bra</span>
+  </a>
+  <a href="/images/seventh-post/1940s-pinksilk-bedjacket.webp" class="image-card">
+    <img src="/images/seventh-post/rosegold-flapper-necklace.avif" alt="1940s pink silk bed jacket" />
+    <span class="image-title">1920s Rose Gold Glass Flapper Lariat Necklace</span>
+  </a>
 </div>
 
 
 Dress edit. really liking balenciaga.
 
 <div class="image-grid dresses">
-  <a href="/images/seventh-post/alfredsung-bluesilk-mini.webp" class="image-card">
-    <img src="/images/seventh-post/alfredsung-bluesilk-mini.webp" alt="alfred sung blue silk mini" />
-    <span class="image-title">alfred sung blue silk mini</span>
-  </a>
   <a href="/images/seventh-post/aliceolivia-minidress.webp" class="image-card">
     <img src="/images/seventh-post/aliceolivia-minidress.webp" alt="alice + olivia minidress" />
     <span class="image-title">alice + olivia minidress</span>
@@ -80,6 +96,14 @@ Dress edit. really liking balenciaga.
   <a href="/images/seventh-post/valentino-whitelace-set.jpg" class="image-card">
     <img src="/images/seventh-post/valentino-whitelace-set.jpg" alt="valentino white lace set" />
     <span class="image-title">valentino white lace set</span>
+  </a>
+  <a href="/images/seventh-post/valentino-whitelace-set.jpg" class="image-card">
+    <img src="/images/seventh-post/tulle-skater-dress.avif" alt="valentino white lace set" />
+    <span class="image-title">sheer white skater dress</span>
+  </a>
+  <a href="/images/seventh-post/valentino-whitelace-set.jpg" class="image-card">
+    <img src="/images/seventh-post/tulle-skater-black-dress.webp" alt="valentino white lace set" />
+    <span class="image-title">sheer black skater dress</span>
   </a>
 </div>
 
@@ -207,6 +231,34 @@ boleros are so in
   </a>
   <a href="/images/seventh-post/walter-bolero-shiny.webp" class="image-card">
     <img src="/images/seventh-post/walter-bolero-shiny.webp" alt="walter shiny bolero" />
+    <span class="image-title">walter shiny bolero</span>
+  </a>
+  <a href="/images/seventh-post/walter-bolero-shiny.webp" class="image-card">
+    <img src="/images/seventh-post/blacksilk-crop-bolero.webp" alt="walter shiny bolero" />
+    <span class="image-title">walter shiny bolero</span>
+  </a>
+  <a href="/images/seventh-post/walter-bolero-shiny.webp" class="image-card">
+    <img src="/images/seventh-post/mcginn-white-polka-bolero.jpg" alt="walter shiny bolero" />
+    <span class="image-title">walter shiny bolero</span>
+  </a>
+  <a href="/images/seventh-post/walter-bolero-shiny.webp" class="image-card">
+    <img src="/images/seventh-post/moschino-yellow-bolero.webp" alt="walter shiny bolero" />
+    <span class="image-title">walter shiny bolero</span>
+  </a>
+  <a href="/images/seventh-post/walter-bolero-shiny.webp" class="image-card">
+    <img src="/images/seventh-post/sheer-organza-bolero.webp" alt="walter shiny bolero" />
+    <span class="image-title">walter shiny bolero</span>
+  </a>
+  <a href="/images/seventh-post/walter-bolero-shiny.webp" class="image-card">
+    <img src="/images/seventh-post/silver-bolero.webp" alt="walter shiny bolero" />
+    <span class="image-title">walter shiny bolero</span>
+  </a>
+  <a href="/images/seventh-post/walter-bolero-shiny.webp" class="image-card">
+    <img src="/images/seventh-post/teal-bridal-bolero.png" alt="walter shiny bolero" />
+    <span class="image-title">walter shiny bolero</span>
+  </a>
+  <a href="/images/seventh-post/walter-bolero-shiny.webp" class="image-card">
+    <img src="/images/seventh-post/teal-sheer-organza-bolero.avif" alt="walter shiny bolero" />
     <span class="image-title">walter shiny bolero</span>
   </a>
 </div>
