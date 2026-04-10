@@ -32,6 +32,10 @@ some basics for my high waisted shorts:
     <img src="/images/blackout-recap/laapparel-white-tank.png" alt="purple bolero" />
     <span class="image-title">white tank $36</span>
   </a>  
+  <a href="https://losangelesapparel.net/products/raw311-performance-spaghetti-tank?option_values=3527597260979%2C3527594246323&variant=44965818466483" class="image-card">
+    <img src="/images/blackout-recap/organicbasics-teal-bodysuit.png" alt="purple bolero" />
+    <span class="image-title">teal bodysuit $23</span>
+  </a>  
 </div>
 
 some more 501s cause i love the fit: 
