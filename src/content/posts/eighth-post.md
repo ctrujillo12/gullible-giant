@@ -4,7 +4,7 @@ date: "2026-04-09"
 coverImage: "/images/whorse.png"
 description: "getting so fucking serious atp"
 ---
-Vintage/50s vibe:
+repetto tstraps
 
 <div class="image-grid">
   <a href="https://www.ebay.com/itm/406423230311" class="image-card">
