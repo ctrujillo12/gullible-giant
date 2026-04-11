@@ -63,6 +63,10 @@ repetto tstraps
     <img src="/images/eighth-post/repetto-tstrap-black.webp" alt="vivienne tam white blouse" />
     <span class="image-title">33</span>
   </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/sandals/repetto/pink-leather-repetto-sandals-44826898.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-coral2.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">126</span>
+  </a>
 </div>
 
 
