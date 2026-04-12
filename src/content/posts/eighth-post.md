@@ -4,16 +4,26 @@ date: "2026-04-09"
 coverImage: "/images/whorse.png"
 description: "getting so fucking serious atp"
 ---
-repetto tstraps
+
+Ive been possessed by repetto tstrap pumps, idk what about them is calling out to me. probably the 1920s flair and i love the mixed textures esp the suede, enamel, and patent leather. idk the colorways are just really exciting my brain. its like a scavenger hunt trying to find new colors in my size. 
+
+
+i was trying to buy a sensible pair so i could be like yk cute and chic. but you know i had to cop the camo ones 😭😭
+
+<div class="image-grid">
+  <a href="https://www.ebay.com/itm/377019547069" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-camo.jpg" alt="vivienne tam white blouse" />
+    <span class="image-title">$104 in good condition from japan. i consider this a huge win</span>
+  </a>
+</div>
+
+
+my blooms taxonomy of repetto tstrap heels in sizes 38-41:
 
 <div class="image-grid">
   <a href="https://www.ebay.com/itm/406423230311" class="image-card">
-    <img src="/images/eighth-post/repetto-pumps-olive.webp" alt="vivienne tam white blouse" />
+    <img src="/images/eighth-post/repetto-tstrap-white.webp" alt="vivienne tam white blouse" />
     <span class="image-title">116 + 29</span>
-  </a>
-  <a href="https://www.ebay.com/itm/157787662168" class="image-card">
-    <img src="/images/eighth-post/repetto-flats-olive.webp" alt="vivienne tam white blouse" />
-    <span class="image-title">95</span>
   </a>
   <a href="https://www.ebay.com/itm/226742013555" class="image-card">
     <img src="/images/eighth-post/repetto-tstrap-lilac.webp" alt="vivienne tam white blouse" />
@@ -39,10 +49,6 @@ repetto tstraps
     <img src="/images/eighth-post/repetto-tstrap-mustard.webp" alt="vivienne tam white blouse" />
     <span class="image-title">87</span>
   </a>
-  <a href="https://www.ebay.com/itm/377019547069" class="image-card">
-    <img src="/images/eighth-post/repetto-tstrap-camo.jpg" alt="vivienne tam white blouse" />
-    <span class="image-title">104</span>
-  </a>
   <a href="https://poshmark.com/listing/Repetto-Blush-TStrap-Heels-69605474b944912a4ecb40df" class="image-card">
     <img src="/images/eighth-post/repetto-tstrap-blush.jpg" alt="vivienne tam white blouse" />
     <span class="image-title">95</span>
@@ -67,9 +73,91 @@ repetto tstraps
     <img src="/images/eighth-post/repetto-tstrap-coral2.webp" alt="vivienne tam white blouse" />
     <span class="image-title">126</span>
   </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/sandals/repetto/pink-leather-repetto-sandals-44826898.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-teal.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">228</span>
+  </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/heels/repetto/blue-cloth-repetto-heels-58516032.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-darkblue.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">91</span>
+  </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/heels/repetto/blue-leather-repetto-heels-62236094.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-bluecolorblock.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">261</span>
+  </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/heels/repetto/pink-patent-leather-repetto-heels-64644533.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-beige.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">99</span>
+  </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/heels/repetto/ecru-suede-repetto-heels-59428365.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-ecru.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">218</span>
+  </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/heels/repetto/green-leather-repetto-heels-37190872.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-darkgreen.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">136</span>
+  </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/heels/repetto/other-velvet-repetto-heels-54742164.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-pinkcolorblock.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">75</span>
+  </a>
+</div>
+
+<div class="image-grid">
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/miumiu-black-tstrap.png" alt="vivienne tam white blouse" />
+    <span class="image-title">150</span>
+  </a>
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-enamelpink.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">135</span>
+  </a>
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-bluesuede.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">250</span>
+  </a>
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-peep-tstrap-orange.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">162</span>
+  </a>
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-red.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">113</span>
+  </a>
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-tstrap-mint.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">155</span>
+  </a>
 </div>
 
 
+some non tstraps that are cute too
+<div class="image-grid">
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-pumps-olive.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">116</span>
+  </a>
+  <a href="https://www.ebay.com/itm/157787662168" class="image-card">
+    <img src="/images/eighth-post/repetto-flats-olive.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">95</span>
+  </a>
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-pumps-blue.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">54</span>
+  </a>
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-flats-blue.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">72</span>
+  </a>
+  <a href="https://www.vestiairecollective.com/women-shoes/heels/repetto/khaki-leather-repetto-heels-65628683.shtml" class="image-card">
+    <img src="/images/eighth-post/repetto-pumps-khaki.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">120</span>
+  </a>
+  <a href="https://www.ebay.com/itm/406423230311" class="image-card">
+    <img src="/images/eighth-post/repetto-pumps-colorblock.webp" alt="vivienne tam white blouse" />
+    <span class="image-title">1</span>
+  </a>
+</div>
 
 ---
 
