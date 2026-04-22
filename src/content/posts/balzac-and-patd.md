@@ -12,6 +12,66 @@ my study on 20s fashion and campness coming back into style.
 
 
 
+Balzac:
+
+Written 1831 paris
+
+Themes of desire and unchecked ambition
+
+Mortality , consequences of actions, luxury and excess
+
+Faustian bargain: a pact where someone sacrifices their moral integrity, soul, or core values for short-term power, knowledge, wealth, or pleasure
+
+Raphael is hella feminine and mercurial almost and never satisfied and so dramatic.
+
+in this state of yearning without reciprocation - so similar to now where no one is getting who they want
+
+
+Afycso: 2005
+
+Vaudevillean
+
+Late 19th early 20th century aesthetics
+
+Baroque pop, electronic influence
+
+Theatrical circus or cabaret vibe
+
+Forms of live stage performance on either family friendly but not too burlesque, or intimate entertainment 
+
+Staged spectacle 
+
+Inspired by invisible monster by chuck palaniuk 
+
+Early fast paced rise
+
+Dance and dark complex lyrics juxtaposition 
+
+2 parts, identity crisis or creative evolution
+
+live in denver being ppls like obsession and its just raw playful teen energy
+
+
+
+Fashion:
+
+Victorian era inspires circus and burlesque 
+
+Tutus were popularized in 1830s 
+
+1920s flapper styles
+
+my girl cierra oday
+2014 the long necklaces 
+return of the pump
+
+
+the mood: desire consuming you, suffering and performance, makes me think of baz luhrmannn films,
+ornamentation as a coping mechanism, nonchalance in dating, the tumblr/twilight shit coming back into popularity,
+we all want obsession.
+
+
+
 ---
 
 <style>
