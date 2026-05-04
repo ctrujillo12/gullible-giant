@@ -7,7 +7,12 @@ import LoopMoving from '../components/LoopMoving.astro';
 const posts = await getCollection('posts');
 
 // sort newest first
-posts.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+const sortedPosts = posts.sort(
+  (a, b) => new Date(b.data.date) - new Date(a.data.date)
+);
+
+// remove last 2
+const postsToShow = sortedPosts.slice(0, -2);
 ---
 
 <Layout>
