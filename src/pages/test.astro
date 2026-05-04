@@ -1,284 +1,606 @@
----
-import Layout from "../layouts/ShopLayout.astro";
-import LoopMoving from '../components/LoopMoving.astro';
-import ShopCarousel from '../components/ShopCarousel.astro';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LA Day Trip — May 10th</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-import { products } from '../content/products.js';
-import { productsAccessories } from '../content/accessories.js';
-import { productsFall } from '../content/fall-products.js';
-import { productsEdgy } from '../content/edgy.js';
+  body {
+    font-family: 'Georgia', serif;
+    background: #faf9f7;
+    color: #1a1a1a;
+    padding: 40px 20px;
+  }
 
-import { productsCollege } from '../content/college.js';
----
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
 
-<Layout title="Night Scroll Demo">
-  <style>
-    /* Smooth transition for colors */
-    body {
-      background-color: rgb(195, 245, 95)a;
-      color: #111;
-      transition: background-color 1s ease, color 1s ease;
-    }
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 48px 32px 40px;
+    background: #1a1a1a;
+    color: #faf9f7;
+    border-radius: 4px;
+    margin-bottom: 32px;
+  }
 
-    body.night-mode {
-      background-color: #111;
-      color: rgb(195, 245, 95);
-    }
+  .header .eyebrow {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 16px;
+  }
 
-    section {
-      min-height: 80vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      transition: background-color 1s ease, color 1s ease;
-      width: 100%;
-    }
+  .header h1 {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
 
-    /* Light section */
-    .day-section {
-      background-color: rgb(195, 245, 95);
-    }
+  .header .subtitle {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    color: #aaa;
+    letter-spacing: 1px;
+  }
 
-    /* Dark section */
-    body.night-mode .night-section {
-      background-color: #111;
-      color: black;
-    }
+  /* Section labels */
+  .section-label {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+  }
 
-    /* Day My Picks banner styles (kept centered) */
-    .white-bg-container {
-      width: 100vw;
-      height: 170px;
-      background-color: #ff66cccf;
-      display: flex;
-      align-items: center;
-      justify-content: center; /* still centered */
-      overflow: visible;
-      padding: 0 1rem;
-      position: relative;
-      z-index: 1;
-    }
+  /* Cluster card */
+  .cluster {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
 
-    .moving-text-wrapper {
-      position: relative;
-      margin-top: 2.5rem;
-      max-width: 1300px;
-      width: 120%;
-      display: flex;
-      justify-content: center; /* still centered */
-      align-items: center;
-      overflow: visible;
-    }
+  .cluster-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: #f5f4f2;
+    border-bottom: 1px solid #e8e8e8;
+  }
 
-    /* Left-aligned “What I'm Eyeing” section */
-    .content-text {
-      max-width: 1400px;
-      margin: 4rem 1rem 0;
-      color: #ff66cc;
-      text-align: left; /* left align heading */
-      padding: 0 1rem;
-      font-family: 'Graduate', serif;
-    }
+  .cluster-name {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+  }
 
-    .content-text h2 {
-      margin: 0;
-      font-size: 1.5rem;
-      line-height: 1.1;
-    }
+  .cluster-note {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    color: #888;
+    letter-spacing: 0.5px;
+  }
 
-    /* Left-aligned tabs */
-    .tab-buttons {
-      display: flex;
-      justify-content: flex-start; /* left align buttons */
-      gap: 1rem;
-      margin: 1rem 1rem 2rem; 
-      max-width: 1000px;
-      padding: 0 1rem;
-    }
+  /* Stop rows */
+  .stop {
+    display: grid;
+    grid-template-columns: 56px 1fr auto;
+    align-items: start;
+    gap: 12px;
+    padding: 14px 20px;
+    border-bottom: 1px solid #f0f0f0;
+  }
 
-    .tab-buttons button {
-      background: white;
-      border: 1px solid #ff66cc;
-      color: #ff66cc;
-      font-family: 'Graduate', serif;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-    }
+  .stop:last-child { border-bottom: none; }
 
-    .tab-buttons button.active,
-    .tab-buttons button[aria-selected='true'] {
-      background-color: #ff66cc;
-      color: white;
-    }
+  .stop-time {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    color: #888;
+    font-weight: 500;
+    padding-top: 2px;
+    white-space: nowrap;
+  }
 
-    .left-align-wrapper {
-      width: 100%;
-      display: block; /* ensures children stack normally */
-      text-align: left; /* left-align content */
-      padding-left: 1rem; /* optional spacing from left edge */
-    }
+  .stop-info { }
 
-    .carousel-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1rem 4rem;
-    }
+  .stop-name {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
 
-    .carousel-tab {
-      display: none;
-    }
+  .walk-badge {
+    font-size: 9px;
+    letter-spacing: 1px;
+    background: #e8f4e8;
+    color: #3a7a3a;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 
-    .carousel-tab.active-tab {
-      display: block;
-    }
+  .drive-badge {
+    font-size: 9px;
+    letter-spacing: 1px;
+    background: #f0f0f0;
+    color: #666;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 
-    /* Night section banner (kept centered) */
-    .night-banner {
-      width: 100vw;
-      height: 170px;
-      background-color: #111;
-      display: flex;
-      align-items: center;
-      justify-content: center; /* still centered */
-      overflow: visible;
-      padding: 0 1rem;
-      position: relative;
-      z-index: 1;
-    }
+  .stop-detail {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    color: #888;
+    line-height: 1.5;
+  }
 
-    .night-content-text {
-      max-width: 1400px;
-      margin: 2rem 1rem;
-      color: rgb(158, 31, 222);
-      text-align: left; /* left align heading */
-      padding: 0 1rem;
-      font-family: 'Graduate', serif;
-    }
+  .stop-cost {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1a1a1a;
+    white-space: nowrap;
+    text-align: right;
+    padding-top: 2px;
+  }
 
-    .night-content-text h2 {
-      margin: 0;
-      color: rgb(158, 31, 222);
-      font-size: 1.5rem;
-      line-height: 1.1;
-    }
+  .stop-cost .range {
+    display: block;
+    font-size: 9px;
+    color: #aaa;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-top: 1px;
+  }
 
-    .night-section .night-carousel-title {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: rgb(195, 245, 95);
-    }
+  /* Drive connector */
+  .drive-connector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    margin: -1px 0;
+  }
 
-    /* Spacer above night banner – 3x bigger */
-    .night-spacer {
-      width: 100%;
-      height: 275px;
-      background-color: rgb(195, 245, 95);
-      transition: background-color 1s ease;
-    }
+  .drive-line {
+    flex: 1;
+    height: 1px;
+    background: repeating-linear-gradient(90deg, #ccc 0px, #ccc 4px, transparent 4px, transparent 8px);
+  }
 
-    body.night-mode .night-spacer {
-      background-color: #111;
-    }
+  .drive-label {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    color: #aaa;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
 
-  </style>
+  /* Cost summary */
+  .cost-section {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
 
-  <!-- Day Section -->
-  <section class="day-section">
-    <div class="white-bg-container">
-      <div class="moving-text-wrapper">
-        <LoopMoving text="- My Picks" fontSize="9rem" color="#111" />
+  .cost-header {
+    padding: 16px 20px;
+    background: #f5f4f2;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+  }
+
+  .cost-row:last-child { border-bottom: none; }
+
+  .cost-row .label { color: #444; }
+  .cost-row .label small { display: block; color: #aaa; font-size: 10px; margin-top: 1px; }
+  .cost-row .amount { font-weight: 600; color: #1a1a1a; }
+
+  .cost-row.total {
+    background: #1a1a1a;
+    color: #faf9f7;
+  }
+  .cost-row.total .label { color: #ccc; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+  .cost-row.total .amount { color: #fff; font-size: 15px; }
+
+  .cost-row.subtotal {
+    background: #f5f4f2;
+    border-top: 1px solid #e8e8e8;
+  }
+  .cost-row.subtotal .label { font-weight: 600; color: #1a1a1a; }
+  .cost-row.subtotal .amount { font-size: 13px; }
+
+  /* Alert */
+  .alert {
+    background: #fff8e6;
+    border: 1px solid #f5d78e;
+    border-radius: 4px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    color: #7a5c00;
+    line-height: 1.6;
+  }
+
+  .alert strong { font-weight: 700; }
+
+  /* Logistics */
+  .logistics {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .logistics-row {
+    display: flex;
+    gap: 14px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    align-items: flex-start;
+  }
+
+  .logistics-row:last-child { border-bottom: none; }
+
+  .logistics-icon { font-size: 14px; flex-shrink: 0; padding-top: 1px; }
+  .logistics-text { color: #444; line-height: 1.5; }
+  .logistics-text strong { color: #1a1a1a; font-weight: 600; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    color: #bbb;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="eyebrow">Girls Trip</div>
+    <h1>LA — May 10th</h1>
+    <div class="subtitle">5 girls · 8:00 AM → 10:30 PM</div>
+  </div>
+
+  <!-- Logistics strip -->
+  <div class="section-label">Logistics</div>
+  <div class="logistics" style="margin-bottom: 32px;">
+    <div class="logistics-row">
+      <div class="logistics-icon">🚗</div>
+      <div class="logistics-text"><strong>BMW rental</strong> — arrives at HMC at 8:00 AM, due back by 10:30 PM. $180 total = <strong>$36/person</strong>.</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">🅿️</div>
+      <div class="logistics-text"><strong>Park only 3 times in LA.</strong> Silver Lake (free behind Taix), Melrose/Pink Wall (walk entire cluster from here), Oxford Center Plaza Ktown (free lot, walk entire cluster from here).</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">🚶</div>
+      <div class="logistics-text"><strong>Walking clusters:</strong> Pink Wall → Community Goods → Erewhon → The Grove are all within ~15 min walk. Out of Ordi → DAMO → Damsot → KazuNori are all within ~10 min walk.</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">⚠️</div>
+      <div class="logistics-text"><strong>Kanomwaan closes at 8:30 PM on Sundays.</strong> Must arrive by 7:45 PM — this is the tightest constraint of the night.</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">📵</div>
+      <div class="logistics-text"><strong>No reservations needed anywhere</strong> — every stop is walk-in only. Expect lines at Out of Ordi (~20–30 min) and Damsot (~15–30 min on weekends).</div>
+    </div>
+  </div>
+
+  <!-- Itinerary -->
+  <div class="section-label">The Itinerary</div>
+
+  <!-- CLUSTER 1 -->
+  <div class="cluster">
+    <div class="cluster-header">
+      <span class="cluster-name">📍 Cluster 1 — Silver Lake</span>
+      <span class="cluster-note">Drive 45 min from Claremont</span>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:30 AM</div>
+      <div class="stop-info">
+        <div class="stop-name">🛍 Silverlake Flea <span class="drive-badge">Drive</span></div>
+        <div class="stop-detail">1911 Sunset Blvd · Free entry · Opens 9:30am Sundays<br>Vintage clothing, jewelry, vinyl, food trucks. ~1 hr.</div>
       </div>
+      <div class="stop-cost">Free<span class="range">+ whatever<br>you buy</span></div>
     </div>
+  </div>
 
-    <!-- <div class="content-text">
-      <h2>What I'm Eyeing. . .</h2>
-    </div> -->
+  <div class="drive-connector">
+    <div class="drive-line"></div>
+    <div class="drive-label">🚗 Drive 15 min → Melrose</div>
+    <div class="drive-line"></div>
+  </div>
 
-    <!-- Subtitle and Buttons wrapper -->
-    <div class="left-align-wrapper">
-      <div class="content-text">
-        <h2>What I'm Eyeing. . .</h2>
+  <!-- CLUSTER 2 -->
+  <div class="cluster">
+    <div class="cluster-header">
+      <span class="cluster-name">📍 Cluster 2 — Melrose / Fairfax</span>
+      <span class="cluster-note">Park once on Melrose · Walk everything</span>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:00 AM</div>
+      <div class="stop-info">
+        <div class="stop-name">📸 Pink Wall (Paul Smith)</div>
+        <div class="stop-detail">8221 Melrose Ave · Anchor point — park here<br>Open 24/7. Photo op, 15 min.</div>
       </div>
-
-      <div class="tab-buttons" role="tablist" aria-label="Shop Categories">
-        <button type="button" role="tab" aria-selected="false" aria-controls="carousel-school" id="tab-school" class="active">School!</button>
-        <button type="button" role="tab" aria-selected="true" aria-controls="carousel-clothes" id="tab-clothes">Summer!</button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="carousel-accessories" id="tab-accessories">Accessories!</button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="carousel-fall" id="tab-fall">Fall!</button>
+      <div class="stop-cost">Free</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:20 AM</div>
+      <div class="stop-info">
+        <div class="stop-name">☕ Community Goods <span class="walk-badge">Walk ~10 min</span></div>
+        <div class="stop-detail">710 N Edinburgh Ave · Opens 8am Sundays<br>Famous matcha einspanner, breakfast sliders. Grab to go.</div>
       </div>
+      <div class="stop-cost">$7–12<span class="range">per person</span></div>
     </div>
-
-
-    <div class="carousel-container">
-      <section id="carousel-clothes" role="tabpanel" aria-labelledby="tab-clothes" class="carousel-tab">
-        <ShopCarousel products={products} nameFontSize="1rem" priceFontSize="1rem" />
-      </section>
-      <section id="carousel-accessories" role="tabpanel" aria-labelledby="tab-accessories" class="carousel-tab">
-        <ShopCarousel products={productsAccessories} nameFontSize="1rem" priceFontSize="1rem" />
-      </section>
-      <section id="carousel-fall" role="tabpanel" aria-labelledby="tab-fall" class="carousel-tab">
-        <ShopCarousel products={productsFall} nameFontSize="1rem" priceFontSize="1rem" />
-      </section>
-      <section id="carousel-school" role="tabpanel" aria-labelledby="tab-school" class="carousel-tab active-tab">
-        <ShopCarousel products={productsCollege} nameFontSize="1rem" priceFontSize="1rem" />
-      </section>
-    </div>
-  </section>
-
-  <!-- Night Section -->
-  <section class="night-section">
-    <div class="night-spacer"></div>
-
-    <div class="night-banner">
-      <div class="moving-text-wrapper">
-        <LoopMoving text="- Picks++" fontSize="8rem" color="#fff200" />
+    <div class="stop">
+      <div class="stop-time">11:50 AM</div>
+      <div class="stop-info">
+        <div class="stop-name">🛒 Erewhon <span class="walk-badge">Walk ~8 min</span></div>
+        <div class="stop-detail">7660 Beverly Blvd · Open 7am–11pm<br>The viral smoothies. Budget accordingly lol.</div>
       </div>
+      <div class="stop-cost">$18–26<span class="range">per smoothie</span></div>
     </div>
-
-    <!-- <div class="night-content-text">
-      <h2>What I'm Eyeing. . .</h2>
-    </div> -->
-
-    <div class="carousel-container">
-      <ShopCarousel products={productsEdgy} nameFontSize="1rem" priceFontSize="1rem" />
+    <div class="stop">
+      <div class="stop-time">12:20 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🛍 The Grove + Brandy Melville <span class="walk-badge">Walk ~8 min</span></div>
+        <div class="stop-detail">189 The Grove Dr · Opens 11am Sundays (Brandy opens 11am, closes 8pm)<br>The Brandy here has an attached café with pizza + coffee if you want a snack.</div>
+      </div>
+      <div class="stop-cost">Varies<span class="range">shopping</span></div>
     </div>
-  </section>
+  </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const tabs = document.querySelectorAll('.tab-buttons button');
-      const panels = document.querySelectorAll('.carousel-tab');
+  <div class="drive-connector">
+    <div class="drive-line"></div>
+    <div class="drive-label">🚗 Drive 15 min → Koreatown</div>
+    <div class="drive-line"></div>
+  </div>
 
-      tabs.forEach((tab) => {
-        tab.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetId = tab.getAttribute('aria-controls');
+  <!-- CLUSTER 3 -->
+  <div class="cluster">
+    <div class="cluster-header">
+      <span class="cluster-name">📍 Cluster 3 — Koreatown</span>
+      <span class="cluster-note">Park once at Oxford Center Plaza · Walk everything</span>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:10 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🍞 Out of Ordi <span class="drive-badge">Drive</span></div>
+        <div class="stop-detail">3524 W 8th St · Opens 11:30am · Closes 3pm<br>Korean salt bread. Weekend limit: 4 pieces/person. Expect 20–30 min line. Eat immediately.</div>
+      </div>
+      <div class="stop-cost">~$16<span class="range">4 pc × ~$4 ea</span></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:50 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🍵 DAMO Matcha <span class="walk-badge">Walk 1 min</span></div>
+        <div class="stop-detail">3510 W 8th St · Same plaza as Out of Ordi<br>Open until 6pm. Get the matcha einspanner. ~15 min wait.</div>
+      </div>
+      <div class="stop-cost">$7–9<span class="range">per drink</span></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:20 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🍚 Damsot — Lunch <span class="walk-badge">Walk ~10 min</span></div>
+        <div class="stop-detail">3377 Wilshire Blvd · Open 11am–3pm for lunch<br>Korean clay pot rice. Each pot comes with banchan, salad, miso soup. No takeout — dine in only. ⚠️ Check in immediately, weekend waits can be 15–30 min.</div>
+      </div>
+      <div class="stop-cost">$19–29<span class="range">per person</span></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:30–6 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🕰 Free Time — Koreatown</div>
+        <div class="stop-detail">Vintage shops, exploring, Ktown malls, rest. Car stays at Oxford Plaza.</div>
+      </div>
+      <div class="stop-cost">—</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:30 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🍣 KazuNori — Dinner <span class="walk-badge">Walk ~4 min</span></div>
+        <div class="stop-detail">3465 W 6th St · Open until 11pm Sundays<br>Hand roll bar by the Sushi Nozawa Group. No reservations. No tipping — hospitality included in price. Order a set: 3 rolls ($15), 5 rolls ($25), 6 rolls ($28). Get the salmon, toro, and lobster.</div>
+      </div>
+      <div class="stop-cost">$25–35<span class="range">per person</span></div>
+    </div>
+  </div>
 
-          tabs.forEach((t) => {
-            t.classList.remove('active');
-            t.setAttribute('aria-selected', 'false');
-          });
+  <div class="drive-connector">
+    <div class="drive-line"></div>
+    <div class="drive-label">🚗 Drive 15 min → East Hollywood</div>
+    <div class="drive-line"></div>
+  </div>
 
-          panels.forEach((panel) => panel.classList.remove('active-tab'));
+  <!-- Standalone stops -->
+  <div class="cluster">
+    <div class="cluster-header">
+      <span class="cluster-name">📍 East Hollywood → Diamond Bar → Home</span>
+      <span class="cluster-note">Final stretch</span>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:45 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🍨 Kanomwaan Thai Gelato <span class="drive-badge">Drive</span></div>
+        <div class="stop-detail">5261 Hollywood Blvd · ⚠️ Closes 8:30pm Sundays — must arrive by 7:45<br>Thai-inspired gelato + shaved ice. The mango sticky rice shaved ice is enormous — share it. Thai tea and pandan gelato are also incredible.</div>
+      </div>
+      <div class="stop-cost">$8–14<span class="range">per person</span></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:15 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🧋 Torotea <span class="drive-badge">Drive ~35 min</span></div>
+        <div class="stop-detail">1395 S Diamond Bar Blvd · Open until 10pm<br>Right off the 57, perfectly on the way home. Popcorn milk tea + brown sugar tapiochi. Then 15 min to Claremont.</div>
+      </div>
+      <div class="stop-cost">$7–10<span class="range">per drink</span></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:15 PM</div>
+      <div class="stop-info">
+        <div class="stop-name">🏁 Back at HMC</div>
+        <div class="stop-detail">Car returned by 10:30 PM ✓</div>
+      </div>
+      <div class="stop-cost">—</div>
+    </div>
+  </div>
 
-          tab.classList.add('active');
-          tab.setAttribute('aria-selected', 'true');
-          document.getElementById(targetId).classList.add('active-tab');
-        });
-      });
-    });
+  <!-- Cost Summary -->
+  <div class="section-label" style="margin-top: 32px;">Cost Breakdown Per Person</div>
 
-    window.addEventListener("scroll", () => {
-      const triggerPoint = document.body.scrollHeight / 3;
-      if (window.scrollY > triggerPoint) {
-        document.body.classList.add("night-mode");
-      } else {
-        document.body.classList.remove("night-mode");
-      }
-    });
-  </script>
-</Layout>
+  <div class="alert">
+    <strong>Heads up:</strong> All prices below are estimates based on typical orders. Actual costs will vary based on how many rolls/items you get, whether you share dishes, and how much you spend shopping. Think of this as a realistic floor — you could spend less if you share, or more if you go off-menu. Damsot and KazuNori are the two biggest meals. Everything else is snacks/drinks.
+  </div>
+
+  <div class="cost-section">
+    <div class="cost-header">
+      <div class="section-label" style="margin: 0; border: none; padding: 0;">Fixed Cost</div>
+    </div>
+    <div class="cost-row">
+      <span class="label">🚗 Car rental split 5 ways<small>$180 total BMW rental</small></span>
+      <span class="amount">$36</span>
+    </div>
+    <div class="cost-row subtotal">
+      <span class="label">Fixed subtotal</span>
+      <span class="amount">$36</span>
+    </div>
+  </div>
+
+  <div class="cost-section">
+    <div class="cost-header">
+      <div class="section-label" style="margin: 0; border: none; padding: 0;">Food & Drinks</div>
+    </div>
+    <div class="cost-row">
+      <span class="label">☕ Community Goods<small>Matcha einspanner or latte</small></span>
+      <span class="amount">~$9</span>
+    </div>
+    <div class="cost-row">
+      <span class="label">🛒 Erewhon<small>One smoothie — the whole point of LA</small></span>
+      <span class="amount">~$20</span>
+    </div>
+    <div class="cost-row">
+      <span class="label">🍞 Out of Ordi<small>4 pieces of salt bread (weekend max)</small></span>
+      <span class="amount">~$16</span>
+    </div>
+    <div class="cost-row">
+      <span class="label">🍵 DAMO Matcha<small>Matcha einspanner</small></span>
+      <span class="amount">~$8</span>
+    </div>
+    <div class="cost-row">
+      <span class="label">🍚 Damsot — Lunch<small>One pot rice (includes banchan, salad, miso). Steak pot is $26, eggplant is $19, others $19–29</small></span>
+      <span class="amount">~$22</span>
+    </div>
+    <div class="cost-row">
+      <span class="label">🍣 KazuNori — Dinner<small>5-roll set ($25) or 6-roll set ($28). No tipping required — hospitality included</small></span>
+      <span class="amount">~$28</span>
+    </div>
+    <div class="cost-row">
+      <span class="label">🍨 Kanomwaan Thai Gelato<small>Mango sticky rice shaved ice or 2 scoops gelato</small></span>
+      <span class="amount">~$10</span>
+    </div>
+    <div class="cost-row">
+      <span class="label">🧋 Torotea<small>One drink (popcorn milk tea + tapiochi)</small></span>
+      <span class="amount">~$9</span>
+    </div>
+    <div class="cost-row subtotal">
+      <span class="label">Food & drinks subtotal</span>
+      <span class="amount">~$122</span>
+    </div>
+  </div>
+
+  <div class="cost-section">
+    <div class="cost-row total">
+      <span class="label">Estimated Total Per Person</span>
+      <span class="amount">~$158</span>
+    </div>
+    <div class="cost-row" style="background: #f5f4f2;">
+      <span class="label" style="font-family: 'Helvetica Neue', sans-serif; font-size: 11px; color: #666;">Budget for shopping, extras, parking tips, etc.<small style="color:#aaa;">Silverlake Flea + The Grove are the main shopping moments</small></span>
+      <span class="amount" style="font-size: 12px; color: #888;">+$?</span>
+    </div>
+    <div class="cost-row">
+      <span class="label" style="font-family: 'Helvetica Neue', sans-serif; font-size: 11px; color: #666;"><strong>Comfortable budget to bring (all-in)</strong></span>
+      <span class="amount">$175–200</span>
+    </div>
+  </div>
+
+  <!-- Notes -->
+  <div class="section-label" style="margin-top: 32px;">Good to Know</div>
+  <div class="logistics">
+    <div class="logistics-row">
+      <div class="logistics-icon">💳</div>
+      <div class="logistics-text"><strong>Cash or Venmo for Silverlake Flea vendors.</strong> Cards accepted everywhere else.</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">🍞</div>
+      <div class="logistics-text"><strong>Eat the Out of Ordi salt bread immediately</strong> — texture is dramatically better warm. Don't save it for later.</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">🍣</div>
+      <div class="logistics-text"><strong>KazuNori doesn't require tipping</strong> — hospitality is included in the price. This is genuinely rare and appreciated.</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">🍽️</div>
+      <div class="logistics-text"><strong>Damsot is dine-in only, no takeout.</strong> Check in the moment you arrive — weekend waits are real. Lunch closes at 3pm sharp.</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">🍨</div>
+      <div class="logistics-text"><strong>Share the Kanomwaan shaved ice</strong> — it's massive and meant for sharing. The mango sticky rice shaved ice easily feeds 2–3 people.</div>
+    </div>
+    <div class="logistics-row">
+      <div class="logistics-icon">☀️</div>
+      <div class="logistics-text"><strong>Wear sunscreen and comfortable shoes.</strong> The Melrose cluster especially is a solid 30-min round-trip walk in May heat.</div>
+    </div>
+  </div>
+
+  <div class="footer">Made with love · LA Day Trip · May 10th</div>
+
+</div>
+</body>
+</html>
