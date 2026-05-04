@@ -4,16 +4,23 @@ date: "2026-04-12"
 coverImage: "/images/my-shoes.jpg"
 description: "cause im cool"
 ---
-my guide to getting dressed: (do this cierra style so every bullet has real finds)
+my guide to getting dressed: 
 
-1. taste is built from everything you do
-    its not a switch you can flip on and off, its a lifestyle. if you can attend class without being in your signature persona, youre not locked in enough.
-2. why are we afraid of cool jewelry ie long necklaces, black accessories, weird earrings
-    i do the big outer earring and small inner earring
+1. taste is built from everything you do.
+    swag isnt a switch you can flip on and off, its a lifestyle. personally cant even go to class without feeling in character w my outfit. but thats cause im locked in.
+   
 
-    love the black jewelry -- giving 2014 claires emo girl
+2. dont be afraid of cool jewelry ie long necklaces, black accessories, weird earrings
+    i do the big inner earring and small outer earring
+
+    loving black jewelry rn cause it gives 2014 claires emo girl
+    but also like flapper
 
 <div class="image-grid">
+  <a href="b" class="image-card">
+    <img src="/images/cheyenne-guide/cat-lariat.webp" alt="vs off the shoulder black" />
+    <span class="image-title">cat lariat necklace</span>
+  </a>
   <a href="b" class="image-card">
     <img src="/images/cheyenne-guide/spiky-hoops.png" alt="vs off the shoulder black" />
     <span class="image-title">taxco 925 silver hoops</span>
@@ -48,16 +55,31 @@ my guide to getting dressed: (do this cierra style so every bullet has real find
 
 4. big messy hair we dgaf
     not everyone has hair like u so let it free!
-5. the shape of your pants is everything. build the outfit around the pants
-6. if you can get away with it, wear ur flip flops/flats
-    i love heel bite, black on the bottom of my jeans, frays dragging on the ground, and then right next to it ur bare feet are out too! it creates and interesting juxtaposition imo. 
+5. the character of your pants is everything. washes and silhouttes set the whole tone and must not be overlooked. i build most of my outfits around the pants.
+6. if you can get away with it, wear flip flops or flats.
+    i love heel bite, black on the bottom of my jeans, frays dragging on the ground, and then right next to it ur bare and probably gross feet are out too! it creates an interesting contrast imo. 
+
+  <div class="image-grid">
+  <a href="b" class="image-card">
+    <img src="/images/cheyenne-guide/shoes1.JPG" alt="vs off the shoulder black" />
+    <span class="image-title">repetto tstraps in camo</span>
+  </a>
+  <a href="b" class="image-card">
+    <img src="/images/cheyenne-guide/shoes2.jpg" alt="vs off the shoulder black" />
+    <span class="image-title">amazon flipflops</span>
+  </a>
+  <a href="b" class="image-card">
+    <img src="/images/cheyenne-guide/shoes3.jpg" alt="vs off the shoulder black" />
+    <span class="image-title">balenciaga suede flats</span>
+  </a>
+  </div>
 7. signature denim is the backbone of ur wardrobe.
 
     my holy grails:
         miss sixty perkins medium wash,
         diesel doozy medium wash,
         diesel blue eyecons 2013 dark wash,
-        levis dark blue
+        levis black label
         ...
 
 actual ones i own:
@@ -80,28 +102,42 @@ ones id recommend:
   </a>
 </div>
 
+and obviously levis engineered too
+
 8. funky shirts!
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/cheyenne-guide/starwars-shirt.jpg" alt="vs off the shoulder black" />
-    <span class="image-title">d&g little boys longsleeve</span>
+    <span class="image-title">preen by thorton bregazzi vader top</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/cheyenne-guide/d&g-longsleeve.jpg" alt="vs off the shoulder black" />
     <span class="image-title">d&g little boys longsleeve</span>
   </a>
+  <a href="b" class="image-card">
+    <img src="/images/vivienne_shirt.webp" alt="vs off the shoulder black" />
+    <span class="image-title">vivienne westwood graphic</span>
+  </a>
 </div>
 
 
 
-9. huge bag
-
+9. huge bag - this frye one has been my right hand man for ~2 yrs
+<div class="image-grid">
+  <a href="b" class="image-card">
+    <img src="/images/cheyenne-guide/frye-bag.png" alt="vs off the shoulder black" />
+    <span class="image-title">frye studded bag</span>
+  </a>
+</div>
 
 
 
 10. always trying out ~different sillhouettes that may make u feel stupid 
-    its ok, if it feels weird it means ur doing something different. and in a way the worse the better like if i feel too bad i just think of thegrotesquearchive styling and then its ok!!
+    its ok, if it feels weird it means ur doing something different. and in a way the worse the better. like if i feel too bad i just think of thegrotesquearchive styling and then its ok!!
 
+
+
+    the point is not always to look good but to genuinely grow in your taste and understnading both what you love and what works for you, which often are different things.
 
 
 
@@ -114,8 +150,16 @@ ones id recommend:
 
 <div class="image-grid">
   <a href="b" class="image-card">
-    <img src="/images/cheyenne-guide/nike-lunarforce.webp" alt="vs off the shoulder black" />
+    <img src="/images/cheyenne-guide/mm6-top.webp" alt="vs off the shoulder black" />
     <span class="image-title">taxco 925 silver hoops</span>
+  </a>
+  <a href="b" class="image-card">
+    <img src="/images/cheyenne-guide/nike-lunarforce.webp" alt="vs off the shoulder black" />
+    <span class="image-title">little boys duckboots</span>
+  </a>
+  <a href="b" class="image-card">
+    <img src="/images/cheyenne-guide/repetto-tstrap-army.webp" alt="vs off the shoulder black" />
+    <span class="image-title">repetto tstraps in sparkly suede!</span>
   </a>
 </div>
 
