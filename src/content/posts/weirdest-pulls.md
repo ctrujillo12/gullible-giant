@@ -6,7 +6,7 @@ description: "idk been on something lately"
 ---
 recent trr finds that i found stimulating...
 
-prepare to be visually assaulted
+prepare to be visually assaulted:
 
 
 
