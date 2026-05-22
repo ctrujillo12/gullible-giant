@@ -68,6 +68,10 @@ idk man
     <img src="/images/weirdest-pulls/rick-top.jpg.webp" alt="vs off the shoulder black" />
     <span class="image-title">cat lariat necklace</span>
   </a>
+</div>
+
+silly skirt
+<div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/prada-skirt.jpg.webp" alt="vs off the shoulder black" />
     <span class="image-title">cat lariat necklace</span>
