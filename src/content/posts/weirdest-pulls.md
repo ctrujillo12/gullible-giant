@@ -4,10 +4,13 @@ date: "2026-06-21"
 coverImage: "/images/weirdest-pulls/hi.jpeg"
 description: "idk been on something lately"
 ---
-
+some recent trr finds...
 
 prepare to be visually assaulted
 
+
+
+------------------------------------
 
 i love an ill fitting polo
 <div class="image-grid">
