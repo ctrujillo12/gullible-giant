@@ -81,7 +81,7 @@ silly skirt
   </a>
 </div>
 
-gorg colorblock dresses. not the easiest on the eye. like imagine if the green one was super mini
+gorg colorblock dresses. not the easiest on the eye. but like imagine if the green one was super mini
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/miumiu-dress3.jpg.webp" alt="vs off the shoulder black" />
@@ -109,7 +109,7 @@ sick footwork
   </a>
 </div>
 
-thats all for now...
+and thats all for now...
 
 
 
