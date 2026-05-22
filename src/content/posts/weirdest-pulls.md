@@ -8,6 +8,8 @@ description: "idk been on something lately"
 
 prepare to be visually assaulted
 
+
+i love an ill fitting polo
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/versace-polo.jpg.webp" alt="vs off the shoulder black" />
@@ -19,6 +21,8 @@ prepare to be visually assaulted
   </a>
 </div>
 
+
+some fire jackets that require only the perfect pair of jeans
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/moschino-jacket.jpg.webp" alt="vs off the shoulder black" />
@@ -34,6 +38,7 @@ prepare to be visually assaulted
   </a>
 </div>
 
+idk man
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/prada-shiny.jpg.webp" alt="vs off the shoulder black" />
@@ -69,6 +74,7 @@ prepare to be visually assaulted
   </a>
 </div>
 
+gorg colorblock dresses. not the easiest on the eye
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/miumiu-dress3.jpg.webp" alt="vs off the shoulder black" />
@@ -80,6 +86,7 @@ prepare to be visually assaulted
   </a>
 </div>
 
+sick footwork
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/moschino-flats.jpg.webp" alt="vs off the shoulder black" />
