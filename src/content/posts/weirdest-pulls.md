@@ -1,5 +1,5 @@
 ---
-title: "i love cheugy clothes"
+title: "i 🧡 ugly clothes"
 date: "2026-06-21"
 coverImage: "/images/weirdest-pulls/hi.jpeg"
 description: "idk been on something lately"
