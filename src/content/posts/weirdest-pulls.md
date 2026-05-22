@@ -4,7 +4,7 @@ date: "2026-06-21"
 coverImage: "/images/weirdest-pulls/hi.jpeg"
 description: "idk been on something lately"
 ---
-some recent trr finds...
+recent trr finds that i found stimulating...
 
 prepare to be visually assaulted
 
@@ -25,7 +25,7 @@ i love an ill fitting polo
 </div>
 
 
-some fire jackets that require only the perfect pair of jeans
+some fire jackets that need only the perfect pair of jeans
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/moschino-jacket.jpg.webp" alt="vs off the shoulder black" />
@@ -41,7 +41,7 @@ some fire jackets that require only the perfect pair of jeans
   </a>
 </div>
 
-idk man
+idk man tops
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/prada-shiny.jpg.webp" alt="vs off the shoulder black" />
@@ -81,7 +81,7 @@ silly skirt
   </a>
 </div>
 
-gorg colorblock dresses. not the easiest on the eye
+gorg colorblock dresses. not the easiest on the eye. like imagine if the green on was super mini
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/miumiu-dress3.jpg.webp" alt="vs off the shoulder black" />
@@ -109,7 +109,7 @@ sick footwork
   </a>
 </div>
 
-
+thats all for now...
 
 
 
