@@ -13,11 +13,11 @@ i love an ill fitting polo
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/versace-polo.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">versace</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/vivienne-polo.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">vivienne westwood</span>
   </a>
 </div>
 
@@ -26,15 +26,15 @@ some fire jackets that require only the perfect pair of jeans
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/moschino-jacket.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">moschino couture</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/ungaro-jacket.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">emmanuel ungaro</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/rv-jacket.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">red valentino</span>
   </a>
 </div>
 
@@ -42,31 +42,31 @@ idk man
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/prada-shiny.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">prada</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/rick-sweater.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">rickkk</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/rv-striped.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">red valentino</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/dior-longsleeve.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">dior</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/rv-sweater.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">red valentino slay</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/cdg-lace.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">junya cdg</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/rick-top.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">rick but giving nicolas ghesquiere</span>
   </a>
 </div>
 
@@ -74,7 +74,7 @@ silly skirt
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/prada-skirt.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">prada</span>
   </a>
 </div>
 
@@ -82,11 +82,11 @@ gorg colorblock dresses. not the easiest on the eye
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/miumiu-dress3.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">miu miu</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/miumiu-dress2.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">miu miu girl</span>
   </a>
 </div>
 
@@ -94,15 +94,15 @@ sick footwork
 <div class="image-grid">
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/moschino-flats.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">moschino</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/mugler-flats.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">mugler</span>
   </a>
   <a href="b" class="image-card">
     <img src="/images/weirdest-pulls/balenci-sandals.jpg.webp" alt="vs off the shoulder black" />
-    <span class="image-title">cat lariat necklace</span>
+    <span class="image-title">balenci ofc</span>
   </a>
 </div>
 
