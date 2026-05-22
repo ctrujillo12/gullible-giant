@@ -2,7 +2,7 @@
 title: "i love cheugy clothes"
 date: "2026-06-21"
 coverImage: "/images/weirdest-pulls/hi.jpeg"
-description: "cause im cool"
+description: "idk been on something lately"
 ---
 
 
