@@ -1,6 +1,6 @@
 ---
 title: "i 🧡 ugly clothes"
-date: "2026-06-21"
+date: "2026-05-21"
 coverImage: "/images/weirdest-pulls/hi.jpeg"
 description: "idk been on something lately"
 ---
