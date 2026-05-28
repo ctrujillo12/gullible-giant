@@ -72,7 +72,7 @@ im in the market so why not share my picks
 
 .image-card img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   border-radius: 1px;
   border: 3px solid #2eddddff;
