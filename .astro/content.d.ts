@@ -172,14 +172,6 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
-"unfinished-posts": Record<string, {
-  id: string;
-  body?: string;
-  collection: "unfinished-posts";
-  data: any;
-  rendered?: RenderedContent;
-  filePath?: string;
-}>;
 
 	};
 
