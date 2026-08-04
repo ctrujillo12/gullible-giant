@@ -11,7 +11,7 @@ my guide to getting dressed:
    
 
 2. dont be afraid of cool jewelry ie long necklaces, black accessories, weird earrings
-    i do the big inner earring and small outer earring
+    i do the big outer earring and small inner earring
 
     loving black jewelry rn cause it gives 2014 claires emo girl
     but also like flapper
